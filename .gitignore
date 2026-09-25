@@ -12,3 +12,8 @@
 # Temporary files
 *.tmp
 *.temp
+
+# Local tooling and Blender backups
+.tools/
+*.blend1
+__pycache__/

@@ -1,0 +1,28 @@
+{
+  "page_errors": [],
+  "image_assets": [
+    {
+      "src": "previews/01-entry.png",
+      "width": 1440
+    },
+    {
+      "src": "previews/02-lobby.png",
+      "width": 1440
+    },
+    {
+      "src": "previews/03-lift.png",
+      "width": 1440
+    },
+    {
+      "src": "previews/04-exterior.png",
+      "width": 1440
+    },
+    {
+      "src": "previews/07-top-annotated.png",
+      "width": 1880
+    }
+  ],
+  "slider": "passed",
+  "routes_toggle": "passed",
+  "mobile_horizontal_overflow": false
+}

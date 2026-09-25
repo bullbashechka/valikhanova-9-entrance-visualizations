@@ -1,0 +1,167 @@
+{
+  "blender": "5.2.2 LTS",
+  "checks": [
+    {
+      "name": "clear_wall_opening/S1-30",
+      "pass": true,
+      "obstructions": []
+    },
+    {
+      "name": "clear_wall_opening/S1-21",
+      "pass": true,
+      "obstructions": []
+    },
+    {
+      "name": "clear_wall_opening/S1-22",
+      "pass": true,
+      "obstructions": []
+    },
+    {
+      "name": "clear_wall_opening/S1-31",
+      "pass": true,
+      "obstructions": []
+    },
+    {
+      "name": "clear_wall_opening/S1-20",
+      "pass": true,
+      "obstructions": []
+    },
+    {
+      "name": "clear_wall_opening/S1-15",
+      "pass": true,
+      "obstructions": []
+    },
+    {
+      "name": "clear_wall_opening/S1-16",
+      "pass": true,
+      "obstructions": []
+    },
+    {
+      "name": "clear_wall_opening/S1-17",
+      "pass": true,
+      "obstructions": []
+    },
+    {
+      "name": "clear_wall_opening/S1-18",
+      "pass": true,
+      "obstructions": []
+    },
+    {
+      "name": "clear_wall_opening/S1-14",
+      "pass": true,
+      "obstructions": []
+    },
+    {
+      "name": "clear_wall_opening/S1-23",
+      "pass": true,
+      "obstructions": []
+    },
+    {
+      "name": "clear_wall_opening/S1-19",
+      "pass": true,
+      "obstructions": []
+    },
+    {
+      "name": "clear_wall_opening/S1-32",
+      "pass": true,
+      "obstructions": []
+    },
+    {
+      "name": "clear_wall_opening/S1-24",
+      "pass": true,
+      "obstructions": []
+    },
+    {
+      "name": "clear_wall_opening/S1-33",
+      "pass": true,
+      "obstructions": []
+    },
+    {
+      "name": "route_wall_clearance/1",
+      "pass": true,
+      "obstructions": []
+    },
+    {
+      "name": "route_wall_clearance/2",
+      "pass": true,
+      "obstructions": []
+    },
+    {
+      "name": "route_wall_clearance/3",
+      "pass": true,
+      "obstructions": []
+    },
+    {
+      "name": "route_wall_clearance/4",
+      "pass": true,
+      "obstructions": []
+    },
+    {
+      "name": "stroller_inside_open_zone",
+      "pass": true
+    },
+    {
+      "name": "source_png_sha256",
+      "pass": true
+    }
+  ],
+  "all_pass": true,
+  "object_count": 272,
+  "assumptions": [
+    {
+      "id": "A01",
+      "element": "Внутренние двери и лифт",
+      "value": "2100 мм; ширины проёмов по PNG, не ширины полотен"
+    },
+    {
+      "id": "A02",
+      "element": "Четыре оконных участка",
+      "value": "Подоконник 900 мм, верх 2400 мм; фасады не дают однозначной привязки этих четырёх участков"
+    },
+    {
+      "id": "A03",
+      "element": "Наружная лестница",
+      "value": "7 подъёмов по 150 мм; 6 проступей в пределах 1799,4 мм, верхняя площадка завершает подъём"
+    },
+    {
+      "id": "A04",
+      "element": "Подъёмник",
+      "value": "Условный объём в зоне символа, не выбранное оборудование и не проверка рабочего габарита"
+    },
+    {
+      "id": "A05",
+      "element": "Навес и ограждения",
+      "value": "Простая форма; низ навеса 2700 мм относительно пола, ограждение 1000 мм над площадкой. Только визуальные допущения"
+    },
+    {
+      "id": "A06",
+      "element": "Лестничная клетка",
+      "value": "По разрезу ЭП стр.22: площадки 0,000 и -1,050 разделены; первый восходящий марш до +1,650 условно 11 подъёмов. Показана только видимая часть, продолжение за верхний срез не моделируется"
+    },
+    {
+      "id": "A07",
+      "element": "Коляска",
+      "value": "Один условный объект 1000×620 мм; вместимость зоны не утверждается"
+    },
+    {
+      "id": "A08",
+      "element": "Фасад и подход",
+      "value": "Нейтральный фрагмент окружения; не проект благоустройства"
+    },
+    {
+      "id": "A09",
+      "element": "Тамбур",
+      "value": "Контур 5,174 м² сохранён; подпись 5,50 м² не использована для изменения стен"
+    }
+  ],
+  "levels_m": {
+    "floor": 0,
+    "outside_upper": -0.01,
+    "outside_lower": -1.06,
+    "stair_lower_entry": -1.05
+  },
+  "exterior_risers": 7,
+  "exterior_treads": 6,
+  "exterior_rise_m": 0.15,
+  "source_png_sha256": "d9cb2c22c474552513cbff969c96e6945dab95c81354a357799a61e6ba0e21b1"
+}

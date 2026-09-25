@@ -1,0 +1,108 @@
+{
+  "blender": "5.2.2 LTS",
+  "blend_sha256": "a1a95448fcdc879d642292879d3b1556490af7c2551d9306672e67ceac42dabe",
+  "all_pass": true,
+  "checks": [
+    {
+      "name": "15 uniquely identified openings",
+      "passed": true
+    },
+    {
+      "name": "4 perspective cameras and orthographic camera",
+      "passed": true
+    },
+    {
+      "name": "editable geometry",
+      "passed": true
+    },
+    {
+      "name": "ceiling/Ceiling / вестибюль",
+      "passed": true,
+      "underside_m": 3.0
+    },
+    {
+      "name": "ceiling/Ceiling / колясочная",
+      "passed": true,
+      "underside_m": 3.0
+    },
+    {
+      "name": "ceiling/Ceiling / тамбур",
+      "passed": true,
+      "underside_m": 3.0
+    },
+    {
+      "name": "ceiling/Ceiling / межквартирный коридор",
+      "passed": true,
+      "underside_m": 3.0
+    },
+    {
+      "name": "full-height model preserved",
+      "passed": true
+    },
+    {
+      "name": "floor area/вестибюль",
+      "passed": true,
+      "actual_m2": 13.1586,
+      "stage1_m2": 13.159
+    },
+    {
+      "name": "floor area/колясочная",
+      "passed": true,
+      "actual_m2": 3.5149,
+      "stage1_m2": 3.515
+    },
+    {
+      "name": "floor area/тамбур",
+      "passed": true,
+      "actual_m2": 5.1739,
+      "stage1_m2": 5.174
+    },
+    {
+      "name": "floor area/межквартирный коридор",
+      "passed": true,
+      "actual_m2": 26.9675,
+      "stage1_m2": 26.967
+    },
+    {
+      "name": "7 exterior risers at 150mm",
+      "passed": true,
+      "levels_m": [
+        -0.01,
+        -0.16,
+        -0.31,
+        -0.46,
+        -0.61,
+        -0.76,
+        -0.91,
+        -1.06
+      ]
+    },
+    {
+      "name": "stair and exterior levels kept separate",
+      "passed": true
+    },
+    {
+      "name": "no walls inside source floor zones",
+      "passed": true,
+      "samples": 6055,
+      "collisions": []
+    },
+    {
+      "name": "source reference packed in blend",
+      "passed": true
+    },
+    {
+      "name": "approved PNG unchanged",
+      "passed": true,
+      "sha256": "d9cb2c22c474552513cbff969c96e6945dab95c81354a357799a61e6ba0e21b1"
+    },
+    {
+      "name": "ceilings and canopy visible in saved scene",
+      "passed": true
+    },
+    {
+      "name": "no missing file assets",
+      "passed": true
+    }
+  ]
+}
