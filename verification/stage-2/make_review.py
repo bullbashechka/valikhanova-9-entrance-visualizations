@@ -7,7 +7,8 @@ HERE=Path(__file__).resolve().parent; ROOT=HERE.parent.parent; P=HERE/'previews'
 D=json.loads((HERE/'geometry.json').read_text(encoding='utf-8'))
 S=json.loads((HERE/'scene-section.json').read_text(encoding='utf-8'))
 V=json.loads((HERE/'validation.json').read_text(encoding='utf-8'))
-FONT=Path('C:/Windows/Fonts/segoeui.ttf'); BOLD=Path('C:/Windows/Fonts/segoeuib.ttf')
+FONT=next(p for p in [Path('C:/Windows/Fonts/segoeui.ttf'),Path('/System/Library/Fonts/Supplemental/Arial.ttf')] if p.exists())
+BOLD=next(p for p in [Path('C:/Windows/Fonts/segoeuib.ttf'),Path('/System/Library/Fonts/Supplemental/Arial Bold.ttf')] if p.exists())
 def font(size,bold=False):return ImageFont.truetype(str(BOLD if bold else FONT),size)
 def wrap(draw,text,width,f):
     words=text.split();lines=[];line=''
@@ -60,7 +61,7 @@ for title,body in [
     ('Основные высоты','Потолок 3000 мм. Внутренние проёмы условно 2100 мм. Входные и тамбурные двери 2400 мм по ЭП.'),
     ('Условные элементы','Окна: подоконник 900 мм, верх 2400 мм. Навес: низ 2700 мм. Ограждения: высота 1000 мм. Подъёмник показан объёмом без выбора изделия.'),
     ('Наружные ступени','7 подъёмов по 150 мм между отметками −1,060 и −0,010. Проступи распределены по контуру плана.'),
-    ('Лестничная клетка','Отметка −1,050 относится к нижней входной площадке ЛК. Восходящий марш и нижний фрагмент показаны по разрезу, без моделирования верхних этажей.'),
+    ('Лестничная клетка','От двери вестибюля площадка 0,000 ведёт по левому маршу к +1,650, затем по обратному правому маршу к площадке второго этажа +3,300. Нижняя входная площадка −1,050 находится под правым маршем и относится к отдельному маршруту. На виде сверху верхний марш закрывает нижний.'),
     ('Что проверить','Положение дверей, форму помещений, открытость колясочной, путь к лифту и лестнице. Оранжевые дуги показывают сторону открывания.'),
     ('Статус','Предварительная геометрия. Окончательное согласование сцены и дата начала срока визуализаций ещё не получены.')]:
     y=paragraphs(draw,title,x,y,555,24,'#142735',True)+8

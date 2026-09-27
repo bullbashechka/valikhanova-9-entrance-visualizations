@@ -164,12 +164,18 @@ for oid,o in PORTALS.items():
     empty['source_id']=oid;empty['width_m']=length;empty['height_m']=h;empty['status']=o['status']
     empty['hinge']=o.get('hinge','none');empty['swing_side']=o.get('swing',0)
 
-# Stairwell: first visible rising flight; lower exterior access is a separate level.
+# From the first-floor door: landing 0.000, left flight, turning landing,
+# right return flight, and the second-floor landing +3.300.
 rect('Stair / first-floor landing',[392.2,346.8,485.4,539.1],-.15,0,'Stairs','floor')
 for i in range(10):
     y0=539.1+(764.3-539.1)*i/10; y1=539.1+(764.3-539.1)*(i+1)/10
     rect(f'Stair / ascending tread {i+1}',[392.2,y0,485.4,y1],-.15,(i+1)*.15,'Stairs','floor','conditional')
 rect('Stair / first turning landing',[392.2,764.3,594.3,865.3],1.50,1.65,'Stairs','floor','conditional')
+for i in range(10):
+    y0=764.3-(764.3-539.1)*(i+1)/10; y1=764.3-(764.3-539.1)*i/10
+    rect(f'Stair / upper return tread {i+1}',[494.9,y0,594.3,y1],1.50,1.65+(i+1)*.15,'Stairs','floor','conditional')
+rect('Stair / second-floor landing',[494.9,346.8,594.3,539.1],3.15,3.30,'Stairs','floor','project_elevation')
+# The lower entry remains below the return flight and is a separate route.
 rect('Stair / lower entry landing',[494.9,346.8,594.3,599.0],-1.20,-1.05,'Stairs','floor','project_elevation')
 for i in range(7):
     y0=599+(764.3-599)*i/7;y1=599+(764.3-599)*(i+1)/7
@@ -180,6 +186,10 @@ rod('Stair / handrail',pxy(481,539.1,1),pxy(481,764.3,2.65),.022,'Stairs')
 for i in range(6):
     t=i/5;y=539.1+(764.3-539.1)*t;z=1.65*t
     rod('Stair / post',pxy(481,y,z),pxy(481,y,z+1),.018,'Stairs')
+rod('Stair / upper return handrail',pxy(505,764.3,2.65),pxy(505,539.1,4.30),.022,'Stairs')
+for i in range(6):
+    t=i/5;y=764.3-(764.3-539.1)*t;z=1.65+1.65*t
+    rod('Stair / upper return post',pxy(505,y,z),pxy(505,y,z+1),.018,'Stairs')
 
 prism('Exterior / upper platform',DATA['exterior_platform_png'],-1.21,-.01,'Exterior','floor','project_elevation')
 for i in range(6):
@@ -293,7 +303,7 @@ for ob in COLS['Walls'].objects:
                 p=a.lerp(b,(1.2-a.z)/(b.z-a.z));hits.append([p.x/SX,-p.y/SY])
         if len(hits)==2:segments.append({'object':ob.name,'points':hits})
 (HERE/'scene-section.json').write_text(json.dumps({'cut_height_m':1.2,'segments':segments,'portals':PORTALS,'routes':routes},ensure_ascii=False,indent=2),encoding='utf-8')
-report={'blender':bpy.app.version_string,'checks':checks,'all_pass':all(c['pass'] for c in checks),'object_count':len(bpy.data.objects),'assumptions':DATA['assumptions'],'levels_m':{'floor':0,'outside_upper':-.01,'outside_lower':-1.06,'stair_lower_entry':-1.05},'exterior_risers':7,'exterior_treads':6,'exterior_rise_m':.15,'source_png_sha256':CAL['png_sha256']}
+report={'blender':bpy.app.version_string,'checks':checks,'all_pass':all(c['pass'] for c in checks),'object_count':len(bpy.data.objects),'assumptions':DATA['assumptions'],'levels_m':{'floor':0,'stair_turn':1.65,'second_floor':3.30,'outside_upper':-.01,'outside_lower':-1.06,'stair_lower_entry':-1.05},'exterior_risers':7,'exterior_treads':6,'exterior_rise_m':.15,'source_png_sha256':CAL['png_sha256']}
 (HERE/'validation.json').write_text(json.dumps(report,ensure_ascii=False,indent=2),encoding='utf-8')
 scene['purpose']='Stage 2 conceptual geometry / unapproved for final rendering'
 scene['source_of_truth']='Approved PNG; stage-1 calibration and measurements'

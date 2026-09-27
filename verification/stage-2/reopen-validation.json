@@ -1,6 +1,6 @@
 {
-  "blender": "5.2.2 LTS",
-  "blend_sha256": "a1a95448fcdc879d642292879d3b1556490af7c2551d9306672e67ceac42dabe",
+  "blender": "5.2.1 LTS",
+  "blend_sha256": "9abe8814d9a7f5d9c200a4f0b0ad9627f6441ad0505ebe9f868b6ccd0d84797b",
   "all_pass": true,
   "checks": [
     {
@@ -80,6 +80,35 @@
     {
       "name": "stair and exterior levels kept separate",
       "passed": true
+    },
+    {
+      "name": "continuous rise to second floor",
+      "passed": true,
+      "levels_m": [
+        0.0,
+        0.15,
+        0.3,
+        0.45,
+        0.6,
+        0.75,
+        0.9,
+        1.05,
+        1.2,
+        1.35,
+        1.5,
+        1.65,
+        1.8,
+        1.95,
+        2.1,
+        2.25,
+        2.4,
+        2.55,
+        2.7,
+        2.85,
+        3.0,
+        3.15,
+        3.3
+      ]
     },
     {
       "name": "no walls inside source floor zones",
