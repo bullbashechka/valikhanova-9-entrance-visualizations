@@ -1,6 +1,6 @@
 {
   "blender": "5.2.1 LTS",
-  "blend_sha256": "9abe8814d9a7f5d9c200a4f0b0ad9627f6441ad0505ebe9f868b6ccd0d84797b",
+  "blend_sha256": "cb9c00515a8990922e88b72d1d56addd151154f65189a514355c2aeb1aa14176",
   "all_pass": true,
   "checks": [
     {
@@ -108,6 +108,21 @@
         3.0,
         3.15,
         3.3
+      ]
+    },
+    {
+      "name": "separate descent from exterior door to basement",
+      "passed": true,
+      "levels_m": [
+        -1.05,
+        -1.2,
+        -1.35,
+        -1.5,
+        -1.65,
+        -1.8,
+        -1.95,
+        -2.1,
+        -2.25
       ]
     },
     {

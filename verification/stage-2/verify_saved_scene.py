@@ -31,6 +31,8 @@ check('7 exterior risers at 150mm',len(rises)==7 and all(abs(h-.15)<1e-5 for h i
 check('stair and exterior levels kept separate',abs(topz('Stair / lower entry landing')+1.05)<1e-5 and abs(topz('Exterior / lower approach')+1.06)<1e-5)
 stair_levels=[topz('Stair / first-floor landing')]+[topz(f'Stair / ascending tread {i}') for i in range(1,11)]+[topz('Stair / first turning landing')]+[topz(f'Stair / upper return tread {i}') for i in range(1,11)]+[topz('Stair / second-floor landing')]
 check('continuous rise to second floor',len(stair_levels)==23 and all(abs(b-a-.15)<1e-5 for a,b in zip(stair_levels,stair_levels[1:])) and abs(stair_levels[-1]-3.30)<1e-5,levels_m=[round(z,3) for z in stair_levels])
+lower_levels=[topz('Stair / lower entry landing')]+[topz(f'Stair / visible lower tread {i}') for i in range(1,8)]+[topz('Stair / lower continuation cut')]
+check('separate descent from exterior door to basement',all(abs(a-b-.15)<1e-5 for a,b in zip(lower_levels,lower_levels[1:])) and abs(lower_levels[-1]+2.25)<1e-5 and bpy.data.objects['S1-19 / Лестница — улица']['status']=='project_height',levels_m=[round(z,3) for z in lower_levels])
 
 # Sample the source floor interiors against serialized wall meshes.
 trees=[]

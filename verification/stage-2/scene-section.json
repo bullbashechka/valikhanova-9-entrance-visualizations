@@ -1939,7 +1939,7 @@
         468.9
       ],
       "vertical": true,
-      "kind": "door",
+      "kind": "glazed_door",
       "height": 2.4,
       "base": -1.05,
       "hinge": "end",
