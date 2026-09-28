@@ -1,10 +1,83 @@
 {
+  "geometry_signature": "666e8e87e053d47866c0284eb71b1d28130e2a194eb252b786df021ba7ac4c26",
   "blender": "5.2.1 LTS",
-  "blend_sha256": "cb9c00515a8990922e88b72d1d56addd151154f65189a514355c2aeb1aa14176",
+  "blend_sha256": "dcd2c94d1ef7d477b17b20fe4bcfcacb2118650b3e53ccabfc161a2e077e1b12",
   "all_pass": true,
   "checks": [
     {
-      "name": "15 uniquely identified openings",
+      "name": "identified openings match source registry",
+      "passed": true
+    },
+    {
+      "name": "saved parameters match builder input",
+      "passed": true
+    },
+    {
+      "name": "opening configuration/S1-14",
+      "passed": true
+    },
+    {
+      "name": "opening configuration/S1-15",
+      "passed": true
+    },
+    {
+      "name": "opening configuration/S1-16",
+      "passed": true
+    },
+    {
+      "name": "opening configuration/S1-17",
+      "passed": true
+    },
+    {
+      "name": "opening configuration/S1-18",
+      "passed": true
+    },
+    {
+      "name": "opening configuration/S1-19",
+      "passed": true
+    },
+    {
+      "name": "opening configuration/S1-20",
+      "passed": true
+    },
+    {
+      "name": "opening configuration/S1-21",
+      "passed": true
+    },
+    {
+      "name": "opening configuration/S1-22",
+      "passed": true
+    },
+    {
+      "name": "opening configuration/S1-23",
+      "passed": true
+    },
+    {
+      "name": "opening configuration/S1-24",
+      "passed": true
+    },
+    {
+      "name": "opening configuration/S1-30",
+      "passed": true
+    },
+    {
+      "name": "opening configuration/S1-31",
+      "passed": true
+    },
+    {
+      "name": "opening configuration/S1-32",
+      "passed": true
+    },
+    {
+      "name": "opening configuration/S1-33",
+      "passed": true
+    },
+    {
+      "name": "opening configuration/S1-U2-W01",
+      "passed": true
+    },
+    {
+      "name": "street door is a single leaf",
       "passed": true
     },
     {
@@ -124,6 +197,142 @@
         -2.1,
         -2.25
       ]
+    },
+    {
+      "name": "walkable_route/first_to_second",
+      "passed": true,
+      "samples": 532,
+      "width_m": 0.6,
+      "height_m": 2.0,
+      "failures": [],
+      "failure_count": 0,
+      "doors_opened": [
+        "S1-18"
+      ]
+    },
+    {
+      "name": "walkable_route/outside_to_basement",
+      "passed": true,
+      "samples": 220,
+      "width_m": 0.6,
+      "height_m": 2.0,
+      "failures": [],
+      "failure_count": 0,
+      "doors_opened": [
+        "S1-19"
+      ]
+    },
+    {
+      "name": "walkable_route/entry_to_lift",
+      "passed": true,
+      "samples": 416,
+      "width_m": 0.6,
+      "height_m": 2.0,
+      "failures": [],
+      "failure_count": 0,
+      "doors_opened": [
+        "S1-17",
+        "S1-16",
+        "S1-15"
+      ]
+    },
+    {
+      "name": "walkable_route/lobby_to_stroller",
+      "passed": true,
+      "samples": 57,
+      "width_m": 0.6,
+      "height_m": 2.0,
+      "failures": [],
+      "failure_count": 0,
+      "doors_opened": []
+    },
+    {
+      "name": "walkable_route/corridor",
+      "passed": true,
+      "samples": 217,
+      "width_m": 0.6,
+      "height_m": 2.0,
+      "failures": [],
+      "failure_count": 0,
+      "doors_opened": []
+    },
+    {
+      "name": "door_sweep/S1-15",
+      "passed": true,
+      "max_angle_degrees": 90.0,
+      "samples": 10,
+      "collisions": []
+    },
+    {
+      "name": "door_sweep/S1-16",
+      "passed": true,
+      "max_angle_degrees": 85.0,
+      "samples": 10,
+      "collisions": []
+    },
+    {
+      "name": "door_sweep/S1-17",
+      "passed": true,
+      "max_angle_degrees": 90.0,
+      "samples": 10,
+      "collisions": []
+    },
+    {
+      "name": "door_sweep/S1-18",
+      "passed": true,
+      "max_angle_degrees": 90.0,
+      "samples": 10,
+      "collisions": []
+    },
+    {
+      "name": "door_sweep/S1-19",
+      "passed": true,
+      "max_angle_degrees": 90.0,
+      "samples": 10,
+      "collisions": []
+    },
+    {
+      "name": "door_sweep/S1-20",
+      "passed": true,
+      "max_angle_degrees": 90.0,
+      "samples": 10,
+      "collisions": []
+    },
+    {
+      "name": "door_sweep/S1-21",
+      "passed": true,
+      "max_angle_degrees": 90.0,
+      "samples": 10,
+      "collisions": []
+    },
+    {
+      "name": "door_sweep/S1-22",
+      "passed": true,
+      "max_angle_degrees": 90.0,
+      "samples": 10,
+      "collisions": []
+    },
+    {
+      "name": "door_sweep/S1-23",
+      "passed": true,
+      "max_angle_degrees": 85.0,
+      "samples": 10,
+      "collisions": []
+    },
+    {
+      "name": "door_sweep/S1-24",
+      "passed": true,
+      "max_angle_degrees": 90.0,
+      "samples": 10,
+      "collisions": []
+    },
+    {
+      "name": "route checker rejects low overhead obstruction",
+      "passed": true
+    },
+    {
+      "name": "route checker rejects missing landing",
+      "passed": true
     },
     {
       "name": "no walls inside source floor zones",

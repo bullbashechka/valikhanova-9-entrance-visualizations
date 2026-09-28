@@ -1,28 +1,53 @@
 {
-  "page_errors": [],
-  "image_assets": [
+  "date": "2026-09-27",
+  "all_executed_checks_pass": true,
+  "checks": [
     {
-      "src": "previews/01-entry.png",
-      "width": 1440
+      "name": "all local links and resources exist",
+      "passed": true,
+      "missing": []
     },
     {
-      "src": "previews/02-lobby.png",
-      "width": 1440
+      "name": "overlay controls and targets exist",
+      "passed": true
     },
     {
-      "src": "previews/03-lift.png",
-      "width": 1440
+      "name": "PNG images decode",
+      "passed": true,
+      "images": [
+        "01-entry.png",
+        "02-lobby.png",
+        "03-lift.png",
+        "04-exterior.png",
+        "05-top.png",
+        "06-source-overlay.png",
+        "07-top-annotated.png",
+        "reopen-check.png"
+      ]
     },
     {
-      "src": "previews/04-exterior.png",
-      "width": 1440
+      "name": "SVG dimensions/08-stair-section.svg",
+      "passed": true
     },
     {
-      "src": "previews/07-top-annotated.png",
-      "width": 1880
+      "name": "SVG dimensions/09-stair-levels.svg",
+      "passed": true
+    },
+    {
+      "name": "saved model verification current",
+      "passed": true
     }
   ],
-  "slider": "passed",
-  "routes_toggle": "passed",
-  "mobile_horizontal_overflow": false
+  "visual_review": [
+    "four perspectives",
+    "annotated overview",
+    "source overlay",
+    "stair section",
+    "level plans"
+  ],
+  "browser": {
+    "status": "not_run",
+    "reason": "Browser plugin bootstrap cannot import its browser-service.mjs; no claim of interactive or mobile UI validation"
+  },
+  "diagram_renderer": "macOS Quick Look; square scratch canvases used to avoid thumbnail cropping"
 }

@@ -1,0 +1,630 @@
+{
+  "section": 1,
+  "source_pdf": "sources/ep-petropavlovsk.pdf",
+  "plan_priority": "Approved PNG for first-floor XY; EP for levels and upper-floor context",
+  "openings": [
+    {
+      "id": "S1-14",
+      "description": "Шахта: входной проём",
+      "wall": "W15",
+      "width_mm": 1101.1,
+      "base_m": 0,
+      "height_m": 2.1,
+      "kind": "lift",
+      "leaf_count": 2,
+      "hinge": "sliding",
+      "swing": null,
+      "open_angle_degrees": null,
+      "source_pages": [
+        2,
+        16
+      ],
+      "status": "height_assumed"
+    },
+    {
+      "id": "S1-15",
+      "description": "Коридор — вестибюль",
+      "wall": "W08",
+      "width_mm": 1307.4,
+      "base_m": 0,
+      "height_m": 2.1,
+      "kind": "glazed_door",
+      "leaf_count": 2,
+      "hinge": "double",
+      "swing": 1,
+      "open_angle_degrees": 90,
+      "source_pages": [
+        2,
+        16
+      ],
+      "status": "height_assumed"
+    },
+    {
+      "id": "S1-16",
+      "description": "Вестибюль — тамбур",
+      "wall": "W09",
+      "width_mm": 1307.4,
+      "base_m": 0,
+      "height_m": 2.4,
+      "kind": "glazed_door",
+      "leaf_count": 2,
+      "hinge": "double",
+      "swing": 1,
+      "open_angle_degrees": 85,
+      "source_pages": [
+        2,
+        16
+      ],
+      "status": "project_height"
+    },
+    {
+      "id": "S1-17",
+      "description": "Тамбур — улица",
+      "wall": "W12",
+      "width_mm": 1306.1,
+      "base_m": 0,
+      "height_m": 2.4,
+      "kind": "glazed_door",
+      "leaf_count": 2,
+      "hinge": "double",
+      "swing": 1,
+      "open_angle_degrees": 90,
+      "source_pages": [
+        2,
+        16
+      ],
+      "status": "project_height"
+    },
+    {
+      "id": "S1-18",
+      "description": "Вестибюль — лестница",
+      "wall": "W13",
+      "width_mm": 1153.9,
+      "base_m": 0,
+      "height_m": 2.1,
+      "kind": "door",
+      "leaf_count": 1,
+      "hinge": "end",
+      "swing": -1,
+      "open_angle_degrees": 90,
+      "source_pages": [
+        2,
+        16
+      ],
+      "status": "height_assumed"
+    },
+    {
+      "id": "S1-19",
+      "description": "Лестница — улица",
+      "wall": "W21",
+      "width_mm": 1053.6,
+      "base_m": -1.05,
+      "height_m": 2.4,
+      "kind": "glazed_door",
+      "leaf_count": 1,
+      "hinge": "end",
+      "swing": 1,
+      "open_angle_degrees": 90,
+      "source_pages": [
+        2,
+        16
+      ],
+      "status": "project_height"
+    },
+    {
+      "id": "S1-20",
+      "description": "Соседнее помещение сверху",
+      "wall": "W02",
+      "width_mm": 1047.0,
+      "base_m": 0,
+      "height_m": 2.1,
+      "kind": "door",
+      "leaf_count": 1,
+      "hinge": "start",
+      "swing": 1,
+      "open_angle_degrees": 90,
+      "source_pages": [
+        2,
+        16
+      ],
+      "status": "height_assumed"
+    },
+    {
+      "id": "S1-21",
+      "description": "Соседнее помещение слева сверху",
+      "wall": "W01",
+      "width_mm": 1048.5,
+      "base_m": 0,
+      "height_m": 2.1,
+      "kind": "door",
+      "leaf_count": 1,
+      "hinge": "end",
+      "swing": 1,
+      "open_angle_degrees": 90,
+      "source_pages": [
+        2,
+        16
+      ],
+      "status": "height_assumed"
+    },
+    {
+      "id": "S1-22",
+      "description": "Соседнее помещение слева снизу",
+      "wall": "W01",
+      "width_mm": 1047.2,
+      "base_m": 0,
+      "height_m": 2.1,
+      "kind": "door",
+      "leaf_count": 1,
+      "hinge": "end",
+      "swing": 1,
+      "open_angle_degrees": 90,
+      "source_pages": [
+        2,
+        16
+      ],
+      "status": "height_assumed"
+    },
+    {
+      "id": "S1-23",
+      "description": "Техническое помещение",
+      "wall": "W19",
+      "width_mm": 851.4,
+      "base_m": 0,
+      "height_m": 2.1,
+      "kind": "door",
+      "leaf_count": 1,
+      "hinge": "start",
+      "swing": 1,
+      "open_angle_degrees": 85,
+      "source_pages": [
+        2,
+        16
+      ],
+      "status": "height_assumed"
+    },
+    {
+      "id": "S1-24",
+      "description": "Соседнее помещение справа снизу",
+      "wall": "W23",
+      "width_mm": 1047.2,
+      "base_m": 0,
+      "height_m": 2.1,
+      "kind": "door",
+      "leaf_count": 1,
+      "hinge": "end",
+      "swing": -1,
+      "open_angle_degrees": 90,
+      "source_pages": [
+        2,
+        16
+      ],
+      "status": "height_assumed"
+    },
+    {
+      "id": "S1-30",
+      "description": "Светопрозрачное заполнение сверху слева",
+      "wall": "W01",
+      "width_mm": 1799.4,
+      "base_m": 0.9,
+      "height_m": 1.5,
+      "kind": "window",
+      "leaf_count": 0,
+      "hinge": null,
+      "swing": null,
+      "open_angle_degrees": null,
+      "source_pages": [
+        16
+      ],
+      "status": "sill_and_height_assumed"
+    },
+    {
+      "id": "S1-31",
+      "description": "Светопрозрачное заполнение снизу слева",
+      "wall": "W01",
+      "width_mm": 1799.4,
+      "base_m": 0.9,
+      "height_m": 1.5,
+      "kind": "window",
+      "leaf_count": 0,
+      "hinge": null,
+      "swing": null,
+      "open_angle_degrees": null,
+      "source_pages": [
+        16
+      ],
+      "status": "sill_and_height_assumed"
+    },
+    {
+      "id": "S1-32",
+      "description": "Светопрозрачное заполнение справа 1",
+      "wall": "W23",
+      "width_mm": 900.3,
+      "base_m": 0.9,
+      "height_m": 1.5,
+      "kind": "window",
+      "leaf_count": 0,
+      "hinge": null,
+      "swing": null,
+      "open_angle_degrees": null,
+      "source_pages": [
+        16
+      ],
+      "status": "sill_and_height_assumed"
+    },
+    {
+      "id": "S1-33",
+      "description": "Светопрозрачное заполнение справа 2",
+      "wall": "W23",
+      "width_mm": 1413.0,
+      "base_m": 0.9,
+      "height_m": 1.5,
+      "kind": "window",
+      "leaf_count": 0,
+      "hinge": null,
+      "swing": null,
+      "open_angle_degrees": null,
+      "source_pages": [
+        16
+      ],
+      "status": "sill_and_height_assumed"
+    },
+    {
+      "id": "S1-U2-W01",
+      "description": "Окно лестничной клетки второго этажа",
+      "wall": "U2-east",
+      "width_mm": 1053.6130584082666,
+      "base_m": 4.2,
+      "height_m": 1.5,
+      "kind": "window",
+      "leaf_count": 0,
+      "hinge": null,
+      "swing": null,
+      "open_angle_degrees": null,
+      "source_pages": [
+        19,
+        22
+      ],
+      "status": "sill_and_height_assumed"
+    }
+  ],
+  "walls": [
+    {
+      "id": "W01",
+      "rect": [
+        24.4,
+        26.7,
+        54.0,
+        1185.4
+      ],
+      "openings": [
+        "S1-21",
+        "S1-22",
+        "S1-30",
+        "S1-31"
+      ]
+    },
+    {
+      "id": "W02",
+      "rect": [
+        54.0,
+        26.7,
+        594.3,
+        56.3
+      ],
+      "openings": [
+        "S1-20"
+      ]
+    },
+    {
+      "id": "W03",
+      "rect": [
+        594.3,
+        26.7,
+        623.9,
+        86.7
+      ]
+    },
+    {
+      "id": "W04",
+      "rect": [
+        623.9,
+        26.7,
+        987.0,
+        56.3
+      ],
+      "base": -1.2
+    },
+    {
+      "id": "W05",
+      "rect": [
+        547.1,
+        56.3,
+        565.6,
+        86.7
+      ]
+    },
+    {
+      "id": "W06",
+      "rect": [
+        565.6,
+        56.3,
+        594.3,
+        66.6
+      ]
+    },
+    {
+      "id": "W07",
+      "rect": [
+        623.9,
+        56.3,
+        720.9,
+        66.6
+      ]
+    },
+    {
+      "id": "W08",
+      "rect": [
+        170.3,
+        56.3,
+        179.8,
+        317.2
+      ],
+      "openings": [
+        "S1-15"
+      ]
+    },
+    {
+      "id": "W09",
+      "rect": [
+        547.1,
+        86.7,
+        556.1,
+        198.5
+      ],
+      "openings": [
+        "S1-16"
+      ]
+    },
+    {
+      "id": "W10",
+      "rect": [
+        547.1,
+        198.5,
+        633.8,
+        217.8
+      ]
+    },
+    {
+      "id": "W11",
+      "rect": [
+        594.3,
+        217.8,
+        633.8,
+        317.2
+      ]
+    },
+    {
+      "id": "W12",
+      "rect": [
+        720.9,
+        56.3,
+        740.2,
+        346.8
+      ],
+      "openings": [
+        "S1-17"
+      ],
+      "base": -1.2
+    },
+    {
+      "id": "W13",
+      "rect": [
+        170.3,
+        317.2,
+        720.9,
+        346.8
+      ],
+      "openings": [
+        "S1-18"
+      ],
+      "base": -1.2
+    },
+    {
+      "id": "W14",
+      "rect": [
+        383.1,
+        346.8,
+        392.2,
+        509.9
+      ]
+    },
+    {
+      "id": "W15",
+      "rect": [
+        170.3,
+        509.9,
+        392.2,
+        539.1
+      ],
+      "openings": [
+        "S1-14"
+      ]
+    },
+    {
+      "id": "W16",
+      "rect": [
+        170.3,
+        539.1,
+        199.9,
+        772.9
+      ]
+    },
+    {
+      "id": "W17",
+      "rect": [
+        363.0,
+        539.1,
+        392.2,
+        865.3
+      ]
+    },
+    {
+      "id": "W18",
+      "rect": [
+        199.9,
+        741.3,
+        363.0,
+        772.9
+      ]
+    },
+    {
+      "id": "W19",
+      "rect": [
+        170.3,
+        772.9,
+        199.9,
+        865.3
+      ],
+      "openings": [
+        "S1-23"
+      ]
+    },
+    {
+      "id": "W20",
+      "rect": [
+        485.4,
+        346.8,
+        494.9,
+        764.3
+      ],
+      "base": -1.2
+    },
+    {
+      "id": "W21",
+      "rect": [
+        594.3,
+        346.8,
+        633.8,
+        865.3
+      ],
+      "base": -2.4,
+      "openings": [
+        "S1-19"
+      ]
+    },
+    {
+      "id": "W22",
+      "rect": [
+        170.3,
+        865.3,
+        740.2,
+        894.9
+      ],
+      "base": -2.4
+    },
+    {
+      "id": "W23",
+      "rect": [
+        170.3,
+        894.9,
+        189.8,
+        1185.4
+      ],
+      "openings": [
+        "S1-24",
+        "S1-32",
+        "S1-33"
+      ]
+    },
+    {
+      "id": "W24",
+      "rect": [
+        54.0,
+        1155.8,
+        170.3,
+        1185.4
+      ]
+    }
+  ],
+  "upper_walls": [
+    {
+      "id": "U2-north",
+      "rect": [
+        24.4,
+        317.2,
+        633.8,
+        346.8
+      ]
+    },
+    {
+      "id": "U2-east",
+      "rect": [
+        594.3,
+        346.8,
+        633.8,
+        865.3
+      ],
+      "openings": [
+        "S1-U2-W01"
+      ]
+    },
+    {
+      "id": "U2-south",
+      "rect": [
+        363,
+        865.3,
+        633.8,
+        894.9
+      ]
+    },
+    {
+      "id": "U2-shaft-east",
+      "rect": [
+        363,
+        539.1,
+        392.2,
+        865.3
+      ]
+    },
+    {
+      "id": "U2-shaft-north",
+      "rect": [
+        170.3,
+        509.9,
+        392.2,
+        539.1
+      ],
+      "base": 3.3
+    },
+    {
+      "id": "U2-west",
+      "rect": [
+        24.4,
+        346.8,
+        54,
+        650
+      ]
+    },
+    {
+      "id": "U2-shaft-west",
+      "rect": [
+        170.3,
+        539.1,
+        199.9,
+        650
+      ],
+      "base": 3.3
+    }
+  ],
+  "levels": {
+    "basement": -2.25,
+    "lower_entry": -1.05,
+    "outside_lower": -1.06,
+    "outside_upper": -0.01,
+    "first_floor": 0,
+    "turn": 1.65,
+    "second_floor": 3.3
+  },
+  "alignment": "Registered to stair enclosure and lift shaft faces of the first-floor PNG; do not reuse PDF pixel positions between pages. Upper corridor fragment ends at PNG y=650."
+}

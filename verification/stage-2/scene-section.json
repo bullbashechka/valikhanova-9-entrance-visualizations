@@ -1782,7 +1782,11 @@
       "kind": "window",
       "height": 1.5,
       "base": 0.9,
-      "status": "sill_and_height_assumed"
+      "status": "sill_and_height_assumed",
+      "leaf_count": 0,
+      "source_pages": [
+        16
+      ]
     },
     "S1-21": {
       "rect": [
@@ -1797,7 +1801,13 @@
       "base": 0,
       "hinge": "end",
       "swing": 1,
-      "status": "height_assumed"
+      "status": "height_assumed",
+      "leaf_count": 1,
+      "source_pages": [
+        2,
+        16
+      ],
+      "open_angle_degrees": 90
     },
     "S1-22": {
       "rect": [
@@ -1812,7 +1822,13 @@
       "base": 0,
       "hinge": "end",
       "swing": 1,
-      "status": "height_assumed"
+      "status": "height_assumed",
+      "leaf_count": 1,
+      "source_pages": [
+        2,
+        16
+      ],
+      "open_angle_degrees": 90
     },
     "S1-31": {
       "rect": [
@@ -1825,7 +1841,11 @@
       "kind": "window",
       "height": 1.5,
       "base": 0.9,
-      "status": "sill_and_height_assumed"
+      "status": "sill_and_height_assumed",
+      "leaf_count": 0,
+      "source_pages": [
+        16
+      ]
     },
     "S1-20": {
       "rect": [
@@ -1840,7 +1860,13 @@
       "base": 0,
       "hinge": "start",
       "swing": 1,
-      "status": "height_assumed"
+      "status": "height_assumed",
+      "leaf_count": 1,
+      "source_pages": [
+        2,
+        16
+      ],
+      "open_angle_degrees": 90
     },
     "S1-15": {
       "rect": [
@@ -1855,7 +1881,13 @@
       "base": 0,
       "hinge": "double",
       "swing": 1,
-      "status": "height_assumed"
+      "status": "height_assumed",
+      "leaf_count": 2,
+      "source_pages": [
+        2,
+        16
+      ],
+      "open_angle_degrees": 90
     },
     "S1-16": {
       "rect": [
@@ -1870,7 +1902,13 @@
       "base": 0,
       "hinge": "double",
       "swing": 1,
-      "status": "project_height"
+      "status": "project_height",
+      "leaf_count": 2,
+      "source_pages": [
+        2,
+        16
+      ],
+      "open_angle_degrees": 85
     },
     "S1-17": {
       "rect": [
@@ -1885,7 +1923,13 @@
       "base": 0,
       "hinge": "double",
       "swing": 1,
-      "status": "project_height"
+      "status": "project_height",
+      "leaf_count": 2,
+      "source_pages": [
+        2,
+        16
+      ],
+      "open_angle_degrees": 90
     },
     "S1-18": {
       "rect": [
@@ -1900,7 +1944,13 @@
       "base": 0,
       "hinge": "end",
       "swing": -1,
-      "status": "height_assumed"
+      "status": "height_assumed",
+      "leaf_count": 1,
+      "source_pages": [
+        2,
+        16
+      ],
+      "open_angle_degrees": 90
     },
     "S1-14": {
       "rect": [
@@ -1914,7 +1964,12 @@
       "height": 2.1,
       "base": 0,
       "hinge": "sliding",
-      "status": "height_assumed"
+      "status": "height_assumed",
+      "leaf_count": 2,
+      "source_pages": [
+        2,
+        16
+      ]
     },
     "S1-23": {
       "rect": [
@@ -1929,7 +1984,13 @@
       "base": 0,
       "hinge": "start",
       "swing": 1,
-      "status": "height_assumed"
+      "status": "height_assumed",
+      "leaf_count": 1,
+      "source_pages": [
+        2,
+        16
+      ],
+      "open_angle_degrees": 85
     },
     "S1-19": {
       "rect": [
@@ -1944,7 +2005,13 @@
       "base": -1.05,
       "hinge": "end",
       "swing": 1,
-      "status": "project_height"
+      "status": "project_height",
+      "leaf_count": 1,
+      "source_pages": [
+        2,
+        16
+      ],
+      "open_angle_degrees": 90
     },
     "S1-32": {
       "rect": [
@@ -1957,7 +2024,11 @@
       "kind": "window",
       "height": 1.5,
       "base": 0.9,
-      "status": "sill_and_height_assumed"
+      "status": "sill_and_height_assumed",
+      "leaf_count": 0,
+      "source_pages": [
+        16
+      ]
     },
     "S1-24": {
       "rect": [
@@ -1972,7 +2043,13 @@
       "base": 0,
       "hinge": "end",
       "swing": -1,
-      "status": "height_assumed"
+      "status": "height_assumed",
+      "leaf_count": 1,
+      "source_pages": [
+        2,
+        16
+      ],
+      "open_angle_degrees": 90
     },
     "S1-33": {
       "rect": [
@@ -1985,7 +2062,34 @@
       "kind": "window",
       "height": 1.5,
       "base": 0.9,
-      "status": "sill_and_height_assumed"
+      "status": "sill_and_height_assumed",
+      "leaf_count": 0,
+      "source_pages": [
+        16
+      ]
+    },
+    "S1-U2-W01": {
+      "rect": [
+        594.3,
+        387.1,
+        633.8,
+        468.9
+      ],
+      "vertical": true,
+      "kind": "window",
+      "leaf_count": 0,
+      "base": 4.2,
+      "height": 1.5,
+      "range_png": [
+        387.1,
+        468.9
+      ],
+      "description": "Окно лестничной клетки второго этажа",
+      "status": "sill_and_height_assumed",
+      "source_pages": [
+        19,
+        22
+      ]
     }
   },
   "routes": [

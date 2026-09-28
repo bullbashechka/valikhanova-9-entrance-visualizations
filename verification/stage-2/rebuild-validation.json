@@ -1,0 +1,7 @@
+{
+  "passed": true,
+  "comparison": "world-space mesh vertices rounded to 1 micrometre, faces and material assignments; two fresh Blender builds",
+  "first_geometry_signature": "666e8e87e053d47866c0284eb71b1d28130e2a194eb252b786df021ba7ac4c26",
+  "second_geometry_signature": "666e8e87e053d47866c0284eb71b1d28130e2a194eb252b786df021ba7ac4c26",
+  "current_blend_sha256": "dcd2c94d1ef7d477b17b20fe4bcfcacb2118650b3e53ccabfc161a2e077e1b12"
+}

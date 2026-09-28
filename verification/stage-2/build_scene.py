@@ -24,7 +24,7 @@ bpy.ops.object.delete(use_global=False)
 for c in list(bpy.data.collections):
     if c.name != 'Collection': bpy.data.collections.remove(c)
 COLS = {}
-for name in ['Walls','Floors','Ceilings','Doors','Windows','Stairs','Exterior','Proxies','Context','Cameras','Lights','Reference']:
+for name in ['Walls','Floors','Ceilings','Doors','Windows','Stairs','Exterior','Proxies','Context','Cameras','Lights','Reference','UpperWalls','UpperCeilings','UpperWindows']:
     c=bpy.data.collections.new(name); bpy.context.scene.collection.children.link(c); COLS[name]=c
 
 def material(name, color, alpha=1):
@@ -102,39 +102,53 @@ for i,f in enumerate(FLOORS):
     prism('Ceiling / '+f['zone'],f['points_png'],3,3.15,'Ceilings','ceiling','project_height')
 
 PORTALS={}
-for w in DATA['walls']:
+LEVELS=DATA['levels_m']
+upper=DATA['upper_context']
+all_walls=DATA['walls']+[dict(w,base=w.get('base',upper['base_m']),top=upper['top_m'],collection='UpperWalls') for w in upper['walls']]
+for w in all_walls:
     r=w['rect']; vertical=(r[3]-r[1])>(r[2]-r[0]); axis=1 if vertical else 0
-    lo,hi=r[axis],r[axis+2]; cursor=lo; zmin=w.get('base',0)
+    lo,hi=r[axis],r[axis+2]; cursor=lo; zmin=w.get('base',0); zmax=w.get('top',DATA['height_m']); wall_collection=w.get('collection','Walls')
     cuts=[]
     for oid in w.get('openings',[]):
-        m=MEAS[oid]; o=DATA['openings'][oid]
-        a,b=sorted((float(m['y1' if vertical else 'x1']),float(m['y2' if vertical else 'x2'])))
+        o=DATA['openings'][oid]
+        if 'range_png' in o: a,b=sorted(o['range_png'])
+        else:
+            m=MEAS[oid]
+            a,b=sorted((float(m['y1' if vertical else 'x1']),float(m['y2' if vertical else 'x2'])))
         cuts.append((a,b,oid,o))
     for a,b,oid,o in sorted(cuts):
         assert lo<=a<b<=hi,(w['id'],oid)
         def part(start,end,bottom,top,suffix):
             if end-start>.0001 and top-bottom>.0001:
                 q=r.copy();q[axis]=start;q[axis+2]=end
-                rect(w['id']+'/'+suffix,q,bottom,top)
-        part(cursor,a,zmin,3,'solid-'+oid)
+                ob=rect(w['id']+'/'+suffix,q,bottom,top,wall_collection); ob['wall_id']=w['id']; ob['expected_top_m']=top
+        part(cursor,a,zmin,zmax,'solid-'+oid)
         part(a,b,zmin,o['base'],'sill-'+oid)
-        part(a,b,o['base']+o['height'],3,'lintel-'+oid)
+        part(a,b,o['base']+o['height'],zmax,'lintel-'+oid)
         q=r.copy();q[axis]=a;q[axis+2]=b
         PORTALS[oid]={'rect':q,'vertical':vertical,**o}
         cursor=b
     if cursor<hi:
-        q=r.copy();q[axis]=cursor;rect(w['id']+'/solid',q,zmin,3)
+        q=r.copy();q[axis]=cursor
+        ob=rect(w['id']+'/solid',q,zmin,zmax,wall_collection); ob['wall_id']=w['id']; ob['expected_top_m']=zmax
 
 for oid,o in PORTALS.items():
     r=o['rect']; vertical=o['vertical']; z=o['base']; h=o['height']
     a=pxy((r[0]+r[2])/2,r[1],z) if vertical else pxy(r[0],(r[1]+r[3])/2,z)
     b=pxy((r[0]+r[2])/2,r[3],z) if vertical else pxy(r[2],(r[1]+r[3])/2,z)
     u=(b-a).normalized(); length=(b-a).length; angle=math.atan2(u.y,u.x)
-    collection='Windows' if o['kind']=='window' else 'Doors'
+    collection=('UpperWindows' if oid.startswith('S1-U2') else 'Windows') if o['kind']=='window' else 'Doors'
+    moving_leaf=None
+    def leaf(index,offset,sign):
+        pivot=a+u*(length-fw if offset else fw)
+        return {'leaf_index':index,'hinge_world':list(pivot),'open_angle':sign*o.get('swing',1)*(1 if vertical else -1)*math.radians(o.get('open_angle_degrees',90))}
     def slab(s,e,base,top,mat,name,depth=.055):
         c=a+u*((s+e)/2);c.z=(base+top)/2
         ob=box(oid+'/'+name,c,(e-s,depth,top-base),collection,mat,o['status'],angle)
-        ob['opening_id']=oid; return ob
+        ob['opening_id']=oid
+        if moving_leaf is not None:
+            for key,value in moving_leaf.items(): ob[key]=value
+        return ob
     fw=.045
     slab(0,fw,z,z+h,'frame','jamb-start',.09)
     slab(length-fw,length,z,z+h,'frame','jamb-end',.09)
@@ -145,51 +159,72 @@ for oid,o in PORTALS.items():
         slab(length/2-.018,length/2+.018,z+fw,z+h-fw,'frame','mullion')
     elif o['kind']=='glazed_door':
         split=length*.64
-        for j,(s,e) in enumerate([(fw,split),(split,length-fw)]):
+        ranges=[(fw,split),(split,length-fw)] if o['leaf_count']==2 else [(fw,length-fw)]
+        for j,(s,e) in enumerate(ranges):
+            at_end=(j==1) if o['leaf_count']==2 else o.get('hinge')=='end'
+            moving_leaf=leaf(j,length if at_end else 0,-1 if at_end else 1)
             slab(s,e,z+.012,z+.095,'frame',f'leaf-{j}-bottom')
             slab(s,e,z+h-.085,z+h-fw,'frame',f'leaf-{j}-top')
             slab(e-.04,e,z+.095,z+h-.085,'frame',f'leaf-{j}-edge')
+            slab(s,s+.04,z+.095,z+h-.085,'frame',f'leaf-{j}-hinge-edge')
             slab(s,e-.04,z+.095,z+h-.085,'glass',f'leaf-{j}-glass',.018)
-        slab(split-.10,split-.07,z+.85,z+1.15,'frame','handle',.12)
+            handle=(s+.09) if at_end else (e-.10)
+            slab(handle,handle+.03,z+.85,z+1.15,'frame',f'leaf-{j}-handle',.12)
+        moving_leaf=None
     else:
         if o['kind']=='lift':
             slab(fw,length/2-.007,z+.015,z+h-fw,'door','left-panel')
             slab(length/2+.007,length-fw,z+.015,z+h-fw,'door','right-panel')
         else:
+            at_end=o.get('hinge')=='end'
+            moving_leaf=leaf(0,length if at_end else 0,-1 if at_end else 1)
             slab(fw,length-fw,z+.015,z+h-fw,'door','closed-leaf')
-            slab(length-fw-.19,length-fw-.06,z+.97,z+1.00,'frame','handle',.13)
+            handle=fw+.06 if at_end else length-fw-.19
+            slab(handle,handle+.13,z+.97,z+1.00,'frame','handle',.13)
+            moving_leaf=None
     if o['kind']!='window': rect(oid+'/threshold',r,z-.15,z,'Floors','floor')
-    empty=bpy.data.objects.new(oid+' / '+MEAS[oid]['description'],None)
+    empty=bpy.data.objects.new(oid+' / '+(MEAS[oid]['description'] if oid in MEAS else o['description']),None)
     COLS['Reference'].objects.link(empty);empty.location=(a+b)/2;empty.empty_display_size=.10
     empty['source_id']=oid;empty['width_m']=length;empty['height_m']=h;empty['status']=o['status']
-    empty['hinge']=o.get('hinge','none');empty['swing_side']=o.get('swing',0)
+    empty['leaf_count']=o['leaf_count']; empty['base_m']=z; empty['hinge']=o.get('hinge','none');empty['swing_side']=o.get('swing',0)
 
-# From the first-floor door: landing 0.000, left flight, turning landing,
-# right return flight, and the second-floor landing +3.300.
-rect('Stair / first-floor landing',[392.2,346.8,485.4,539.1],-.15,0,'Stairs','floor')
-for i in range(10):
-    y0=539.1+(764.3-539.1)*i/10; y1=539.1+(764.3-539.1)*(i+1)/10
-    rect(f'Stair / ascending tread {i+1}',[392.2,y0,485.4,y1],-.15,(i+1)*.15,'Stairs','floor','conditional')
-rect('Stair / first turning landing',[392.2,764.3,594.3,865.3],1.50,1.65,'Stairs','floor','conditional')
-for i in range(10):
-    y0=764.3-(764.3-539.1)*(i+1)/10; y1=764.3-(764.3-539.1)*i/10
-    rect(f'Stair / upper return tread {i+1}',[494.9,y0,594.3,y1],1.50,1.65+(i+1)*.15,'Stairs','floor','conditional')
-rect('Stair / second-floor landing',[494.9,346.8,594.3,539.1],3.15,3.30,'Stairs','floor','project_elevation')
-# The lower entry remains below the return flight and is a separate route.
-rect('Stair / lower entry landing',[494.9,346.8,594.3,599.0],-1.20,-1.05,'Stairs','floor','project_elevation')
-for i in range(7):
-    y0=599+(764.3-599)*i/7;y1=599+(764.3-599)*(i+1)/7
-    top=-1.05-(i+1)*.15
-    rect(f'Stair / visible lower tread {i+1}',[494.9,y0,594.3,y1],top-.15,top,'Stairs','floor','conditional')
-rect('Stair / lower continuation cut',[494.9,764.3,594.3,865.3],-2.40,-2.25,'Stairs','floor','conditional')
-rod('Stair / handrail',pxy(481,539.1,1),pxy(481,764.3,2.65),.022,'Stairs')
-for i in range(6):
-    t=i/5;y=539.1+(764.3-539.1)*t;z=1.65*t
-    rod('Stair / post',pxy(481,y,z),pxy(481,y,z+1),.018,'Stairs')
-rod('Stair / upper return handrail',pxy(505,764.3,2.65),pxy(505,539.1,4.30),.022,'Stairs')
-for i in range(6):
-    t=i/5;y=764.3-(764.3-539.1)*t;z=1.65+1.65*t
-    rod('Stair / upper return post',pxy(505,y,z),pxy(505,y,z+1),.018,'Stairs')
+# Stair geometry is driven by level references and measured plan rectangles.
+stairs=DATA['stairs']; rail_h=stairs['railing_height_m']; thickness=stairs['slab_thickness_m']
+for landing in stairs['landings']:
+    z=LEVELS[landing['level']]
+    ob=rect('Stair / '+landing['id'],landing['rect'],z-landing.get('thickness_m',thickness),z,'Stairs','floor','derived_dimension')
+    ob['level']=landing['level']; ob['source']='EP pages 13,16,19,22; registered first-floor PNG'
+
+def tread_wedge(name,x0,x1,y0,y1,top,bottom0,bottom1):
+    # A sloping underside preserves clearance; no floor-to-tread solid blocks.
+    verts=[tuple(pxy(x,y,z)) for x,y,z in [(x0,y0,bottom0),(x1,y0,bottom0),(x1,y1,bottom1),(x0,y1,bottom1),(x0,y0,top),(x1,y0,top),(x1,y1,top),(x0,y1,top)]]
+    faces=[(0,1,2,3),(4,7,6,5),(0,4,5,1),(1,5,6,2),(2,6,7,3),(3,7,4,0)]
+    if y1<y0:faces=[tuple(reversed(face)) for face in faces]
+    mesh=bpy.data.meshes.new(name);mesh.from_pydata(verts,[],faces);mesh.update()
+    ob=bpy.data.objects.new(name,mesh);return link(ob,'Stairs','floor','conditional','EP page 22; equal risers and thickness assumed')
+
+for flight in stairs['flights']:
+    x0,yn,x1,ys=flight['rect']; start,end=(yn,ys) if flight['direction']==1 else (ys,yn)
+    z0,z1=LEVELS[flight['from']],LEVELS[flight['to']]; rise=(z1-z0)/flight['risers']; count=flight['risers']-1
+    for i in range(count):
+        a=start+(end-start)*i/count;b=start+(end-start)*(i+1)/count
+        bottom=z0+i*rise-thickness+min(rise,0)
+        ob=tread_wedge(f"Stair / {flight['id']} tread {i+1}",x0,x1,a,b,z0+(i+1)*rise,bottom,bottom+rise)
+        ob['flight_id']=flight['id'];ob['tread_index']=i+1
+    railx=flight['rail_x']
+    rod('Stair / '+flight['id']+' handrail',pxy(railx,start,z0+rail_h),pxy(railx,end,z1+rail_h),.022,'Stairs')
+    for i in range(6):
+        t=i/5;y=start+(end-start)*t
+        # Place posts on actual tread heights, not an interpolated line through risers.
+        z=z0 if i==0 else z1 if i==5 else z0+(int(t*count)+1)*rise
+        rod('Stair / '+flight['id']+' post',pxy(railx,y,z),pxy(railx,y,z0+(z1-z0)*t+rail_h),.018,'Stairs')
+for guard in stairs['guards']:
+    z=LEVELS[guard['level']];a=pxy(*guard['a'],z);b=pxy(*guard['b'],z)
+    rod('Stair / guard '+guard['id'],a+Vector((0,0,rail_h)),b+Vector((0,0,rail_h)),.022,'Stairs')
+    for t in (0,.5,1):
+        q=a.lerp(b,t);rod('Stair / guard post '+guard['id'],q,q+Vector((0,0,rail_h)),.018,'Stairs')
+for i,r in enumerate(upper['ceilings']):
+    rect('U2 / ceiling '+str(i),r,upper['top_m'],upper['top_m']+.30,'UpperCeilings','ceiling','conditional')
 
 prism('Exterior / upper platform',DATA['exterior_platform_png'],-1.21,-.01,'Exterior','floor','project_elevation')
 for i in range(6):
@@ -266,7 +301,7 @@ top.rotation_euler=(0,0,0)
 bpy.context.view_layer.update()
 # Independent spatial checks against the actual wall meshes, not just JSON records.
 trees=[]
-for ob in COLS['Walls'].objects:
+for ob in list(COLS['Walls'].objects)+list(COLS['UpperWalls'].objects):
     verts=[ob.matrix_world@v.co for v in ob.data.vertices]
     trees.append((ob.name,BVHTree.FromPolygons(verts,[list(p.vertices) for p in ob.data.polygons],all_triangles=False)))
 def obstruction(a,b):
@@ -303,10 +338,11 @@ for ob in COLS['Walls'].objects:
                 p=a.lerp(b,(1.2-a.z)/(b.z-a.z));hits.append([p.x/SX,-p.y/SY])
         if len(hits)==2:segments.append({'object':ob.name,'points':hits})
 (HERE/'scene-section.json').write_text(json.dumps({'cut_height_m':1.2,'segments':segments,'portals':PORTALS,'routes':routes},ensure_ascii=False,indent=2),encoding='utf-8')
-report={'blender':bpy.app.version_string,'checks':checks,'all_pass':all(c['pass'] for c in checks),'object_count':len(bpy.data.objects),'assumptions':DATA['assumptions'],'levels_m':{'floor':0,'stair_turn':1.65,'second_floor':3.30,'outside_upper':-.01,'outside_lower':-1.06,'stair_lower_entry':-1.05},'exterior_risers':7,'exterior_treads':6,'exterior_rise_m':.15,'source_png_sha256':CAL['png_sha256']}
+report={'blender':bpy.app.version_string,'checks':checks,'all_pass':all(c['pass'] for c in checks),'object_count':len(bpy.data.objects),'assumptions':DATA['assumptions'],'levels_m':LEVELS,'exterior_risers':7,'exterior_treads':6,'exterior_rise_m':.15,'source_png_sha256':CAL['png_sha256']}
 (HERE/'validation.json').write_text(json.dumps(report,ensure_ascii=False,indent=2),encoding='utf-8')
 scene['purpose']='Stage 2 conceptual geometry / unapproved for final rendering'
 scene['source_of_truth']='Approved PNG; stage-1 calibration and measurements'
+scene['geometry_data_json']=json.dumps(DATA,ensure_ascii=False)
 scene['assumptions_json']=json.dumps(DATA['assumptions'],ensure_ascii=False)
 scene.camera=CAMERAS[1]
 for area in bpy.context.screen.areas:
@@ -314,6 +350,7 @@ for area in bpy.context.screen.areas:
         area.spaces.active.region_3d.view_distance=22
         area.spaces.active.region_3d.view_location=(6,-7,0)
         area.spaces.active.clip_end=300
+if not report['all_pass']:raise RuntimeError('Geometry checks failed before save')
 bpy.ops.wm.save_as_mainfile(filepath=str(OUT/'section-1-geometry.blend'))
 print('VALIDATION',report['all_pass'],'checks',len(checks),'objects',len(bpy.data.objects))
 if not report['all_pass']:raise RuntimeError('Geometry checks failed; inspect validation.json')
@@ -324,6 +361,9 @@ if '--render' in sys.argv:
         scene.camera=cam;scene.render.filepath=str(PREVIEW/(cam.name+'.png'))
         bpy.ops.render.render(write_still=True)
     COLS['Ceilings'].hide_render=True;COLS['Context'].hide_render=True
+    for cname in ['UpperWalls','UpperWindows','UpperCeilings']:COLS[cname].hide_render=True
+    for ob in COLS['Stairs'].objects:
+        if ob.get('level')=='second_floor' or 'guard upper void' in ob.name or 'guard post upper void' in ob.name:ob.hide_render=True
     bpy.data.objects['Conditional / canopy'].hide_render=True
     # Cut only the architecture above 1.2m so door openings are readable in plan.
     for cname in ['Walls','Doors','Windows']:

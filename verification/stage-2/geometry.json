@@ -267,7 +267,12 @@
       "height": 2.1,
       "base": 0,
       "hinge": "sliding",
-      "status": "height_assumed"
+      "status": "height_assumed",
+      "leaf_count": 2,
+      "source_pages": [
+        2,
+        16
+      ]
     },
     "S1-15": {
       "kind": "glazed_door",
@@ -275,7 +280,13 @@
       "base": 0,
       "hinge": "double",
       "swing": 1,
-      "status": "height_assumed"
+      "status": "height_assumed",
+      "leaf_count": 2,
+      "source_pages": [
+        2,
+        16
+      ],
+      "open_angle_degrees": 90
     },
     "S1-16": {
       "kind": "glazed_door",
@@ -283,7 +294,13 @@
       "base": 0,
       "hinge": "double",
       "swing": 1,
-      "status": "project_height"
+      "status": "project_height",
+      "leaf_count": 2,
+      "source_pages": [
+        2,
+        16
+      ],
+      "open_angle_degrees": 85
     },
     "S1-17": {
       "kind": "glazed_door",
@@ -291,7 +308,13 @@
       "base": 0,
       "hinge": "double",
       "swing": 1,
-      "status": "project_height"
+      "status": "project_height",
+      "leaf_count": 2,
+      "source_pages": [
+        2,
+        16
+      ],
+      "open_angle_degrees": 90
     },
     "S1-18": {
       "kind": "door",
@@ -299,7 +322,13 @@
       "base": 0,
       "hinge": "end",
       "swing": -1,
-      "status": "height_assumed"
+      "status": "height_assumed",
+      "leaf_count": 1,
+      "source_pages": [
+        2,
+        16
+      ],
+      "open_angle_degrees": 90
     },
     "S1-19": {
       "kind": "glazed_door",
@@ -307,7 +336,13 @@
       "base": -1.05,
       "hinge": "end",
       "swing": 1,
-      "status": "project_height"
+      "status": "project_height",
+      "leaf_count": 1,
+      "source_pages": [
+        2,
+        16
+      ],
+      "open_angle_degrees": 90
     },
     "S1-20": {
       "kind": "door",
@@ -315,7 +350,13 @@
       "base": 0,
       "hinge": "start",
       "swing": 1,
-      "status": "height_assumed"
+      "status": "height_assumed",
+      "leaf_count": 1,
+      "source_pages": [
+        2,
+        16
+      ],
+      "open_angle_degrees": 90
     },
     "S1-21": {
       "kind": "door",
@@ -323,7 +364,13 @@
       "base": 0,
       "hinge": "end",
       "swing": 1,
-      "status": "height_assumed"
+      "status": "height_assumed",
+      "leaf_count": 1,
+      "source_pages": [
+        2,
+        16
+      ],
+      "open_angle_degrees": 90
     },
     "S1-22": {
       "kind": "door",
@@ -331,7 +378,13 @@
       "base": 0,
       "hinge": "end",
       "swing": 1,
-      "status": "height_assumed"
+      "status": "height_assumed",
+      "leaf_count": 1,
+      "source_pages": [
+        2,
+        16
+      ],
+      "open_angle_degrees": 90
     },
     "S1-23": {
       "kind": "door",
@@ -339,7 +392,13 @@
       "base": 0,
       "hinge": "start",
       "swing": 1,
-      "status": "height_assumed"
+      "status": "height_assumed",
+      "leaf_count": 1,
+      "source_pages": [
+        2,
+        16
+      ],
+      "open_angle_degrees": 85
     },
     "S1-24": {
       "kind": "door",
@@ -347,31 +406,69 @@
       "base": 0,
       "hinge": "end",
       "swing": -1,
-      "status": "height_assumed"
+      "status": "height_assumed",
+      "leaf_count": 1,
+      "source_pages": [
+        2,
+        16
+      ],
+      "open_angle_degrees": 90
     },
     "S1-30": {
       "kind": "window",
       "height": 1.5,
       "base": 0.9,
-      "status": "sill_and_height_assumed"
+      "status": "sill_and_height_assumed",
+      "leaf_count": 0,
+      "source_pages": [
+        16
+      ]
     },
     "S1-31": {
       "kind": "window",
       "height": 1.5,
       "base": 0.9,
-      "status": "sill_and_height_assumed"
+      "status": "sill_and_height_assumed",
+      "leaf_count": 0,
+      "source_pages": [
+        16
+      ]
     },
     "S1-32": {
       "kind": "window",
       "height": 1.5,
       "base": 0.9,
-      "status": "sill_and_height_assumed"
+      "status": "sill_and_height_assumed",
+      "leaf_count": 0,
+      "source_pages": [
+        16
+      ]
     },
     "S1-33": {
       "kind": "window",
       "height": 1.5,
       "base": 0.9,
-      "status": "sill_and_height_assumed"
+      "status": "sill_and_height_assumed",
+      "leaf_count": 0,
+      "source_pages": [
+        16
+      ]
+    },
+    "S1-U2-W01": {
+      "kind": "window",
+      "leaf_count": 0,
+      "base": 4.2,
+      "height": 1.5,
+      "range_png": [
+        387.1,
+        468.9
+      ],
+      "description": "Окно лестничной клетки второго этажа",
+      "status": "sill_and_height_assumed",
+      "source_pages": [
+        19,
+        22
+      ]
     }
   },
   "exterior_platform_png": [
@@ -508,7 +605,7 @@
     {
       "id": "A06",
       "element": "Лестничная клетка",
-      "value": "По планам подвала, первого и типового этажей ЭП стр.13, 16, 19 и разрезу стр.22: дверь с улицы ведёт на площадку −1,050 и далее вниз к подвалу −2,250. Подъём от внутренней площадки 0,000 идёт через разворот +1,650 к площадке второго этажа +3,300. Прямой переход от наружной двери −1,050 к площадке 0,000 не показан и в сцене не моделируется. Два верхних марша условно имеют по 11 подъёмов по 150 мм"
+      "value": "ЭП стр.13,16,19,22: отдельные маршруты 0,000 → +1,650 → +3,300 → внутренний коридор и −1,050 → −2,250. Верхние марши: по 11 подъёмов; нижний: 8 подъёмов; по 150 мм условно. Толщина маршей 150 мм условно. Верхняя площадка и фрагмент коридора соединены открытым проходом; окно второго этажа с условными вертикальными размерами."
     },
     {
       "id": "A07",
@@ -524,6 +621,485 @@
       "id": "A09",
       "element": "Тамбур",
       "value": "Контур 5,174 м² сохранён; подпись 5,50 м² не использована для изменения стен"
+    },
+    {
+      "id": "A10",
+      "element": "Открывание дверей",
+      "value": "S1-16 и S1-23: для условных ручек и рам принят предел 85°, поскольку на 90° ручки задевают примыкающие стены. Остальные распашные двери проверены до 90°. Ограничители и фурнитура не выбраны; пределы уточняются по изделиям."
+    }
+  ],
+  "levels_m": {
+    "basement": -2.25,
+    "lower_entry": -1.05,
+    "outside_lower": -1.06,
+    "outside_upper": -0.01,
+    "first_floor": 0,
+    "turn": 1.65,
+    "second_floor": 3.3
+  },
+  "stairs": {
+    "source_pages": [
+      13,
+      16,
+      19,
+      22
+    ],
+    "slab_thickness_m": 0.15,
+    "railing_height_m": 1.0,
+    "landings": [
+      {
+        "id": "first-floor landing",
+        "rect": [
+          392.2,
+          346.8,
+          485.4,
+          539.1
+        ],
+        "level": "first_floor"
+      },
+      {
+        "id": "first turning landing",
+        "rect": [
+          392.2,
+          764.3,
+          594.3,
+          865.3
+        ],
+        "level": "turn"
+      },
+      {
+        "id": "second-floor landing",
+        "rect": [
+          170.3,
+          346.8,
+          594.3,
+          509.9
+        ],
+        "level": "second_floor",
+        "thickness_m": 0.3
+      },
+      {
+        "id": "second-floor flight connection",
+        "rect": [
+          392.2,
+          509.9,
+          594.3,
+          539.1
+        ],
+        "level": "second_floor",
+        "thickness_m": 0.3
+      },
+      {
+        "id": "second-floor corridor",
+        "rect": [
+          54,
+          346.8,
+          170.3,
+          650
+        ],
+        "level": "second_floor",
+        "thickness_m": 0.3
+      },
+      {
+        "id": "lower entry landing",
+        "rect": [
+          494.9,
+          346.8,
+          594.3,
+          599
+        ],
+        "level": "lower_entry"
+      },
+      {
+        "id": "basement landing",
+        "rect": [
+          392.2,
+          764.3,
+          594.3,
+          865.3
+        ],
+        "level": "basement"
+      }
+    ],
+    "flights": [
+      {
+        "id": "ascending",
+        "rect": [
+          392.2,
+          539.1,
+          485.4,
+          764.3
+        ],
+        "from": "first_floor",
+        "to": "turn",
+        "direction": 1,
+        "risers": 11,
+        "rail_x": 481
+      },
+      {
+        "id": "upper return",
+        "rect": [
+          494.9,
+          539.1,
+          594.3,
+          764.3
+        ],
+        "from": "turn",
+        "to": "second_floor",
+        "direction": -1,
+        "risers": 11,
+        "rail_x": 505
+      },
+      {
+        "id": "visible lower",
+        "rect": [
+          494.9,
+          599,
+          594.3,
+          764.3
+        ],
+        "from": "lower_entry",
+        "to": "basement",
+        "direction": 1,
+        "risers": 8,
+        "rail_x": 505
+      }
+    ],
+    "guards": [
+      {
+        "id": "upper void",
+        "a": [
+          392.2,
+          539.1
+        ],
+        "b": [
+          494.9,
+          539.1
+        ],
+        "level": "second_floor"
+      },
+      {
+        "id": "turn outside",
+        "a": [
+          402,
+          855
+        ],
+        "b": [
+          584,
+          855
+        ],
+        "level": "turn"
+      }
+    ],
+    "assumptions": "Equal 150 mm risers; 150 mm vertical structural thickness and 1000 mm rail height are conceptual. Upper landing floor slab 300 mm per section. Upper and basement continuation are local fragments only."
+  },
+  "upper_context": {
+    "base_m": 3.0,
+    "top_m": 6.3,
+    "source_pages": [
+      19,
+      22
+    ],
+    "alignment": "Registered to stair enclosure and lift shaft faces of the first-floor PNG; do not reuse PDF pixel positions between pages. Upper corridor fragment ends at PNG y=650.",
+    "walls": [
+      {
+        "id": "U2-north",
+        "rect": [
+          24.4,
+          317.2,
+          633.8,
+          346.8
+        ]
+      },
+      {
+        "id": "U2-east",
+        "rect": [
+          594.3,
+          346.8,
+          633.8,
+          865.3
+        ],
+        "openings": [
+          "S1-U2-W01"
+        ]
+      },
+      {
+        "id": "U2-south",
+        "rect": [
+          363,
+          865.3,
+          633.8,
+          894.9
+        ]
+      },
+      {
+        "id": "U2-shaft-east",
+        "rect": [
+          363,
+          539.1,
+          392.2,
+          865.3
+        ]
+      },
+      {
+        "id": "U2-shaft-north",
+        "rect": [
+          170.3,
+          509.9,
+          392.2,
+          539.1
+        ],
+        "base": 3.3
+      },
+      {
+        "id": "U2-west",
+        "rect": [
+          24.4,
+          346.8,
+          54,
+          650
+        ]
+      },
+      {
+        "id": "U2-shaft-west",
+        "rect": [
+          170.3,
+          539.1,
+          199.9,
+          650
+        ],
+        "base": 3.3
+      }
+    ],
+    "ceilings": [
+      [
+        54,
+        346.8,
+        594.3,
+        509.9
+      ],
+      [
+        392.2,
+        509.9,
+        594.3,
+        865.3
+      ],
+      [
+        54,
+        509.9,
+        170.3,
+        650
+      ]
+    ]
+  },
+  "review_routes": [
+    {
+      "id": "first_to_second",
+      "label": "Вестибюль → второй этаж",
+      "doors": [
+        "S1-18"
+      ],
+      "points": [
+        [
+          440,
+          300,
+          0
+        ],
+        [
+          440,
+          380,
+          0
+        ],
+        [
+          440,
+          520,
+          0
+        ],
+        [
+          440,
+          550,
+          0.15
+        ],
+        [
+          440,
+          753,
+          1.5
+        ],
+        [
+          440,
+          810,
+          1.65
+        ],
+        [
+          549,
+          810,
+          1.65
+        ],
+        [
+          549,
+          753,
+          1.8
+        ],
+        [
+          549,
+          550,
+          3.15
+        ],
+        [
+          549,
+          490,
+          3.3
+        ],
+        [
+          115,
+          440,
+          3.3
+        ],
+        [
+          115,
+          610,
+          3.3
+        ]
+      ]
+    },
+    {
+      "id": "outside_to_basement",
+      "label": "Улица → подвал",
+      "doors": [
+        "S1-19"
+      ],
+      "points": [
+        [
+          690,
+          427,
+          -1.06
+        ],
+        [
+          550,
+          427,
+          -1.05
+        ],
+        [
+          550,
+          580,
+          -1.05
+        ],
+        [
+          550,
+          610,
+          -1.2
+        ],
+        [
+          550,
+          750,
+          -2.1
+        ],
+        [
+          550,
+          810,
+          -2.25
+        ],
+        [
+          440,
+          810,
+          -2.25
+        ]
+      ]
+    },
+    {
+      "id": "entry_to_lift",
+      "label": "Крыльцо → лифт",
+      "doors": [
+        "S1-17",
+        "S1-16",
+        "S1-15"
+      ],
+      "points": [
+        [
+          880,
+          130,
+          -0.01
+        ],
+        [
+          690,
+          130,
+          0
+        ],
+        [
+          520,
+          130,
+          0
+        ],
+        [
+          460,
+          220,
+          0
+        ],
+        [
+          220,
+          220,
+          0
+        ],
+        [
+          110,
+          220,
+          0
+        ],
+        [
+          110,
+          450,
+          0
+        ],
+        [
+          278,
+          450,
+          0
+        ],
+        [
+          278,
+          485,
+          0
+        ]
+      ]
+    },
+    {
+      "id": "lobby_to_stroller",
+      "label": "Вестибюль → колясочная",
+      "doors": [],
+      "points": [
+        [
+          460,
+          220,
+          0
+        ],
+        [
+          410,
+          175,
+          0
+        ],
+        [
+          310,
+          175,
+          0
+        ]
+      ]
+    },
+    {
+      "id": "corridor",
+      "label": "Межквартирный коридор",
+      "doors": [],
+      "points": [
+        [
+          110,
+          450,
+          0
+        ],
+        [
+          110,
+          1120,
+          0
+        ]
+      ]
     }
   ]
 }
