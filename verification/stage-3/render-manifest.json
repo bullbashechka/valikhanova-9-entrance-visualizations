@@ -1,0 +1,12 @@
+{
+  "device": "METAL",
+  "blend_sha256": "c3db7532ca8785d41231f1482a2880b5c63d2bd566ab4069eac4f86e6a0b2be9",
+  "style_sha256": "899db128db9d15d7e455513ca62847e73f00fa52359b7e3bf4fe6767d921ceba",
+  "images": {
+    "05-top.png": "1727d36e7ab57bb5b6f4c7d195356b2c7edb83f8c1d4c849650fa115fc021cff",
+    "03-lift.png": "2add11b54b74a9477229e845acf27d6286377ebf2919eab0117b4bcfd79a4fc9",
+    "02-lobby.png": "c9892716817b7fb8898e0e865a6b5bce216d58b5c22d43c88ee8dc11378222db",
+    "04-exterior.png": "294caf32defab15c1ca143b11f3302dd4fcad6935ea8d4aff0054df8c3aa63d6",
+    "01-entry.png": "1d44bed59c840951d3b837d3251d7ef82111cb0973262ce2b377dda31f37beb2"
+  }
+}

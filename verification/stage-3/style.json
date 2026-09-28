@@ -1,0 +1,30 @@
+{
+  "status": "first_review_not_approved",
+  "section": 1,
+  "source_blend_sha256": "dcd2c94d1ef7d477b17b20fe4bcfcacb2118650b3e53ccabfc161a2e077e1b12",
+  "ceiling_height_m": 3.0,
+  "ceiling_drop_m": 0.0,
+  "light_temperature_k": 3000,
+  "tile_module_m": 0.6,
+  "joint_width_m": 0.002,
+  "plinth_height_m": 0.12,
+  "corridor_border_width_m": 0.11,
+  "contact_panel_height_m": 0.78,
+  "palette": {
+    "wall": "#E5DECF",
+    "ceiling": "#F0EBE1",
+    "floor": "#C3AF94",
+    "entry_floor": "#958573",
+    "outdoor_floor": "#8B8479",
+    "wood": "#785338",
+    "charcoal": "#302D29",
+    "contact": "#756B5D",
+    "facade_brick": "#947D70"
+  },
+  "cameras": [
+    {"name":"01-entry", "label":"От входа в вестибюль", "position_png":[530,76], "target_png":[325,295], "height":1.60,"target_height":1.45,"lens":26},
+    {"name":"02-lobby", "label":"Вестибюль и открытая колясочная", "position_png":[571,294], "target_png":[282,139], "height":1.60,"target_height":1.47,"lens":28},
+    {"name":"03-lift", "label":"Коридор и зона лифта", "position_png":[110,303], "target_png":[220,500], "height":1.60,"target_height":1.44,"lens":26},
+    {"name":"04-exterior", "label":"Основной наружный вход и площадка", "position_png":[1210,640], "target_png":[780,227], "height":0.54,"target_height":0.82,"lens":30}
+  ]
+}
