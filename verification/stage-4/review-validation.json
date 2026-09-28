@@ -1,0 +1,111 @@
+{
+  "all_static_checks_pass": true,
+  "checks": [
+    {
+      "name": "scene checks pass",
+      "passed": true
+    },
+    {
+      "name": "current finish hashes",
+      "passed": true
+    },
+    {
+      "name": "current geometry hash",
+      "passed": true
+    },
+    {
+      "name": "current style hash",
+      "passed": true
+    },
+    {
+      "name": "exactly five presentation images",
+      "passed": true
+    },
+    {
+      "name": "image current / 01-entry",
+      "passed": true
+    },
+    {
+      "name": "resolution / 01-entry",
+      "passed": true,
+      "size": [
+        1920,
+        1280
+      ]
+    },
+    {
+      "name": "image current / 02-lobby",
+      "passed": true
+    },
+    {
+      "name": "resolution / 02-lobby",
+      "passed": true,
+      "size": [
+        1920,
+        1280
+      ]
+    },
+    {
+      "name": "image current / 03-lift",
+      "passed": true
+    },
+    {
+      "name": "resolution / 03-lift",
+      "passed": true,
+      "size": [
+        1920,
+        1280
+      ]
+    },
+    {
+      "name": "image current / 04-exterior",
+      "passed": true
+    },
+    {
+      "name": "resolution / 04-exterior",
+      "passed": true,
+      "size": [
+        1920,
+        1280
+      ]
+    },
+    {
+      "name": "image current / 05-top",
+      "passed": true
+    },
+    {
+      "name": "resolution / 05-top",
+      "passed": true,
+      "size": [
+        1677,
+        1920
+      ]
+    },
+    {
+      "name": "all local links and anchors resolve",
+      "passed": true,
+      "missing": []
+    },
+    {
+      "name": "page script parses",
+      "passed": true,
+      "error": ""
+    },
+    {
+      "name": "all presentation images on page",
+      "passed": true
+    },
+    {
+      "name": "source overlay and control present",
+      "passed": true
+    },
+    {
+      "name": "visual review matches current images",
+      "passed": true
+    }
+  ],
+  "browser": {
+    "status": "unavailable",
+    "reason": "Installed Browser plugin failed to connect: missing browser-service.mjs in referenced runtime version. No browser pass claimed."
+  }
+}

@@ -1,0 +1,123 @@
+[
+  {
+    "id": "S2-12",
+    "original_description": "Шахта: входной проём",
+    "scene_description": "Шахта: входной проём",
+    "width_estimate_mm": 1302.3,
+    "base_m": 0,
+    "height_m": 2.1,
+    "kind": "lift",
+    "leaf_count": 2,
+    "decision": "PNG + проектные/условные высоты"
+  },
+  {
+    "id": "S2-13",
+    "original_description": "Вестибюль — тамбур",
+    "scene_description": "Вестибюль — тамбур",
+    "width_estimate_mm": 1313.1,
+    "base_m": 0,
+    "height_m": 2.4,
+    "kind": "glazed_door",
+    "leaf_count": 1,
+    "decision": "PNG + проектные/условные высоты"
+  },
+  {
+    "id": "S2-14",
+    "original_description": "Тамбур — улица",
+    "scene_description": "Тамбур — улица",
+    "width_estimate_mm": 1313.1,
+    "base_m": 0,
+    "height_m": 2.4,
+    "kind": "glazed_door",
+    "leaf_count": 1,
+    "decision": "PNG + проектные/условные высоты"
+  },
+  {
+    "id": "S2-15",
+    "original_description": "Тамбур — лестничная площадка",
+    "scene_description": "Тамбур — лестничная площадка",
+    "width_estimate_mm": 1148.2,
+    "base_m": 0,
+    "height_m": 2.1,
+    "kind": "door",
+    "leaf_count": 1,
+    "decision": "PNG + проектные/условные высоты"
+  },
+  {
+    "id": "S2-16",
+    "original_description": "Вестибюль — коридор: открытый проход",
+    "scene_description": "Вестибюль — коридор: открытый проход",
+    "width_estimate_mm": 1047.6,
+    "base_m": 0,
+    "height_m": 2.4,
+    "kind": "open",
+    "leaf_count": 0,
+    "decision": "PNG + проектные/условные высоты"
+  },
+  {
+    "id": "S2-17",
+    "original_description": "Лестница — улица",
+    "scene_description": "Дверь после подъёма на второй этаж",
+    "width_estimate_mm": 1052.2,
+    "base_m": 3.3,
+    "height_m": 2.1,
+    "kind": "door",
+    "leaf_count": 1,
+    "decision": "User confirmed upper-floor door after internal stair; overrides stage-1 description, 2026-09-28"
+  },
+  {
+    "id": "S2-18",
+    "original_description": "Соседнее помещение слева",
+    "scene_description": "Соседнее помещение слева",
+    "width_estimate_mm": 1052.3,
+    "base_m": 0,
+    "height_m": 2.1,
+    "kind": "door",
+    "leaf_count": 1,
+    "decision": "PNG + проектные/условные высоты"
+  },
+  {
+    "id": "S2-19",
+    "original_description": "Соседнее помещение справа",
+    "scene_description": "Соседнее помещение справа",
+    "width_estimate_mm": 1052.3,
+    "base_m": 0,
+    "height_m": 2.1,
+    "kind": "door",
+    "leaf_count": 1,
+    "decision": "PNG + проектные/условные высоты"
+  },
+  {
+    "id": "S2-36",
+    "original_description": "Соседнее помещение снизу",
+    "scene_description": "Соседнее помещение снизу",
+    "width_estimate_mm": 1047.9,
+    "base_m": 0,
+    "height_m": 2.1,
+    "kind": "door",
+    "leaf_count": 1,
+    "decision": "PNG + проектные/условные высоты"
+  },
+  {
+    "id": "S2-25",
+    "original_description": "Светопрозрачное заполнение справа от лестницы",
+    "scene_description": "Светопрозрачное заполнение справа от лестницы",
+    "width_estimate_mm": 1688.1,
+    "base_m": 0.9,
+    "height_m": 1.5,
+    "kind": "window",
+    "leaf_count": 0,
+    "decision": "PNG + проектные/условные высоты"
+  },
+  {
+    "id": "S2-26",
+    "original_description": "Светопрозрачное заполнение у правого выхода",
+    "scene_description": "Светопрозрачное заполнение у правого выхода",
+    "width_estimate_mm": 1000.3,
+    "base_m": 0.9,
+    "height_m": 1.5,
+    "kind": "window",
+    "leaf_count": 0,
+    "decision": "PNG + проектные/условные высоты"
+  }
+]

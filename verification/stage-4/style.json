@@ -1,0 +1,148 @@
+{
+  "status": "stage4_concept_from_section1_accepted_direction",
+  "section": 2,
+  "source_blend_sha256": "d0af1788615c2dd32b16c7015ca21c43cb61c661ad8de8db2b4b89eaf5615197",
+  "ceiling_height_m": 3.0,
+  "ceiling_drop_m": 0.0,
+  "light_temperature_k": 3000,
+  "tile_module_m": 0.6,
+  "joint_width_m": 0.002,
+  "plinth_height_m": 0.12,
+  "corridor_border_width_m": 0.11,
+  "contact_panel_height_m": 0.78,
+  "palette": {
+    "wall": "#E5DECF",
+    "ceiling": "#F0EBE1",
+    "floor": "#C3AF94",
+    "entry_floor": "#958573",
+    "outdoor_floor": "#8B8479",
+    "wood": "#785338",
+    "charcoal": "#302D29",
+    "contact": "#756B5D",
+    "facade_brick": "#947D70"
+  },
+  "cameras": [
+    {
+      "name": "01-entry",
+      "label": "Из тамбура в вестибюль",
+      "position_png": [
+        350,
+        350
+      ],
+      "target_png": [
+        173,
+        220
+      ],
+      "height": 1.6,
+      "target_height": 1.3,
+      "lens": 26
+    },
+    {
+      "name": "02-lobby",
+      "label": "Вестибюль и открытая колясочная",
+      "position_png": [
+        175,
+        366
+      ],
+      "target_png": [
+        98,
+        176
+      ],
+      "height": 1.6,
+      "target_height": 1.25,
+      "lens": 26
+    },
+    {
+      "name": "03-lift",
+      "label": "Коридор, акценты и лифт",
+      "position_png": [
+        152,
+        835
+      ],
+      "target_png": [
+        239,
+        520
+      ],
+      "height": 1.6,
+      "target_height": 1.3,
+      "lens": 24
+    },
+    {
+      "name": "04-exterior",
+      "label": "Жилой вход и наружная площадка",
+      "position_png": [
+        1000,
+        105
+      ],
+      "target_png": [
+        465,
+        220
+      ],
+      "height": 0.54,
+      "target_height": 0.42,
+      "lens": 35
+    }
+  ],
+  "top_bounds_png": [
+    0,
+    110,
+    690,
+    900
+  ],
+  "corridor_border_spans": [
+    [
+      29.1,
+      36.3,
+      410,
+      765
+    ],
+    [
+      149.60000000000002,
+      156.8,
+      502,
+      704
+    ],
+    [
+      29.1,
+      160,
+      852.3,
+      859.5
+    ],
+    [
+      248,
+      655.6,
+      852.3,
+      859.5
+    ],
+    [
+      160,
+      229,
+      704,
+      711.2
+    ],
+    [
+      327,
+      369.6,
+      704,
+      711.2
+    ],
+    [
+      369.6,
+      376.8,
+      704,
+      775
+    ],
+    [
+      394.6,
+      590,
+      781.4,
+      788.6
+    ],
+    [
+      648.4,
+      655.6,
+      755.4,
+      776
+    ]
+  ]
+}

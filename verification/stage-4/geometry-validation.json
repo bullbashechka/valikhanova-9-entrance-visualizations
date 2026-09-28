@@ -1,0 +1,331 @@
+{
+  "all_pass": true,
+  "blender": "5.2.1 LTS",
+  "blend_sha256": "d0af1788615c2dd32b16c7015ca21c43cb61c661ad8de8db2b4b89eaf5615197",
+  "checks": [
+    {
+      "name": "stored geometry data matches configuration",
+      "passed": true
+    },
+    {
+      "name": "source PNG unchanged",
+      "passed": true
+    },
+    {
+      "name": "source PNG packed",
+      "passed": true
+    },
+    {
+      "name": "all resources packed",
+      "passed": true
+    },
+    {
+      "name": "floor area / вестибюль",
+      "passed": true,
+      "actual_m2": 7.026702404022217,
+      "source_estimate_m2": 7.027,
+      "label_m2": 7.03
+    },
+    {
+      "name": "floor area / колясочная",
+      "passed": true,
+      "actual_m2": 4.045032024383545,
+      "source_estimate_m2": 4.045,
+      "label_m2": 4.04
+    },
+    {
+      "name": "floor area / тамбур",
+      "passed": true,
+      "actual_m2": 8.668122291564941,
+      "source_estimate_m2": 8.668,
+      "label_m2": 8.72
+    },
+    {
+      "name": "floor area / межквартирный коридор",
+      "passed": true,
+      "actual_m2": 26.578985825181007,
+      "source_estimate_m2": 26.579,
+      "label_m2": 26.59
+    },
+    {
+      "name": "3m ceiling / Ceiling / вестибюль",
+      "passed": true
+    },
+    {
+      "name": "3m ceiling / Ceiling / колясочная",
+      "passed": true
+    },
+    {
+      "name": "3m ceiling / Ceiling / тамбур",
+      "passed": true
+    },
+    {
+      "name": "3m ceiling / Ceiling / межквартирный коридор",
+      "passed": true
+    },
+    {
+      "name": "all openings accounted for",
+      "passed": true
+    },
+    {
+      "name": "actual wall opening / S2-13",
+      "passed": true,
+      "obstructions": []
+    },
+    {
+      "name": "actual wall opening / S2-14",
+      "passed": true,
+      "obstructions": []
+    },
+    {
+      "name": "actual wall opening / S2-16",
+      "passed": true,
+      "obstructions": []
+    },
+    {
+      "name": "actual wall opening / S2-15",
+      "passed": true,
+      "obstructions": []
+    },
+    {
+      "name": "actual wall opening / S2-18",
+      "passed": true,
+      "obstructions": []
+    },
+    {
+      "name": "actual wall opening / S2-12",
+      "passed": true,
+      "obstructions": []
+    },
+    {
+      "name": "actual wall opening / S2-26",
+      "passed": true,
+      "obstructions": []
+    },
+    {
+      "name": "actual wall opening / S2-19",
+      "passed": true,
+      "obstructions": []
+    },
+    {
+      "name": "actual wall opening / S2-36",
+      "passed": true,
+      "obstructions": []
+    },
+    {
+      "name": "actual wall opening / S2-25",
+      "passed": true,
+      "obstructions": []
+    },
+    {
+      "name": "actual wall opening / S2-17",
+      "passed": true,
+      "obstructions": []
+    },
+    {
+      "name": "actual frame width from source / S2-13",
+      "passed": true,
+      "actual_m": 1.3130817413330078,
+      "source_m": 1.3130815219164487
+    },
+    {
+      "name": "actual frame width from source / S2-14",
+      "passed": true,
+      "actual_m": 1.3130815029144287,
+      "source_m": 1.3130815219164482
+    },
+    {
+      "name": "actual frame width from source / S2-15",
+      "passed": true,
+      "actual_m": 1.1482441425323486,
+      "source_m": 1.1482440448336995
+    },
+    {
+      "name": "actual frame width from source / S2-18",
+      "passed": true,
+      "actual_m": 1.0522956848144531,
+      "source_m": 1.0522952963093488
+    },
+    {
+      "name": "actual frame width from source / S2-12",
+      "passed": true,
+      "actual_m": 1.3022582530975342,
+      "source_m": 1.3022581863054168
+    },
+    {
+      "name": "actual frame width from source / S2-26",
+      "passed": true,
+      "actual_m": 1.0003299713134766,
+      "source_m": 1.0003294733212575
+    },
+    {
+      "name": "actual frame width from source / S2-19",
+      "passed": true,
+      "actual_m": 1.0522947311401367,
+      "source_m": 1.0522952963093488
+    },
+    {
+      "name": "actual frame width from source / S2-36",
+      "passed": true,
+      "actual_m": 1.0478756427764893,
+      "source_m": 1.0478756211538132
+    },
+    {
+      "name": "actual frame width from source / S2-25",
+      "passed": true,
+      "actual_m": 1.6880559921264648,
+      "source_m": 1.6880559862296223
+    },
+    {
+      "name": "actual frame width from source / S2-17",
+      "passed": true,
+      "actual_m": 1.052175521850586,
+      "source_m": 1.0521758179751037
+    },
+    {
+      "name": "S2-17 upper level and explicit override",
+      "passed": true
+    },
+    {
+      "name": "no S2-17 first-floor entrance",
+      "passed": true
+    },
+    {
+      "name": "open stroller boundary",
+      "passed": true
+    },
+    {
+      "name": "eye camera / 01-entry",
+      "passed": true
+    },
+    {
+      "name": "eye camera / 02-lobby",
+      "passed": true
+    },
+    {
+      "name": "eye camera / 03-lift",
+      "passed": true
+    },
+    {
+      "name": "eye camera / 04-exterior",
+      "passed": true
+    },
+    {
+      "name": "five cameras",
+      "passed": true
+    },
+    {
+      "name": "walkable_route/entry_to_lift",
+      "passed": true,
+      "samples": 433,
+      "width_m": 0.6,
+      "height_m": 2.0,
+      "failures": [],
+      "failure_count": 0,
+      "doors_opened": [
+        "S2-14",
+        "S2-13"
+      ]
+    },
+    {
+      "name": "walkable_route/lobby_to_stroller",
+      "passed": true,
+      "samples": 38,
+      "width_m": 0.6,
+      "height_m": 2.0,
+      "failures": [],
+      "failure_count": 0,
+      "doors_opened": []
+    },
+    {
+      "name": "walkable_route/corridor",
+      "passed": true,
+      "samples": 217,
+      "width_m": 0.6,
+      "height_m": 2.0,
+      "failures": [],
+      "failure_count": 0,
+      "doors_opened": []
+    },
+    {
+      "name": "walkable_route/first_to_second",
+      "passed": true,
+      "samples": 427,
+      "width_m": 0.6,
+      "height_m": 2.0,
+      "failures": [],
+      "failure_count": 0,
+      "doors_opened": [
+        "S2-15",
+        "S2-17"
+      ]
+    },
+    {
+      "name": "walkable_route/outside_steps",
+      "passed": true,
+      "samples": 115,
+      "width_m": 0.6,
+      "height_m": 2.0,
+      "failures": [],
+      "failure_count": 0,
+      "doors_opened": []
+    },
+    {
+      "name": "door_sweep/S2-13",
+      "passed": true,
+      "max_angle_degrees": 90.0,
+      "samples": 10,
+      "collisions": []
+    },
+    {
+      "name": "door_sweep/S2-14",
+      "passed": true,
+      "max_angle_degrees": 90.0,
+      "samples": 10,
+      "collisions": []
+    },
+    {
+      "name": "door_sweep/S2-15",
+      "passed": true,
+      "max_angle_degrees": 90.0,
+      "samples": 10,
+      "collisions": []
+    },
+    {
+      "name": "door_sweep/S2-17",
+      "passed": true,
+      "max_angle_degrees": 90.0,
+      "samples": 10,
+      "collisions": []
+    },
+    {
+      "name": "door_sweep/S2-18",
+      "passed": true,
+      "max_angle_degrees": 90.0,
+      "samples": 10,
+      "collisions": []
+    },
+    {
+      "name": "door_sweep/S2-19",
+      "passed": true,
+      "max_angle_degrees": 90.0,
+      "samples": 10,
+      "collisions": []
+    },
+    {
+      "name": "door_sweep/S2-36",
+      "passed": true,
+      "max_angle_degrees": 90.0,
+      "samples": 10,
+      "collisions": []
+    },
+    {
+      "name": "negative control detects blocked route",
+      "passed": true
+    },
+    {
+      "name": "negative control detects missing upper support",
+      "passed": true
+    }
+  ]
+}
