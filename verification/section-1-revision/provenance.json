@@ -1,0 +1,12 @@
+{
+  "checks": {
+    "approved_geometry_unchanged": true,
+    "approved_finish_unchanged": true,
+    "approved_style_unchanged": true,
+    "approved_previews_unchanged": true
+  },
+  "source_geometry_sha256": "dcd2c94d1ef7d477b17b20fe4bcfcacb2118650b3e53ccabfc161a2e077e1b12",
+  "source_finish_sha256": "c3db7532ca8785d41231f1482a2880b5c63d2bd566ab4069eac4f86e6a0b2be9",
+  "revised_scene_sha256": "63fd869c8c9ff5be943f20d01355c1a0aa1d4cd73bb09fdb1b336387f9488069",
+  "render_source_blend_sha256": "af3b081f55f5167fcb789354582d4b7ce1c0066f40203efd6ceaede27cd1dace"
+}

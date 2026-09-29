@@ -1,0 +1,77 @@
+{
+  "all_pass": true,
+  "checks": [
+    {
+      "name": "all local links and anchors resolve",
+      "passed": true,
+      "bad": []
+    },
+    {
+      "name": "all images have alt text",
+      "passed": true
+    },
+    {
+      "name": "unique ids",
+      "passed": true
+    },
+    {
+      "name": "five outputs plus two references",
+      "passed": true
+    },
+    {
+      "name": "scene validation and render set are current",
+      "passed": true
+    },
+    {
+      "name": "style is current",
+      "passed": true
+    },
+    {
+      "name": "image / 01-entry",
+      "passed": true,
+      "dimensions": [
+        2560,
+        1707
+      ]
+    },
+    {
+      "name": "image / 02-lobby",
+      "passed": true,
+      "dimensions": [
+        2560,
+        1707
+      ]
+    },
+    {
+      "name": "image / 03-lift",
+      "passed": true,
+      "dimensions": [
+        2560,
+        1707
+      ]
+    },
+    {
+      "name": "image / 04-exterior",
+      "passed": true,
+      "dimensions": [
+        2560,
+        1707
+      ]
+    },
+    {
+      "name": "image / 05-top",
+      "passed": true,
+      "dimensions": [
+        2182,
+        2560
+      ]
+    },
+    {
+      "name": "manual visual review matches current images",
+      "passed": true
+    }
+  ],
+  "visual_images_reviewed": true,
+  "browser_verified": false,
+  "browser_limitation": "Browser check not performed; local files, links, image dimensions and freshness validated"
+}

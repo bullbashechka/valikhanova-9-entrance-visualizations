@@ -1,0 +1,329 @@
+{
+  "all_pass": true,
+  "blender": "5.2.1 LTS",
+  "blend_sha256": "63fd869c8c9ff5be943f20d01355c1a0aa1d4cd73bb09fdb1b336387f9488069",
+  "checks": [
+    {
+      "name": "source blend unchanged",
+      "passed": true
+    },
+    {
+      "name": "apartment door preserved",
+      "passed": true
+    },
+    {
+      "name": "architecture changes limited to approved revision",
+      "passed": true,
+      "objects": 297,
+      "changed": [
+        "Context / ground",
+        "Exterior / upper platform",
+        "Proxy / lift platform",
+        "Proxy / lift post",
+        "Proxy / lift post.001",
+        "Proxy / lift post.002",
+        "Proxy / lift post.003",
+        "Proxy / lift top back",
+        "Proxy / lift top side",
+        "S1-19/leaf-0-bottom",
+        "S1-19/leaf-0-edge",
+        "S1-19/leaf-0-glass",
+        "S1-19/leaf-0-handle",
+        "S1-19/leaf-0-hinge-edge",
+        "S1-19/leaf-0-top",
+        "S1-32/head",
+        "S1-32/jamb-end",
+        "S1-32/jamb-start",
+        "S1-32/mullion",
+        "S1-32/pane",
+        "S1-32/sill",
+        "S1-33/head",
+        "S1-33/jamb-end",
+        "S1-33/jamb-start",
+        "S1-33/mullion",
+        "S1-33/pane",
+        "S1-33/sill"
+      ]
+    },
+    {
+      "name": "geometry metadata records closed apartment-wall inserts",
+      "passed": true
+    },
+    {
+      "name": "style matches saved scene",
+      "passed": true
+    },
+    {
+      "name": "all five cameras present",
+      "passed": true
+    },
+    {
+      "name": "eye height / 01-entry",
+      "passed": true
+    },
+    {
+      "name": "eye height / 02-lobby",
+      "passed": true
+    },
+    {
+      "name": "eye height / 03-lift",
+      "passed": true
+    },
+    {
+      "name": "eye height / 04-exterior",
+      "passed": true
+    },
+    {
+      "name": "ceiling remains 3m / Ceiling / вестибюль",
+      "passed": true
+    },
+    {
+      "name": "ceiling remains 3m / Ceiling / колясочная",
+      "passed": true
+    },
+    {
+      "name": "ceiling remains 3m / Ceiling / тамбур",
+      "passed": true
+    },
+    {
+      "name": "ceiling remains 3m / Ceiling / межквартирный коридор",
+      "passed": true
+    },
+    {
+      "name": "navigation includes all agreed labels",
+      "passed": true
+    },
+    {
+      "name": "one stroller model",
+      "passed": true
+    },
+    {
+      "name": "stroller stays within open niche",
+      "passed": true
+    },
+    {
+      "name": "no extra partition or mailboxes",
+      "passed": true
+    },
+    {
+      "name": "walkable_route/first_to_second",
+      "passed": true,
+      "samples": 532,
+      "width_m": 0.6,
+      "height_m": 2.0,
+      "failures": [],
+      "failure_count": 0,
+      "doors_opened": [
+        "S1-18"
+      ]
+    },
+    {
+      "name": "walkable_route/outside_to_basement",
+      "passed": true,
+      "samples": 220,
+      "width_m": 0.6,
+      "height_m": 2.0,
+      "failures": [],
+      "failure_count": 0,
+      "doors_opened": [
+        "S1-19"
+      ]
+    },
+    {
+      "name": "walkable_route/entry_to_lift",
+      "passed": true,
+      "samples": 416,
+      "width_m": 0.6,
+      "height_m": 2.0,
+      "failures": [],
+      "failure_count": 0,
+      "doors_opened": [
+        "S1-17",
+        "S1-16",
+        "S1-15"
+      ]
+    },
+    {
+      "name": "walkable_route/lobby_to_stroller",
+      "passed": true,
+      "samples": 57,
+      "width_m": 0.6,
+      "height_m": 2.0,
+      "failures": [],
+      "failure_count": 0,
+      "doors_opened": []
+    },
+    {
+      "name": "walkable_route/corridor",
+      "passed": true,
+      "samples": 217,
+      "width_m": 0.6,
+      "height_m": 2.0,
+      "failures": [],
+      "failure_count": 0,
+      "doors_opened": []
+    },
+    {
+      "name": "door_sweep/S1-15",
+      "passed": true,
+      "max_angle_degrees": 90.0,
+      "samples": 10,
+      "collisions": []
+    },
+    {
+      "name": "door_sweep/S1-16",
+      "passed": true,
+      "max_angle_degrees": 85.0,
+      "samples": 10,
+      "collisions": []
+    },
+    {
+      "name": "door_sweep/S1-17",
+      "passed": true,
+      "max_angle_degrees": 90.0,
+      "samples": 10,
+      "collisions": []
+    },
+    {
+      "name": "door_sweep/S1-18",
+      "passed": true,
+      "max_angle_degrees": 90.0,
+      "samples": 10,
+      "collisions": []
+    },
+    {
+      "name": "door_sweep/S1-19",
+      "passed": true,
+      "max_angle_degrees": 90.0,
+      "samples": 10,
+      "collisions": []
+    },
+    {
+      "name": "door_sweep/S1-20",
+      "passed": true,
+      "max_angle_degrees": 90.0,
+      "samples": 10,
+      "collisions": []
+    },
+    {
+      "name": "door_sweep/S1-21",
+      "passed": true,
+      "max_angle_degrees": 90.0,
+      "samples": 10,
+      "collisions": []
+    },
+    {
+      "name": "door_sweep/S1-22",
+      "passed": true,
+      "max_angle_degrees": 90.0,
+      "samples": 10,
+      "collisions": []
+    },
+    {
+      "name": "door_sweep/S1-23",
+      "passed": true,
+      "max_angle_degrees": 85.0,
+      "samples": 10,
+      "collisions": []
+    },
+    {
+      "name": "door_sweep/S1-24",
+      "passed": true,
+      "max_angle_degrees": 90.0,
+      "samples": 10,
+      "collisions": []
+    },
+    {
+      "name": "source PNG packed and unchanged",
+      "passed": true
+    },
+    {
+      "name": "images self contained",
+      "passed": true
+    },
+    {
+      "name": "fonts self contained",
+      "passed": true
+    },
+    {
+      "name": "no ceiling height reduction",
+      "passed": true
+    },
+    {
+      "name": "no old window geometry / S1-32",
+      "passed": true
+    },
+    {
+      "name": "solid full-depth wall / S1-32",
+      "passed": true
+    },
+    {
+      "name": "no old window geometry / S1-33",
+      "passed": true
+    },
+    {
+      "name": "solid full-depth wall / S1-33",
+      "passed": true
+    },
+    {
+      "name": "small frosted insert in metal leaf",
+      "passed": true
+    },
+    {
+      "name": "sign faces arriving visitor",
+      "passed": true
+    },
+    {
+      "name": "sign text directs right",
+      "passed": true
+    },
+    {
+      "name": "three control stations present",
+      "passed": true
+    },
+    {
+      "name": "lift guide tower and gates present",
+      "passed": true
+    },
+    {
+      "name": "platform travel clear of fixed geometry",
+      "passed": true,
+      "collisions": [],
+      "states": 5
+    },
+    {
+      "name": "clear deck envelope for concept",
+      "passed": true,
+      "width_m": 1.1705266584965925,
+      "length_m": 1.660206891318964
+    },
+    {
+      "name": "lower and upper deck levels",
+      "passed": true
+    },
+    {
+      "name": "lift access with open gate / lower",
+      "passed": true,
+      "footprint_m": [
+        0.7,
+        1.2
+      ],
+      "height_m": 1.8,
+      "failures": []
+    },
+    {
+      "name": "lift access with open gate / upper",
+      "passed": true,
+      "footprint_m": [
+        0.7,
+        1.2
+      ],
+      "height_m": 1.8,
+      "failures": []
+    },
+    {
+      "name": "native render defaults ready for delivery",
+      "passed": true
+    }
+  ]
+}
