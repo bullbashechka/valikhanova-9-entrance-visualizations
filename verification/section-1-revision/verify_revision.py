@@ -2,10 +2,23 @@ from mathutils.bvhtree import BVHTree
 from mathutils import Matrix
 scene=bpy.context.scene
 bpy.context.view_layer.update()
-for oid in ('S1-32','S1-33'):
+for oid in ('S1-21','S1-22','S1-23','S1-24'):
+    leaf=bpy.data.objects[oid+'/closed-leaf']
+    west=oid in ('S1-21','S1-22')
+    inner_x=(54 if west else 170.3)*sx
+    face=(max if west else min)((leaf.matrix_world@v.co).x for v in leaf.data.vertices)
+    check('west door leaf flush with inner wall / '+oid,abs(face-inner_x)<.001)
+    check('west door hinge follows leaf / '+oid,abs(leaf['hinge_world'][0]-leaf.location.x)<.001)
+    check('west door frame and handle follow leaf / '+oid,all(abs(ob.location.x-leaf.location.x)<.001 for ob in bpy.data.objects if ob.get('opening_id')==oid))
+for oid in ('S1-30','S1-31','S1-32','S1-33'):
     check('no old window geometry / '+oid,not any(o.get('opening_id')==oid for o in bpy.data.objects))
     ob=bpy.data.objects['Revision / wall infill '+oid]
-    check('solid full-depth wall / '+oid,abs(ob.dimensions.x-(189.8-170.3)*sx)<.001 and abs(ob.dimensions.z-1.5)<.001)
+    width=(54.0-24.4) if oid in ('S1-30','S1-31') else (189.8-170.3)
+    check('solid full-depth wall / '+oid,abs(ob.dimensions.x-width*sx)<.001 and abs(ob.dimensions.z-1.5)<.001)
+stair=bpy.data.objects['S1-18/closed-leaf']
+check('stair door has nonmetal interior finish',stair.active_material.name=='M08 / vertical warm wood' and stair.active_material.node_tree.nodes.get('Principled BSDF').inputs['Metallic'].default_value==0)
+label=bpy.data.objects['N / stair label']
+check('stair sign identifies route',label.data.body=='ЛЕСТНИЦА' and label.data.align_x=='CENTER' and 2.1<label.location.z<2.4)
 frost=bpy.data.materials['Revision / frosted door glazing'].node_tree.nodes.get('Principled BSDF')
 check('small frosted insert in metal leaf',abs(bpy.data.objects['S1-19/revised-frosted-pane'].dimensions.y-.38)<.001 and frost.inputs['Roughness'].default_value>.4 and frost.inputs['Transmission Weight'].default_value==1)
 sign=bpy.data.objects['N / lift direction'];cam=bpy.data.objects['01-entry']

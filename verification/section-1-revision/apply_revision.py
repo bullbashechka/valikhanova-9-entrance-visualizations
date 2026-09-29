@@ -1,18 +1,43 @@
 """Approved section-1 deltas, executed in the finish builder namespace."""
-# The two inserts surround the apartment door in the internal wall W23.
-for oid in ('S1-32','S1-33'):
+# Close the two exterior windows marked on the west wall and the two
+# previously agreed internal inserts beside the apartment door.
+closed={'S1-30':'W01','S1-31':'W01','S1-32':'W23','S1-33':'W23'}
+for oid,wall_id in closed.items():
     for ob in list(bpy.data.objects):
         if ob.get('opening_id')==oid or ob.get('source_id')==oid:
             bpy.data.objects.remove(ob,do_unlink=True)
     opening=PORTALS[oid]
     ob=rect('Revision / wall infill '+oid,opening['rect'],.9,2.4,wall,bpy.data.collections['Walls'])
-    ob['wall_id']='W23';ob['revision_closed_opening']=oid
-    # Continuous interior baseboard already exists below the former sill.
+    ob['wall_id']=wall_id;ob['revision_closed_opening']=oid
+    # The existing sill and lintel complete the wall below and above this fill.
 data=json.loads(scene['geometry_data_json'])
-for oid in ('S1-32','S1-33'):data['openings'].pop(oid)
+for oid in closed:data['openings'].pop(oid)
 for w in data['walls']:
     if w['id']=='W23':w['openings']=['S1-24']
+    if w['id']=='W01':w['openings']=['S1-21','S1-22']
 scene['geometry_data_json']=json.dumps(data,ensure_ascii=False)
+
+# Place both west-wall door leaves on the room-side wall plane. Keep each
+# frame, handle and hinge with its leaf so the door still opens correctly.
+for oid in ('S1-21','S1-22','S1-23','S1-24'):
+    leaf=bpy.data.objects[oid+'/closed-leaf']
+    west=oid in ('S1-21','S1-22')
+    inside_x=PORTALS[oid]['rect'][2 if west else 0]*SX
+    leaf_face=(max if west else min)((leaf.matrix_world@v.co).x for v in leaf.data.vertices)
+    offset=inside_x-leaf_face
+    for ob in bpy.data.objects:
+        if ob.get('opening_id')!=oid:continue
+        ob.location.x+=offset
+        if 'hinge_world' in ob:
+            hinge=list(ob['hinge_world']);hinge[0]+=offset;ob['hinge_world']=hinge
+
+# The stair door keeps its opening, hinge and swing. Only its leaf finish
+# changes from graphite metal to the same warm interior palette as the lobby.
+for ob in bpy.data.objects:
+    if ob.get('opening_id')=='S1-18' and ob.name.endswith('/closed-leaf'):
+        assign(ob,wood)
+stair_label=text('N / stair label','ЛЕСТНИЦА',p(440,316.3,2.25),(math.pi/2,0,math.pi),.09,dark)
+stair_label.data.align_x='CENTER'
 
 # One metal door leaf with an actual small frosted opening, preserving its hinge.
 frost=material('Revision / frosted door glazing','#D5D9D5',.48)
@@ -111,7 +136,7 @@ controls('upper call',p(988.5,207,1.01),math.pi)
 # Subtle tread lines make the deck legible without a decorative floor pattern.
 for i in range(1,15):
     ob=rect('Equipment / deck groove '+str(i),[870,222+i*8.5,964,222.5+i*8.5],-.010,-.009,steel,EQUIP);ob['lift_moving']=True
-scene['revision_json']=json.dumps({'closed_openings':['S1-32','S1-33'],'apartment_door':'S1-24','basement_door':'S1-19','lift_travel_m':1.05,'lift_deck_rect_png':[868,220,966,356.5],'platform_state':'upper','equipment':'generic visual concept, not a product specification'},ensure_ascii=False)
+scene['revision_json']=json.dumps({'closed_openings':list(closed),'flush_west_doors':['S1-21','S1-22'],'stair_door':'S1-18','stair_door_finish':'warm wood','apartment_door':'S1-24','basement_door':'S1-19','lift_travel_m':1.05,'lift_deck_rect_png':[868,220,966,356.5],'platform_state':'upper','equipment':'generic visual concept, not a product specification'},ensure_ascii=False)
 # Small, ordinary luminaire for the visible basement landing; no daylight effect.
 box('LB1 / wall-mounted body',p(593.1,500,.75),(.03,.24,.16),dark,FIX,.008)
 box('LB1 / wall-mounted diffuser',p(591.85,500,.75),(.005,.21,.13),emission,FIX,.004)

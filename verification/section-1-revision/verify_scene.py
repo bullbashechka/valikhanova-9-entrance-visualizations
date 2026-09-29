@@ -16,21 +16,33 @@ base_parameters=bpy.context.scene['geometry_data_json']
 bpy.ops.wm.open_mainfile(filepath=str(OUT));bpy.context.view_layer.update()
 check('source blend unchanged',hashlib.sha256(BASE.read_bytes()).hexdigest()==STYLE['source_blend_sha256'])
 changed=[n for n,s in original.items() if n not in bpy.data.objects or meshstate(bpy.data.objects[n])!=s]
-check('apartment door preserved',all(n in bpy.data.objects and meshstate(bpy.data.objects[n])==s for n,s in original.items() if n.startswith('S1-24/')))
-allowed=lambda n:n.startswith(('S1-19/leaf-','S1-32/','S1-33/','Proxy / lift')) or n in ('Exterior / upper platform','Context / ground')
+for oid in ('S1-23','S1-24'):
+    shifts=[];preserved=True
+    for n,s in original.items():
+        if not n.startswith(oid+'/'):continue
+        if n not in bpy.data.objects:preserved=False;continue
+        now=meshstate(bpy.data.objects[n])
+        preserved &= all(now[k]==s[k] for k in ('faces','opening_id','leaf_index','open_angle'))
+        for a,b in zip(now['vertices'],s['vertices']):
+            preserved &= abs(a[1]-b[1])<.00001 and abs(a[2]-b[2])<.00001
+            if n.endswith('/threshold'):preserved &= abs(a[0]-b[0])<.00001
+            else:shifts.append(a[0]-b[0])
+    check('door preserved except uniform depth translation / '+oid,preserved and bool(shifts) and max(shifts)-min(shifts)<.00001)
+allowed=lambda n:n.startswith(('S1-19/leaf-','S1-21/','S1-22/','S1-23/','S1-24/','S1-30/','S1-31/','S1-32/','S1-33/','Proxy / lift')) or n in ('Exterior / upper platform','Context / ground')
 check('architecture changes limited to approved revision',all(allowed(n) for n in changed),objects=len(original),changed=changed)
 expected=json.loads(base_parameters)
-for oid in ('S1-32','S1-33'):expected['openings'].pop(oid)
+for oid in ('S1-30','S1-31','S1-32','S1-33'):expected['openings'].pop(oid)
 for w in expected['walls']:
     if w['id']=='W23':w['openings']=['S1-24']
-check('geometry metadata records closed apartment-wall inserts',json.loads(bpy.context.scene['geometry_data_json'])==expected)
+    if w['id']=='W01':w['openings']=['S1-21','S1-22']
+check('geometry metadata records four closed openings',json.loads(bpy.context.scene['geometry_data_json'])==expected)
 check('style matches saved scene',json.loads(bpy.context.scene['stage3_style_json'])==STYLE)
 check('all five cameras present',all(n in bpy.data.objects for n in ['01-entry','02-lobby','03-lift','04-exterior','05-top']))
 for cfg in STYLE['cameras']:
     o=bpy.data.objects[cfg['name']];check('eye height / '+cfg['name'],abs(o.location.z-cfg['height'])<1e-5 and 26<=o.data.lens<=35)
 for ob in bpy.data.collections['Ceilings'].objects:
     check('ceiling remains 3m / '+ob.name,abs(min((ob.matrix_world@v.co).z for v in ob.data.vertices)-3)<1e-5 and not ob.hide_render)
-check('navigation includes all agreed labels',all(n in bpy.data.objects for n in ('N / stroller label','N / floor number','N / exterior number','N / stroller icon','N / lift direction')))
+check('navigation includes all agreed labels',all(n in bpy.data.objects for n in ('N / stroller label','N / floor number','N / exterior number','N / stroller icon','N / lift direction','N / stair label')))
 check('one stroller model',sum(o.name=='S / bassinet' for o in bpy.data.collections['Stroller'].objects)==1)
 cal=json.loads((ROOT/'verification/stage-1/calibration.json').read_text())['1'];sx,sy=cal['mm_per_png_pixel_x']/1000,cal['mm_per_png_pixel_y']/1000
 coords=[o.matrix_world@v.co for o in bpy.data.collections['Stroller'].objects if o.type=='MESH' for v in o.data.vertices]

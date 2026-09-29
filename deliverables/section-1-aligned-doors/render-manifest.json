@@ -1,0 +1,15 @@
+{
+  "device": "CPU",
+  "samples": 32,
+  "blend_sha256": "f1c9b67175989980b55fe56b7ca2c1572229fad4ed1286665346b3479fc85ece",
+  "style_sha256": "620d45b0646ad0c9c078a64c7fda2a252da66aeb6fff404a43cd2baf254e43a4",
+  "images": {
+    "01-entry.png": "308125c8a10cd2faa7b3927064e9d0e36a3f6743ab11179416776520375655d9",
+    "02-lobby.png": "cc894c3d694855a33290782257753e1b4a57d12088bc9c6aaf4a8d4f43863761",
+    "03-lift.png": "a247eb3d42e268afe31c2ccb1cc372d85ceb236d1540db9905b7dc7bd812c3d1",
+    "04-exterior.png": "e5672f2af2dba7b41cb306c55e069fcabf724bc6016453c27636f722ade56cf0",
+    "05-top.png": "fc87ad2f03d17fec477cb79c2fd50470eb41f9b49ffc5e6bee3992d6f49caddf"
+  },
+  "render_source_snapshot": "render-source.blend",
+  "render_source_blend_sha256": "f1c9b67175989980b55fe56b7ca2c1572229fad4ed1286665346b3479fc85ece"
+}

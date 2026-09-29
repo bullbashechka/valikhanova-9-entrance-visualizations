@@ -17,8 +17,10 @@ if '--cpu' not in sys.argv:
     except (TypeError,RuntimeError):pass
 out=HERE/('drafts' if draft else 'previews');out.mkdir(exist_ok=True)
 selected=sys.argv[sys.argv.index('--cameras')+1].split(',') if '--cameras' in sys.argv else ['01-entry','02-lobby','03-lift','04-exterior','05-top']
+samples=int(sys.argv[sys.argv.index('--samples')+1]) if '--samples' in sys.argv else (24 if draft else 128)
+assert 1<=samples<=4096
 scene.render.resolution_x=960 if draft else 2560;scene.render.resolution_y=640 if draft else 1707
-scene.cycles.samples=24 if draft else 128
+scene.cycles.samples=samples
 scene.render.pixel_aspect_x=scene.render.pixel_aspect_y=1
 for name in selected:
     if name=='05-top':continue
@@ -57,6 +59,6 @@ if not draft:
     images=dict(old.get('images',{})) if old.get('blend_sha256')==blend_sha and old.get('style_sha256')==style_sha else {}
     for name in selected:
         path=out/(name+'.png');images[path.name]=hashlib.sha256(path.read_bytes()).hexdigest()
-    manifest={'device':device,'blend_sha256':blend_sha,'style_sha256':style_sha,'images':images}
+    manifest={'device':device,'samples':samples,'blend_sha256':blend_sha,'style_sha256':style_sha,'images':images}
     (HERE/'render-manifest.json').write_text(json.dumps(manifest,indent=2))
 print('RENDER_COMPLETE',selected)

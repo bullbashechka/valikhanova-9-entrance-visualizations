@@ -204,7 +204,12 @@ area('Daylight / entrance',p(1100,60,5),600,7,6,(.84,.9,1),p(720,135,1.4))
 scene.world.node_tree.nodes['Background'].inputs[0].default_value=(.72,.8,.92,1)
 scene.world.node_tree.nodes['Background'].inputs[1].default_value=.3
 
-font=bpy.data.fonts.load('/System/Library/Fonts/Supplemental/Arial.ttf')
+font_path=next((q for q in (
+    Path('/System/Library/Fonts/Supplemental/Arial.ttf'),
+    Path('C:/Windows/Fonts/arial.ttf'),
+) if q.is_file()),None)
+assert font_path is not None,'Arial font required for Cyrillic navigation signs'
+font=bpy.data.fonts.load(str(font_path))
 signlight=material('N / ivory lettering','#EBE1CE',.6)
 def text(name,body,loc,rot,size,mat=dark):
     d=bpy.data.curves.new(name,'FONT');d.body=body;d.font=font;d.size=size;d.extrude=.0007;d.space_character=1.12
