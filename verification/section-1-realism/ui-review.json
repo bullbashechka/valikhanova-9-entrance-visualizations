@@ -1,0 +1,20 @@
+{
+  "passed": true,
+  "checks": [
+    "desktop day/evening toggle changes original image and link",
+    "mobile page has no horizontal overflow",
+    "detail image and both references load offline",
+    "no JavaScript errors"
+  ],
+  "browser": "Microsoft Edge",
+  "viewports": [
+    [
+      1440,
+      1100
+    ],
+    [
+      390,
+      900
+    ]
+  ]
+}

@@ -1,0 +1,405 @@
+{
+  "all_pass": true,
+  "checks": [
+    {
+      "name": "approved input unchanged",
+      "passed": true
+    },
+    {
+      "name": "all approved walls openings and heights retained",
+      "passed": true
+    },
+    {
+      "name": "geometry changes confined to handles and glazing thickness",
+      "passed": true,
+      "changed": [
+        "S1-15/leaf-0-glass",
+        "S1-15/leaf-0-handle",
+        "S1-15/leaf-1-glass",
+        "S1-15/leaf-1-handle",
+        "S1-16/leaf-0-glass",
+        "S1-16/leaf-0-handle",
+        "S1-16/leaf-1-glass",
+        "S1-16/leaf-1-handle",
+        "S1-17/leaf-0-glass",
+        "S1-17/leaf-0-handle",
+        "S1-17/leaf-1-glass",
+        "S1-17/leaf-1-handle",
+        "S1-18/handle",
+        "S1-20/handle",
+        "S1-21/handle",
+        "S1-22/handle",
+        "S1-23/handle",
+        "S1-24/handle"
+      ]
+    },
+    {
+      "name": "settings embedded in scene match file",
+      "passed": true
+    },
+    {
+      "name": "leaf envelope and hinge unchanged / S1-18",
+      "passed": true
+    },
+    {
+      "name": "fixed upper panel / S1-18",
+      "passed": true
+    },
+    {
+      "name": "wood texture and physical UV / S1-18",
+      "passed": true
+    },
+    {
+      "name": "upper panel UV matches leaf orientation / S1-18",
+      "passed": true
+    },
+    {
+      "name": "leaf envelope and hinge unchanged / S1-20",
+      "passed": true
+    },
+    {
+      "name": "fixed upper panel / S1-20",
+      "passed": true
+    },
+    {
+      "name": "wood texture and physical UV / S1-20",
+      "passed": true
+    },
+    {
+      "name": "upper panel UV matches leaf orientation / S1-20",
+      "passed": true
+    },
+    {
+      "name": "leaf envelope and hinge unchanged / S1-21",
+      "passed": true
+    },
+    {
+      "name": "fixed upper panel / S1-21",
+      "passed": true
+    },
+    {
+      "name": "wood texture and physical UV / S1-21",
+      "passed": true
+    },
+    {
+      "name": "upper panel UV matches leaf orientation / S1-21",
+      "passed": true
+    },
+    {
+      "name": "leaf envelope and hinge unchanged / S1-22",
+      "passed": true
+    },
+    {
+      "name": "fixed upper panel / S1-22",
+      "passed": true
+    },
+    {
+      "name": "wood texture and physical UV / S1-22",
+      "passed": true
+    },
+    {
+      "name": "upper panel UV matches leaf orientation / S1-22",
+      "passed": true
+    },
+    {
+      "name": "leaf envelope and hinge unchanged / S1-23",
+      "passed": true
+    },
+    {
+      "name": "fixed upper panel / S1-23",
+      "passed": true
+    },
+    {
+      "name": "wood texture and physical UV / S1-23",
+      "passed": true
+    },
+    {
+      "name": "upper panel UV matches leaf orientation / S1-23",
+      "passed": true
+    },
+    {
+      "name": "leaf envelope and hinge unchanged / S1-24",
+      "passed": true
+    },
+    {
+      "name": "fixed upper panel / S1-24",
+      "passed": true
+    },
+    {
+      "name": "wood texture and physical UV / S1-24",
+      "passed": true
+    },
+    {
+      "name": "upper panel UV matches leaf orientation / S1-24",
+      "passed": true
+    },
+    {
+      "name": "clear solid glazing / S1-15-0",
+      "passed": true
+    },
+    {
+      "name": "clear solid glazing / S1-15-1",
+      "passed": true
+    },
+    {
+      "name": "clear solid glazing / S1-16-0",
+      "passed": true
+    },
+    {
+      "name": "clear solid glazing / S1-16-1",
+      "passed": true
+    },
+    {
+      "name": "clear solid glazing / S1-17-0",
+      "passed": true
+    },
+    {
+      "name": "clear solid glazing / S1-17-1",
+      "passed": true
+    },
+    {
+      "name": "all moving details have opening metadata",
+      "passed": true
+    },
+    {
+      "name": "all fixed panels have no moving leaf metadata",
+      "passed": true
+    },
+    {
+      "name": "camera settings / pilot-overview",
+      "passed": true
+    },
+    {
+      "name": "camera outside wall solids / pilot-overview",
+      "passed": true,
+      "walls": []
+    },
+    {
+      "name": "camera settings / pilot-door-detail",
+      "passed": true
+    },
+    {
+      "name": "camera outside wall solids / pilot-door-detail",
+      "passed": true,
+      "walls": []
+    },
+    {
+      "name": "overview camera horizontal",
+      "passed": true
+    },
+    {
+      "name": "textures packed",
+      "passed": true
+    },
+    {
+      "name": "fonts packed",
+      "passed": true
+    },
+    {
+      "name": "native render dimensions",
+      "passed": true
+    },
+    {
+      "name": "no ceiling cut saved",
+      "passed": true
+    },
+    {
+      "name": "walkable_route/first_to_second",
+      "passed": true,
+      "samples": 532,
+      "width_m": 0.6,
+      "height_m": 2.0,
+      "failures": [],
+      "failure_count": 0,
+      "doors_opened": [
+        "S1-18"
+      ]
+    },
+    {
+      "name": "walkable_route/outside_to_basement",
+      "passed": true,
+      "samples": 220,
+      "width_m": 0.6,
+      "height_m": 2.0,
+      "failures": [],
+      "failure_count": 0,
+      "doors_opened": [
+        "S1-19"
+      ]
+    },
+    {
+      "name": "walkable_route/entry_to_lift",
+      "passed": true,
+      "samples": 416,
+      "width_m": 0.6,
+      "height_m": 2.0,
+      "failures": [],
+      "failure_count": 0,
+      "doors_opened": [
+        "S1-17",
+        "S1-16",
+        "S1-15"
+      ]
+    },
+    {
+      "name": "walkable_route/lobby_to_stroller",
+      "passed": true,
+      "samples": 57,
+      "width_m": 0.6,
+      "height_m": 2.0,
+      "failures": [],
+      "failure_count": 0,
+      "doors_opened": []
+    },
+    {
+      "name": "walkable_route/corridor",
+      "passed": true,
+      "samples": 217,
+      "width_m": 0.6,
+      "height_m": 2.0,
+      "failures": [],
+      "failure_count": 0,
+      "doors_opened": []
+    },
+    {
+      "name": "door_sweep/S1-15",
+      "passed": true,
+      "max_angle_degrees": 90.0,
+      "samples": 10,
+      "collisions": []
+    },
+    {
+      "name": "door_sweep/S1-16",
+      "passed": true,
+      "max_angle_degrees": 85.0,
+      "samples": 10,
+      "collisions": []
+    },
+    {
+      "name": "door_sweep/S1-17",
+      "passed": true,
+      "max_angle_degrees": 90.0,
+      "samples": 10,
+      "collisions": []
+    },
+    {
+      "name": "door_sweep/S1-18",
+      "passed": true,
+      "max_angle_degrees": 90.0,
+      "samples": 10,
+      "collisions": []
+    },
+    {
+      "name": "door_sweep/S1-19",
+      "passed": true,
+      "max_angle_degrees": 90.0,
+      "samples": 10,
+      "collisions": []
+    },
+    {
+      "name": "door_sweep/S1-20",
+      "passed": true,
+      "max_angle_degrees": 90.0,
+      "samples": 10,
+      "collisions": []
+    },
+    {
+      "name": "door_sweep/S1-21",
+      "passed": true,
+      "max_angle_degrees": 90.0,
+      "samples": 10,
+      "collisions": []
+    },
+    {
+      "name": "door_sweep/S1-22",
+      "passed": true,
+      "max_angle_degrees": 90.0,
+      "samples": 10,
+      "collisions": []
+    },
+    {
+      "name": "door_sweep/S1-23",
+      "passed": true,
+      "max_angle_degrees": 85.0,
+      "samples": 10,
+      "collisions": []
+    },
+    {
+      "name": "door_sweep/S1-24",
+      "passed": true,
+      "max_angle_degrees": 90.0,
+      "samples": 10,
+      "collisions": []
+    },
+    {
+      "name": "new panels clear own door motion / S1-18",
+      "passed": true,
+      "contacts": []
+    },
+    {
+      "name": "new panels clear own door motion / S1-20",
+      "passed": true,
+      "contacts": []
+    },
+    {
+      "name": "new panels clear own door motion / S1-21",
+      "passed": true,
+      "contacts": []
+    },
+    {
+      "name": "new panels clear own door motion / S1-22",
+      "passed": true,
+      "contacts": []
+    },
+    {
+      "name": "new panels clear own door motion / S1-23",
+      "passed": true,
+      "contacts": []
+    },
+    {
+      "name": "new panels clear own door motion / S1-24",
+      "passed": true,
+      "contacts": []
+    },
+    {
+      "name": "platform travel clear of fixed geometry",
+      "passed": true,
+      "collisions": [],
+      "states": 5
+    },
+    {
+      "name": "clear deck envelope for concept",
+      "passed": true,
+      "width_m": 1.1705266584965925,
+      "length_m": 1.660206891318964
+    },
+    {
+      "name": "lower and upper deck levels",
+      "passed": true
+    },
+    {
+      "name": "lift access with open gate / lower",
+      "passed": true,
+      "footprint_m": [
+        0.7,
+        1.2
+      ],
+      "height_m": 1.8,
+      "failures": []
+    },
+    {
+      "name": "lift access with open gate / upper",
+      "passed": true,
+      "footprint_m": [
+        0.7,
+        1.2
+      ],
+      "height_m": 1.8,
+      "failures": []
+    }
+  ],
+  "blend_sha256": "c983f3409f8a38325cc832006d4274ad75bb3f02f8370446fbbcb08c2de8db66",
+  "source_sha256": "75d12ea700162e28a2fa507c84eff61f9c415da0e00f795984ae6196d2e56560",
+  "lift_check_source_sha256": "bb2304333cfeecd76554b783577d222c7b154eeb656bdb5383cce4d6bf98932f",
+  "limitation": "Route and lift envelopes are conceptual checks, not site measurements or regulatory certification."
+}

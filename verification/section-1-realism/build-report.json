@@ -1,0 +1,12 @@
+{
+  "source": "models\\section-1\\section-1-revised.blend",
+  "source_sha256": "75d12ea700162e28a2fa507c84eff61f9c415da0e00f795984ae6196d2e56560",
+  "output": "models\\section-1\\section-1-realism.blend",
+  "output_sha256": "c983f3409f8a38325cc832006d4274ad75bb3f02f8370446fbbcb08c2de8db66",
+  "objects": 846,
+  "new_door_parts": 373,
+  "fixed_parts": 30,
+  "blender": "5.2.2 LTS",
+  "settings_sha256": "19575b1b688c62e99135330b862e4fb1e0a5692c8b3506576a591f2aadc97f22",
+  "stage": "pilot_pending_user_review"
+}

@@ -1,0 +1,51 @@
+{
+  "shot": {
+    "name": "03-door-detail",
+    "camera": "pilot-door-detail",
+    "mode": "day"
+  },
+  "file": "03-door-detail.png",
+  "width": 3200,
+  "height": 2133,
+  "samples": 128,
+  "noise_threshold": 0.007000000216066837,
+  "device": "CPU",
+  "seconds": 1067.47,
+  "sha256": "873a3ee276bac20c5a48abcd3e7371783ce03383ad92a9984eef1fdef067db75",
+  "blend_sha256": "c983f3409f8a38325cc832006d4274ad75bb3f02f8370446fbbcb08c2de8db66",
+  "settings_sha256": "19575b1b688c62e99135330b862e4fb1e0a5692c8b3506576a591f2aadc97f22",
+  "camera_matrix": [
+    [
+      -0.8785243630409241,
+      0.005245467182248831,
+      0.47766873240470886,
+      6.349999904632568
+    ],
+    [
+      0.4776975214481354,
+      0.009646903723478317,
+      0.8784713745117188,
+      -2.569999933242798
+    ],
+    [
+      -3.12400345592323e-08,
+      0.9999396800994873,
+      -0.010980786755681038,
+      1.159999966621399
+    ],
+    [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ]
+  ],
+  "lens": 58.0,
+  "lighting": {
+    "world_strength": 0.35,
+    "entrance_watts": 1500,
+    "fixture_multiplier": 1.0,
+    "exposure": 0.2
+  },
+  "source": "Native Blender Cycles render; no generated-image replacement"
+}

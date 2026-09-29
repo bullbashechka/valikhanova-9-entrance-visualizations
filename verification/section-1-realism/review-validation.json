@@ -1,0 +1,11 @@
+{
+  "passed": true,
+  "images": 3,
+  "links_checked": 14,
+  "same_day_evening_camera": true,
+  "zip_crc_and_contents_match": true,
+  "zip_sha256": "18cae7944fe27d27c7936fa3386b70027bc6c490328d95741bac57ed7527ce04",
+  "previews_zip_crc_and_contents_match": true,
+  "previews_zip_sha256": "58a3b8bd2e3c3bedf83fcebd759540efe0387386d65f4f4255de7cdfabc07509",
+  "visual_approval": "pending_user_review"
+}

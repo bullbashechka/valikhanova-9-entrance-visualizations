@@ -1,0 +1,20 @@
+{
+  "stage": "pilot_pending_user_review",
+  "source_sha256": "75d12ea700162e28a2fa507c84eff61f9c415da0e00f795984ae6196d2e56560",
+  "wood_doors": ["S1-18", "S1-20", "S1-21", "S1-22", "S1-23", "S1-24"],
+  "glass_doors": ["S1-15", "S1-16", "S1-17"],
+  "render": {"width": 3200, "height": 2133, "samples": 512, "noise_threshold": 0.007, "min_samples": 32},
+  "cameras": {
+    "pilot-overview": {"position": [6.98, -0.80, 1.50], "target": [4.58, -3.58, 1.50], "lens": 24, "shift_y": 0.0},
+    "pilot-door-detail": {"position": [6.35, -2.57, 1.16], "target": [5.48, -4.17, 1.18], "lens": 58, "shift_y": 0.0}
+  },
+  "modes": {
+    "day": {"world_strength": 0.35, "entrance_watts": 1500, "fixture_multiplier": 1.0, "exposure": 0.2},
+    "evening": {"world_strength": 0.025, "entrance_watts": 45, "fixture_multiplier": 0.7, "exposure": 0.0}
+  },
+  "pilot_outputs": [
+    {"name": "01-overview-day", "camera": "pilot-overview", "mode": "day"},
+    {"name": "02-overview-evening", "camera": "pilot-overview", "mode": "evening"},
+    {"name": "03-door-detail", "camera": "pilot-door-detail", "mode": "day"}
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "asset": "Oak Veneer 01",
+  "source": "https://polyhaven.com/a/oak_veneer_01",
+  "license": "CC0",
+  "license_url": "https://polyhaven.com/license",
+  "authors": [
+    "Jenelle van Heerden"
+  ],
+  "physical_width_m": 1.8,
+  "files": [
+    {
+      "channel": "Diffuse",
+      "file": "textures\\oak_veneer_01_diff_4k.jpg",
+      "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/4k/oak_veneer_01/oak_veneer_01_diff_4k.jpg",
+      "sha256": "7e8c64811e580ef6664c20524606359c739e6fe030eff5c2c06c3482ecc8b1cf",
+      "bytes": 12587069
+    },
+    {
+      "channel": "Rough",
+      "file": "textures\\oak_veneer_01_rough_4k.jpg",
+      "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/4k/oak_veneer_01/oak_veneer_01_rough_4k.jpg",
+      "sha256": "3e7eb00705c173babfc01443de1ed1e8d40d055b97de278a6e817b65e8decb38",
+      "bytes": 18638525
+    },
+    {
+      "channel": "nor_gl",
+      "file": "textures\\oak_veneer_01_nor_gl_4k.jpg",
+      "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/4k/oak_veneer_01/oak_veneer_01_nor_gl_4k.jpg",
+      "sha256": "e9bb26f63682773895ce3f0dfd9a43554a719c4caae65b6bcf41712ecfaf3d26",
+      "bytes": 11584844
+    }
+  ],
+  "adaptation": "Shader colour treatment; original downloaded maps preserved."
+}

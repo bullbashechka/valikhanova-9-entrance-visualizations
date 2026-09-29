@@ -1,0 +1,51 @@
+{
+  "shot": {
+    "name": "01-overview-day",
+    "camera": "pilot-overview",
+    "mode": "day"
+  },
+  "file": "01-overview-day.png",
+  "width": 1200,
+  "height": 800,
+  "samples": 32,
+  "noise_threshold": 0.03500000014901161,
+  "device": "CPU",
+  "seconds": 49.74,
+  "sha256": "c291cd3a7984c198b1d8be5ab243c9a17d572be55f4ac482b97256af91ba415d",
+  "blend_sha256": "c983f3409f8a38325cc832006d4274ad75bb3f02f8370446fbbcb08c2de8db66",
+  "settings_sha256": "19575b1b688c62e99135330b862e4fb1e0a5692c8b3506576a591f2aadc97f22",
+  "camera_matrix": [
+    [
+      -0.7569454312324524,
+      -1.3371206364354293e-09,
+      0.6534780859947205,
+      6.980000019073486
+    ],
+    [
+      0.6534780859947205,
+      5.890143128794989e-08,
+      0.7569454312324524,
+      -0.800000011920929
+    ],
+    [
+      -3.950292182253179e-08,
+      1.0,
+      -4.371138828673793e-08,
+      1.5
+    ],
+    [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ]
+  ],
+  "lens": 24.0,
+  "lighting": {
+    "world_strength": 0.35,
+    "entrance_watts": 1500,
+    "fixture_multiplier": 1.0,
+    "exposure": 0.2
+  },
+  "source": "Native Blender Cycles render; no generated-image replacement"
+}
