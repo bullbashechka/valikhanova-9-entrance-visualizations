@@ -1,0 +1,42 @@
+{
+  "tool": "built-in imagegen",
+  "source": "../source-view.jpg",
+  "common": "Use case: precise-object-edit. Edit the supplied ORIGINAL house image. Preserve exact building geometry, all nine floor/window rows, roof outline, every window, balcony glazing, entrances, camera perspective, image crop and daylight, sky, trees, cars, people and bench. Replace only opaque facade cladding including all gray/pink wall panels with realistic fine scale horizontal half-brick running bond. Leave glass/frames/railings intact. Across both visible facades use three main horizontal zones following perspective floor slabs: bottom THREE actual floors FLASH dark brown terracotta with varied #846651 #6E513C #967B6C #4B3323 and light warm gray/beige mortar, matching built masonry; middle FOUR floors SAHARA sand #E3CDB2 #F2E0CA #CDB79D with dark #5A4A40 mortar; top TWO floors and parapet warm pale cream. Count from bottom floor as 1. No new floors, no cold gray walls, no giant bricks, no diagonal patterns, no text. Single photorealistic image.",
+  "variants": [
+    {
+      "id": 24,
+      "file": "24-milk-top.png",
+      "title": "Молочный верх",
+      "detail": "Clean sharply separated 3/4/2 horizontal zones. Middle four floors warm golden sand, top two floors noticeably lighter warm milk-white #FAF3E5 with delicate beige joints. No frames, ornaments or stripes. Strongly legible light crown.",
+      "generated_source": "/Users/kirillsaidashev/.codex/generated_images/01a0f61f-1c6f-7650-a4d8-fdd057e6d838/exec-adeccf74-8702-44c3-bd28-d2eca11c5e8d.png"
+    },
+    {
+      "id": 25,
+      "file": "25-window-frames.png",
+      "title": "Светлые рамки",
+      "detail": "Clear three-zone 3/4/2 facade. On middle FOUR floors only add fine pale ivory brick surrounds around individual ordinary windows, consistently about one brick width. Top TWO floors warm ivory #F3E7CF. Bottom THREE floors uninterrupted brown, no added light frames there. Preserve all glass.",
+      "generated_source": "/Users/kirillsaidashev/.codex/generated_images/01a0f61f-1c6f-7650-a4d8-fdd057e6d838/exec-9287cc32-0004-49bd-95b0-62f64f6ed281.png"
+    },
+    {
+      "id": 26,
+      "file": "26-paired-panels.png",
+      "title": "Окна попарно",
+      "detail": "Three horizontal 3/4/2 material zones. On middle FOUR sandy floors connect pairs of vertically aligned ordinary windows with solid warm cream brick infill panels, forming two-storey vertical rectangles; upper TWO floors same very pale cream. Bottom THREE floors brown uninterrupted. Only change brick colors in existing opaque wall. No change to openings. Wider cream panels clearly distinguish this from thin window frames.",
+      "generated_source": "/Users/kirillsaidashev/.codex/generated_images/01a0f61f-1c6f-7650-a4d8-fdd057e6d838/exec-09bf6f81-201a-434c-862d-11d02ed63ffd.png"
+    },
+    {
+      "id": 27,
+      "file": "27-speckled-middle.png",
+      "title": "Пёстрая середина",
+      "detail": "Three-zone 3/4/2. Bottom THREE floors dark Flash. Middle FOUR floors 85% Sahara sand and 15% Flash individual scattered brown bricks, evenly irregular, no diagonal repetitions. Upper TWO floors very pale cream with subtle sand variations. Zone boundaries crisp and floor aligned. No frames or belts.",
+      "generated_source": "/Users/kirillsaidashev/.codex/generated_images/01a0f61f-1c6f-7650-a4d8-fdd057e6d838/exec-882fa791-817e-4a8a-99c5-a6693431c8cc.png"
+    },
+    {
+      "id": 28,
+      "file": "28-brick-belts.png",
+      "title": "Тонкие кирпичные пояса",
+      "detail": "Three-zone 3/4/2 with warm ivory upper TWO floors. Add restrained flat brick color ornament only at top of floor3 and top of floor7: one narrow continuous cream band with small alternating brown/cream brick checker motifs, at most 3 courses high. NOT protruding cornices. Sandy four-floor middle otherwise quiet, no window frames or vertical stripes. Dark bottom THREE floors preserved.",
+      "generated_source": "/Users/kirillsaidashev/.codex/generated_images/01a0f61f-1c6f-7650-a4d8-fdd057e6d838/exec-ef4418d6-5d55-419b-b870-ff4639b920cf.png"
+    }
+  ]
+}

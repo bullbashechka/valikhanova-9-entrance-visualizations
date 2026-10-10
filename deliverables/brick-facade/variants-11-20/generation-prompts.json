@@ -1,0 +1,81 @@
+{
+  "common_prompt": "Precise architectural image edit. Image1 is the ONLY geometry/camera EDIT TARGET, existing ten-storey apartment house. Image2 is STYLE reference ONLY: brown mottled brick, creamy brick vertical strips, window surrounds and narrow ornamental horizontal bands. Do not copy its building, window count, perspective or sculpture. Image3 is MATERIAL ONLY for built ground floor: brown/terracotta brick and visible light warm gray mortar. Image4 is SAME HOUSE calibration for one-floor dark base boundary ONLY.\nProduce ONE photorealistic 4:3 landscape edited Image1, preserve EXACT roof silhouette, all existing ten rows of windows, glazing, loggias, frames and openings, stepped masses, camera, framing, daylight and entire surrounding scene. Change ONLY opaque wall cladding, including old white/gray HPL panels and old red/beige brick. No new geometry, no blocked glass, no added windows, no arches, no sculpture. All ornament and frames are FLAT COLOR PATTERNS IN BRICK on existing wall surfaces, not new protruding moldings. Preserve aluminum/glass spandrel systems.\nFIXED DARK GROUND FLOOR: match Image3 muted varied brown-terracotta brick with light warm gray/beige thin mortar. Exactly ONE bottommost window row plus plinth, like Image4. Original Image1 red belt is TWO rows: upper half must change to the specified upper facade. At 1448x1086 output, base upper boundary near y=732 at main corner and y=776 at left front edge. Do not extend pale ornament into the fixed ground-floor wall belt.\nUpper materials: Flash mottled brown brick #846651/#6E513C/#967B6C/#4B3323/#1A0C06 in 35/25/15/20/5 proportions, mortar #3B322C. Sahara creamy sand brick #E3CDB2/#F2E0CA/#CDB79D/#B09A84/#987F6C/#534036 in 40/20/15/10/10/5 proportions, mortar #5A4A40. Use muted matte fired clay, real fine small bricks (250x65mm face, ~40 courses/storey), horizontal half-brick running bond. Cream frames and belts must visibly consist of small bricks, not plaster or white painted metal. Apply light and shade consistently from Image1. Upper brick mixture can vary per design. Keep ornament modest, only specified locations. No text/labels/watermarks/collage. All original glass, individual window openings and vegetation remain exact.",
+  "variants": [
+    {
+      "id": "11",
+      "slug": "slender-frames",
+      "name": "Тонкие светлые рамки",
+      "description": "Тёмная основа и аккуратные обрамления",
+      "prompt": "Upper facade predominantly Flash dark mottled brick. Add thin Sahara rectangular borders, about 1-2 brick lengths wide, around each individual ordinary window opening above ground floor. Add equally restrained pale outer jamb strips alongside tall glazed loggia stacks, without filling glass. No horizontal belts, no broad pale panels. The broad blank corner wall stays dark. Refined simple framed-window brick architecture."
+    },
+    {
+      "id": "12",
+      "slug": "paired-windows",
+      "name": "Рамки на два этажа",
+      "description": "Светлые рамки объединяют пары окон",
+      "prompt": "Upper walls Flash. Use Sahara rectangular frames joining TWO vertically adjacent ordinary window openings into each tall two-floor rectangle: pairs floors2-3,4-5,6-7,8-9; top floor10 individually framed. The opaque wall BETWEEN paired windows is pale Sahara, making tall pale panels with two exact unchanged openings. Dark fields between paired groups. Full height pale strips beside glazed loggias. No ornamental horizontal bands. Broad blank wall dark."
+    },
+    {
+      "id": "13",
+      "slug": "reference-rhythm",
+      "name": "Ритм как на референсе",
+      "description": "Светлые вертикали и два узорных пояса",
+      "prompt": "Closest reinterpretation of Image2 on Image1 geometry: Flash wall fields, broad Sahara vertical pilaster-like FLAT brick strips between ordinary window stacks and around glazed loggia columns. Thin Sahara borders around ordinary top-floor windows. Two narrow horizontal two-color brick tooth/checker ornamental bands at floor divisions above floors4 and7; bands cross opaque walls only, stop at glass. Add tiny matching motif immediately under parapet. Dark first floor unchanged. Rich but orderly brick facade."
+    },
+    {
+      "id": "14",
+      "slug": "light-facade-dark-frames",
+      "name": "Светлый фасад, тёмные рамки",
+      "description": "Обратное сочетание цветов",
+      "prompt": "INVERT reference colors: dominant Sahara upper walls, Flash thin rectangular brick surrounds around ordinary windows and paired outer edges of tall glazed loggias. Two very narrow dark running-bond belts above floors4 and7, NO checker pattern. Main blank wall light. Dark ground floor. Refined pale building with dark framed openings, clearly distinct from brown-base proposals."
+    },
+    {
+      "id": "15",
+      "slug": "framed-speckled-panels",
+      "name": "Пёстрые поля в светлых рамках",
+      "description": "Смесь 70/30 внутри крупных обрамлений",
+      "prompt": "Upper wall fields mix 70% Sahara /30% Flash at individual brick level, natural irregular contrasting speckles, no repeated diagonal chains. Enclose LARGE two-to-three-window-wide facade zones in clearly readable SOLID Sahara frames: broad pale vertical jamb strips and pale horizontal lintel/sill strips above floors4 and7. Frames define large panels encompassing several floors, NEVER cross glass. Main blank corner wall mixed as well, bounded by solid pale corner strip. Ground base dark."
+    },
+    {
+      "id": "16",
+      "slug": "quiet-classic",
+      "name": "Спокойная классика",
+      "description": "Тёмный кирпич, светлые перемычки и верх",
+      "prompt": "Upper walls predominantly rich Flash mottled brown. Sahara accents ONLY as narrow horizontal brick lintels immediately ABOVE individual ordinary windows, pale full-height jamb strips at outer edges of glazed loggia stacks, and a simple unbroken pale brick band just below roof parapet. No full pale rectangular surrounds around ordinary windows, no mid-building ornamental bands, no pale vertical stripes between every window. Main corner dark."
+    },
+    {
+      "id": "17",
+      "slug": "light-middle",
+      "name": "Светлая середина",
+      "description": "Тёмный низ и верх, светлый средний объём",
+      "prompt": "Three deliberate horizontal architectural zones: ground floor plus floors2-3 Flash; floors4-7 solid Sahara; floors8-10 Flash. In dark upper and lower zones add thin pale borders around ordinary windows; within light middle zone thin Flash borders around ordinary windows. One narrow restrained two-tone checker brick belt at each transition above floors3 and7, continuing only across opaque wall. Keep glazed stacks uninterrupted. This has intentional dark additional lower floors above fixed base, not an erroneous base boundary."
+    },
+    {
+      "id": "18",
+      "slug": "dark-corner-framed-wings",
+      "name": "Тёмный угол и светлые крылья",
+      "description": "Акцентный угол с обрамлёнными окнами",
+      "prompt": "Main broad blank sunlit corner wall and its right return Flash dark full height; rest of upper house predominantly Sahara. On pale wings group ordinary window stacks within restrained Flash full-height vertical rectangular frames, stopping at ground-floor top. Outline the big dark corner's outer opaque edges with a slim Sahara brick border, plus a single narrow light checker band under its parapet only. No floor-by-floor bands, no extra geometry."
+    },
+    {
+      "id": "19",
+      "slug": "gradient-with-frames",
+      "name": "Переход со светлыми рамками",
+      "description": "Осветление вверх и непрерывные вертикали",
+      "prompt": "Upper wall infill transitions from mostly Flash on floors2-3 through 50/50 mix floors4-5 to 90% Sahara floors8-10. Transition through varying small individual bricks, not painted gradient or abrupt stripes. Overlay continuous SOLID Sahara vertical brick strips beside ordinary window stacks and loggia columns from second floor to parapet, with pale horizontal brick links above floors4 and7 to form large rectangular frames. Ground floor preserved dark. Pale frame lines remain clear over gradient and subtly blend into light top."
+    },
+    {
+      "id": "20",
+      "slug": "large-three-floor-frames",
+      "name": "Крупные светлые рамки",
+      "description": "Тёмные поля и широкая светлая сетка",
+      "prompt": "Upper house mainly Flash mottled brown. Create a bold ordered SOLID Sahara FLAT BRICK FRAME GRID of large modules spanning roughly THREE FLOORS and TWO ordinary window columns per module where geometry allows: horizontal cream bands about 3 brick courses above floors4 and7, vertical cream frame edges 2-3 bricks wide at existing bay boundaries. Windows inside modules remain individually unchanged and DARK brown wall surrounds them, no individual pale frames. Broad blank corner wall dark enclosed by a large pale perimeter frame with those two horizontal divisions. Glazed loggias remain tall uninterrupted transparent stacks bounded by pale side strips. No tooth/checker ornaments; clean robust rectangular geometry."
+    }
+  ],
+  "reference_roles": [
+    "source-view.jpg: edit target",
+    "references/framed-facade.png: style",
+    "references/built-brick.png: ground material",
+    "../variants-10/02-light-upper.png: ground boundary calibration"
+  ]
+}

@@ -1,0 +1,111 @@
+{
+  "date": "2026-10-01",
+  "source": "source-view.jpg",
+  "variants": [
+    {
+      "id": "11",
+      "file": "11-slender-frames.png",
+      "source": "/Users/kirillsaidashev/.codex/generated_images/01a0f61f-1c6f-7650-a4d8-fdd057e6d838/exec-6d331099-f2f5-4912-8f52-c1f5daeef760.png",
+      "dimensions": [
+        1448,
+        1086
+      ],
+      "sha256": "a70c66b578daecfa625fe969e7c033647407ab3af906c534ec869f732f0c56cf"
+    },
+    {
+      "id": "12",
+      "file": "12-paired-windows.png",
+      "source": "/Users/kirillsaidashev/.codex/generated_images/01a0f61f-1c6f-7650-a4d8-fdd057e6d838/exec-82e8ecc0-8e19-423d-8d55-e0dc8a4fa583.png",
+      "dimensions": [
+        1448,
+        1086
+      ],
+      "sha256": "4dd27234740ca4e8ffe25216c4085172efa7e400d88fdcaa1fa906c33724af4b"
+    },
+    {
+      "id": "13",
+      "file": "13-reference-rhythm.png",
+      "source": "/Users/kirillsaidashev/.codex/generated_images/01a0f61f-1c6f-7650-a4d8-fdd057e6d838/exec-acdad293-41da-4139-93a1-fc243e503876.png",
+      "dimensions": [
+        1448,
+        1086
+      ],
+      "sha256": "15b3509ff9a0a51262294d8692af2f2ed1e7413a564d23ea806414384b2798d5"
+    },
+    {
+      "id": "14",
+      "file": "14-light-facade-dark-frames.png",
+      "source": "/Users/kirillsaidashev/.codex/generated_images/01a0f61f-1c6f-7650-a4d8-fdd057e6d838/exec-c67a1e9b-0e30-499d-9748-b727e5929ad4.png",
+      "repair": "Edit this exact image only to REDUCE dark brown base from TWO FLOOR ROWS to ONE bottommost ground-floor window row. Recolor upper half of brown base PALE SAHARA matching upper walls, retain dark narrow window borders and thin decorative horizontal belt. At main blank corner move boundary DOWN from pixel y=650 to y=732 of 1086px image; at left front edge to y=776. Keep bottommost row dark, next row above pale. All other textures, architecture, thin dark belts, openings, glazing, framing, sky, camera and surroundings remain exactly unchanged. Single photorealistic image.",
+      "dimensions": [
+        1448,
+        1086
+      ],
+      "sha256": "08cc72176998a5f78cb18bdec45661d627b2b5b82cc680d862f87a6ea374bc37"
+    },
+    {
+      "id": "15",
+      "file": "15-framed-speckled-panels.png",
+      "source": "/Users/kirillsaidashev/.codex/generated_images/01a0f61f-1c6f-7650-a4d8-fdd057e6d838/exec-7008e4ef-0e2c-4dc4-99ea-1ba2fb6d838b.png",
+      "initial_path": "/Users/kirillsaidashev/.codex/generated_images/01a0f61f-1c6f-7650-a4d8-fdd057e6d838/exec-d826057f-b11f-41db-950a-ff518aefb8e1.png",
+      "repair": "Edit this exact image: reduce solid brown base from TWO floor rows to ONLY ONE bottommost ground-floor window row. On second floor (upper half of current base), continue the SAME upper mixed 70% pale sand/30% brown speckled brick and solid pale architectural frame edges down to the ceiling above bottommost floor. Move brown boundary from y650 to y732 at main corner, y776 at front left in 1448x1086 image. Keep ground floor brown with light mortar. Keep all other patterns, frames, architecture, openings, glazing, composition and surroundings identical.",
+      "dimensions": [
+        1448,
+        1086
+      ],
+      "sha256": "66403c5a7e4aaf81865a2a6aa50a4955c0bf43f612cc71da8640e7504cea67d2"
+    },
+    {
+      "id": "16",
+      "file": "16-quiet-classic.png",
+      "source": "/Users/kirillsaidashev/.codex/generated_images/01a0f61f-1c6f-7650-a4d8-fdd057e6d838/exec-bd951f43-639f-4069-90c9-6c7d2dac4e87.png",
+      "dimensions": [
+        1448,
+        1086
+      ],
+      "sha256": "2ef38e1343148b86cd1dc8cf33daef61b363213f8c0bd57bd771b87c0863f080"
+    },
+    {
+      "id": "17",
+      "file": "17-light-middle.png",
+      "source": "/Users/kirillsaidashev/.codex/generated_images/01a0f61f-1c6f-7650-a4d8-fdd057e6d838/exec-59c34e53-1e21-4f87-82cf-f18edcf8c197.png",
+      "initial_path": "/Users/kirillsaidashev/.codex/generated_images/01a0f61f-1c6f-7650-a4d8-fdd057e6d838/exec-745680e4-aad3-4b71-ae10-5d7b672f8ffa.png",
+      "repair": "Edit this exact image with ONE precise material correction: remove PALE BRICK WINDOW FRAMES from ONLY LOWEST GROUND-FLOOR window row. These ground-floor walls are already built brown brick and must remain UNINTERRUPTED brown/terracotta with light mortar, like original base. Recolor the cream brick borders touching lowest window row to surrounding brown. The ground-floor zone is below y732 at main corner and below y776 at left facade edge in this 1086px image. Preserve pale window surrounds on all OTHER upper floors. Preserve three-zone light-middle/dark-top design, ornamental belts, all windows/glazing/geometry, lighting, composition, ground and sky. No other changes.",
+      "dimensions": [
+        1448,
+        1086
+      ],
+      "sha256": "f5f1d5332748f9140152e3ec35fc7738d850f8caa78e443140d52198e6c7f656"
+    },
+    {
+      "id": "18",
+      "file": "18-dark-corner-framed-wings.png",
+      "source": "/Users/kirillsaidashev/.codex/generated_images/01a0f61f-1c6f-7650-a4d8-fdd057e6d838/exec-14830143-5789-44f2-bb80-84e99b6fa646.png",
+      "dimensions": [
+        1448,
+        1086
+      ],
+      "sha256": "e2a0c9d5dc9821db66c36182dcd3471aab14296d0e33a5208d2bde6d2302c877"
+    },
+    {
+      "id": "19",
+      "file": "19-gradient-with-frames.png",
+      "source": "/Users/kirillsaidashev/.codex/generated_images/01a0f61f-1c6f-7650-a4d8-fdd057e6d838/exec-f54072a0-c143-43eb-9fbb-d71573b7935e.png",
+      "dimensions": [
+        1448,
+        1086
+      ],
+      "sha256": "5b45abc025f4b4775ec72b8f2522355cdf70bbd1e5b2e995dfaabeb660e99d9e"
+    },
+    {
+      "id": "20",
+      "file": "20-large-three-floor-frames.png",
+      "source": "/Users/kirillsaidashev/.codex/generated_images/01a0f61f-1c6f-7650-a4d8-fdd057e6d838/exec-40d17052-6f5a-4d89-969e-9f11eb506763.png",
+      "dimensions": [
+        1448,
+        1086
+      ],
+      "sha256": "42896db74d2e41fede6a40fc7ff929d7f2ae54ed08315159fb313efd7cffd50b"
+    }
+  ]
+}

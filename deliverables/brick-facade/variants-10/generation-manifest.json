@@ -1,0 +1,141 @@
+{
+  "created_local_date": "2026-10-01",
+  "time_zone": "Asia/Almaty",
+  "source": "source-view.jpg",
+  "edit_target_policy": "Each variant starts from original source-view.jpg; 02-light-upper.png is supporting material/boundary calibration only. Variant02 received one targeted floor-band repair.",
+  "variants": [
+    {
+      "id": "01",
+      "file": "01-vertical-accents.png",
+      "generated_path": "/Users/kirillsaidashev/.codex/generated_images/01a0f61f-1c6f-7650-a4d8-fdd057e6d838/exec-77e28369-9bd8-468f-823d-41dfa22e65e6.png",
+      "size": [
+        1448,
+        1086
+      ],
+      "format": "PNG",
+      "sha256": "7f77dc3a24a01a280a9eed01bcb750a87c3e21011901dbea53956448b878ab74",
+      "bytes": 2757264
+    },
+    {
+      "id": "02",
+      "file": "02-light-upper.png",
+      "generated_path": "/Users/kirillsaidashev/.codex/generated_images/01a0f61f-1c6f-7650-a4d8-fdd057e6d838/exec-9ac969f7-e193-4f2c-9ea4-c337cbd9e4c0.png",
+      "initial_generated_path": "/Users/kirillsaidashev/.codex/generated_images/01a0f61f-1c6f-7650-a4d8-fdd057e6d838/exec-a5ed2a30-c91f-4834-8fc1-774fe165bdfb.png",
+      "repair": "Dark base reduced from two floor rows to one.",
+      "size": [
+        1448,
+        1086
+      ],
+      "format": "PNG",
+      "sha256": "a3a0ad093e0dbd56c872a39b9b35dc9e6c8bbe06e822c47a4a7e6a5158077535",
+      "bytes": 2599685
+    },
+    {
+      "id": "03",
+      "file": "03-sparse-mix.png",
+      "generated_path": "/Users/kirillsaidashev/.codex/generated_images/01a0f61f-1c6f-7650-a4d8-fdd057e6d838/exec-98765cfa-0e81-4851-8271-da23bbe830fb.png",
+      "size": [
+        1448,
+        1086
+      ],
+      "format": "PNG",
+      "sha256": "d9b007612bbd854e9ad16c6c30ccafc7cfa9150507bc0eb87ef4f12f6e996f88",
+      "bytes": 2755225
+    },
+    {
+      "id": "04",
+      "file": "04-moderate-mix.png",
+      "generated_path": "/Users/kirillsaidashev/.codex/generated_images/01a0f61f-1c6f-7650-a4d8-fdd057e6d838/exec-536eda76-fc77-4625-96d2-0cac5a7ceda6.png",
+      "size": [
+        1448,
+        1086
+      ],
+      "format": "PNG",
+      "sha256": "ce0f9bed8debe3b7bc36118db6c5bb5a54e2b4b18d3000899dc259e811cd69b4",
+      "bytes": 2715191
+    },
+    {
+      "id": "05",
+      "file": "05-contrast-mix.png",
+      "generated_path": "/Users/kirillsaidashev/.codex/generated_images/01a0f61f-1c6f-7650-a4d8-fdd057e6d838/exec-eeed0549-b83a-4348-af3f-6d578e8d2ee5.png",
+      "size": [
+        1448,
+        1086
+      ],
+      "format": "PNG",
+      "sha256": "1f8e8921a4439a4c6b9542f4479cdcc25c0198d074d327a92d694fd23dca3032",
+      "bytes": 2773585
+    },
+    {
+      "id": "06",
+      "file": "06-lightening-gradient.png",
+      "generated_path": "/Users/kirillsaidashev/.codex/generated_images/01a0f61f-1c6f-7650-a4d8-fdd057e6d838/exec-f4b9da54-4e38-416e-86a5-33b70451c92e.png",
+      "size": [
+        1448,
+        1086
+      ],
+      "format": "PNG",
+      "sha256": "761742c19f99ef8767112713dc646fee4390528219732acc3e329493f3d42314",
+      "bytes": 2724971
+    },
+    {
+      "id": "07",
+      "file": "07-dark-recesses.png",
+      "generated_path": "/Users/kirillsaidashev/.codex/generated_images/01a0f61f-1c6f-7650-a4d8-fdd057e6d838/exec-213ae178-5211-4cc4-b090-397b73443ad7.png",
+      "size": [
+        1448,
+        1086
+      ],
+      "format": "PNG",
+      "sha256": "a5c4489907ed101dd293e90dbfe173f3ec0c4849e92f3f5e9bffbd6402ff957d",
+      "bytes": 2745411
+    },
+    {
+      "id": "08",
+      "file": "08-dark-corner.png",
+      "generated_path": "/Users/kirillsaidashev/.codex/generated_images/01a0f61f-1c6f-7650-a4d8-fdd057e6d838/exec-51d9a112-e978-4b1e-8710-3a9c18ee9258.png",
+      "size": [
+        1448,
+        1086
+      ],
+      "format": "PNG",
+      "sha256": "94ef2e23728a0c4a00173b22c3f4e2492b74877df3caad96d70e3d436910b80c",
+      "bytes": 2689678
+    },
+    {
+      "id": "09",
+      "file": "09-window-groups.png",
+      "generated_path": "/Users/kirillsaidashev/.codex/generated_images/01a0f61f-1c6f-7650-a4d8-fdd057e6d838/exec-4eb4d5c9-8cfa-4dad-8ee9-b2cf28d1f81d.png",
+      "size": [
+        1448,
+        1086
+      ],
+      "format": "PNG",
+      "sha256": "94372fe8d08972c7e6925bcccb3bae74deed70f5126a58cf51f758ca1c767500",
+      "bytes": 2722112
+    },
+    {
+      "id": "10",
+      "file": "10-dark-facade.png",
+      "generated_path": "/Users/kirillsaidashev/.codex/generated_images/01a0f61f-1c6f-7650-a4d8-fdd057e6d838/exec-2803cc49-b9a4-4def-94d2-1dc4db70e7bc.png",
+      "size": [
+        1448,
+        1086
+      ],
+      "format": "PNG",
+      "sha256": "0383472d141a6821dcb94bb69f0ed63e169250b5f77e7af531d3caf2c384f62f",
+      "bytes": 2670489
+    }
+  ],
+  "overview": {
+    "file": "overview.png",
+    "layout": {
+      "columns": 2,
+      "rows": 5
+    },
+    "size": [
+      2008,
+      4420
+    ]
+  }
+}

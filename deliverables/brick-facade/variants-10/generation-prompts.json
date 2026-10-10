@@ -1,0 +1,82 @@
+{
+  "source": "source-view.jpg",
+  "references": [
+    "references/built-brick.png",
+    "references/mixed-brick.png"
+  ],
+  "calibration": "02-light-upper.png",
+  "common_prompt": "CALIBRATION: Image 4 is a finished MATERIAL/FLOOR-BOUNDARY reference of this same house, NOT the edit target. Match its small brick scale, light upper Sahara tone and narrow one-storey dark ground band, ending at y≈67.4% at main corner and y≈71.5% at far-left facade edge. Use Image 1 for every architecture/perspective/layout invariant. Starting from Image 1, the top half of its original two-storey red belt must become the UPPER treatment. ONLY BOTTOMMOST window row is below new dark/light boundary. Ground floor means ONE window row, never two. Do not copy Image 4's uniformly light upper treatment when the VARIANT calls for mixing or accents.\nUse case: precise-object-edit. Image 1 is the EDIT TARGET: the exact existing ten-story apartment building and surrounding scene. Image 2 is ONLY a MATERIAL reference for built dark brown/terracotta brick at ground level; do NOT transfer its building, construction debris or perspective. Image 3 is ONLY a reference for small irregular mixed-color bricks, not its architecture or conspicuously repeated diagonal clusters.\nReturn ONE photorealistic 4:3 landscape edited view, same framing, camera, perspective, stepped roof silhouette, ten floor rows, every opening/window and full-height glazed loggia/mullion position, entrances and all dimensions of Image 1. Keep lighting, sky, clouds, trees, cars, people, bench, streets, lamps and surroundings intact. Do NOT invent architecture. Replace ONLY opaque WALL CLADDING including large white/pink and gray HPL panels and old beige/red brick with new horizontally laid ceramic brick. Remove old panel seams and old upper gray/white horizontal zoning. Keep glass, aluminum/window frames, balcony/loggia spandrel system components, thin metal parapet cap and sill edges intact. No brick on glass. Brick is ordinary small 250x65 mm face with ~10 mm matte recessed joints, half-brick running bond, many fine courses per storey (~40), NOT giant stone blocks. Keep realistic small-scale brick texture, perspective and original shadow/light relationships.\nALL VARIANTS HAVE THE SAME DARK GROUND FLOOR + PLINTH, and ONLY ONE FLOOR is the solid dark base. Existing original red base spans TWO window rows: turn the upper of those two rows into the upper facade treatment described below. New dark boundary follows the floor slab ABOVE the BOTTOMMOST window row, roughly y=71.5% at front left edge to y=67% at main front-right corner. Across both visible faces match the same first-floor ceiling line. Ground brick MUST match Image 2's weathered muted brown/terracotta fired-clay mix, around #846651/#6E513C/#4B3323 with irregular lighter reddish browns and light warm gray-beige mortar (visually #B4A38E), clearly visible but narrow. No original red two-floor band.\nFor all NEW upper walls, Sahara brick palette: #E3CDB2 40%, #F2E0CA 20%, #CDB79D 15%, #B09A84 10%, #987F6C 10%, #534036 5%, pale creamy sand/beige primary appearance, low saturation, matte roughness 0.86, mortar #5A4A40. Flash upper brick palette: #846651 35%, #6E513C 25%, #967B6C 15%, #4B3323 20%, #1A0C06 5%, muted dark brown/terracotta matte roughness 0.82, mortar #3B322C. These are albedo guides not flat screen colors: preserve source daylight and shade. Distinguish large-color-area layouts from random mixtures specified below. For mixtures vary INDIVIDUAL BRICKS, no printed identical repeated diagonal stair-step motifs, no giant black blotches or straight tiny repeated stripes. No text, label, watermark, collage. SAME daylight, material scale and composition for the whole series.",
+  "variants": [
+    {
+      "id": "01",
+      "slug": "vertical-accents",
+      "name": "Вертикальные акценты",
+      "description": "Светлая основа, тёмные вертикальные акценты",
+      "prompt": "UPPER WALLS variant 01: 75-80% Sahara, 20-25% Flash as FEW FULL-HEIGHT CONTINUOUS VERTICAL AREAS on existing solid projecting separator piers. Put Flash on existing solid separator around x=38% of image between glazed stacks on sunlit left face, corner return pier around x=68%, and corresponding rear-right separator if visible. Keep BROAD BLANK SUNLIT wall near x=62% Sahara. These dark accents connect to the mandatory dark first-floor base. No dark top band, no extra geometry, no frame around every window."
+    },
+    {
+      "id": "02",
+      "slug": "light-upper",
+      "name": "Светлый верх",
+      "description": "Тёмный первый этаж, выше — Сахара",
+      "prompt": "UPPER WALLS variant 02: ALL opaque WALL surfaces from SECOND FLOOR THROUGH TOP PARAPET are uniformly Sahara with its restrained natural color variation. No intentional added Flash, no dark vertical areas, no dark upper stripe. Original gray/white upper panels and old two-story red base are replaced. The ONLY solid dark wall cladding is ONE ground-floor row plus plinth, matched to Image 2 with visibly LIGHT narrow mortar. Broad wall at main corner remains pale sand all the way from second floor up."
+    },
+    {
+      "id": "03",
+      "slug": "sparse-mix",
+      "name": "Редкие вкрапления",
+      "description": "Верх: 90% Сахары + 10% Флэша",
+      "prompt": "UPPER WALLS variant 03: mixture of 90% Sahara and 10% distinctly darker Flash INDIVIDUAL SMALL BRICKS evenly but irregularly scattered across ALL upper wall faces, including broad blank walls and original panel zones up to parapet. Flash is sparse and mainly isolated single bricks, not whole vertical bays or large panels. Soft pale facade with easily identifiable occasional dark brown individual bricks. Ground base stays solid dark."
+    },
+    {
+      "id": "04",
+      "slug": "moderate-mix",
+      "name": "Умеренная пестрота",
+      "description": "Верх: 80% Сахары + 20% Флэша",
+      "prompt": "UPPER WALLS variant 04: mixture 80% Sahara and 20% distinctly dark brown Flash INDIVIDUAL SMALL BRICKS throughout upper wall faces up to parapet. Medium irregular speckling, occasional small clusters of 2-3 neighboring dark bricks, dispersed naturally, NOT diagonal chains. Dark presence clearly stronger than sparse 10% but light base still dominates. No entire dark vertical bays. Use Image 3 only for mixed-brick character, never its repeated texture pattern. Ground base stays solid dark."
+    },
+    {
+      "id": "05",
+      "slug": "contrast-mix",
+      "name": "Контрастная пестрота",
+      "description": "Верх: 70% Сахары + 30% Флэша",
+      "prompt": "UPPER WALLS variant 05: strong mixed-brick character as Image 3 but irregular nonrepeating distribution, 70% Sahara and 30% conspicuously darker Flash SMALL INDIVIDUAL BRICKS across every upper wall and blank wall up to parapet. Dark bricks more frequent, small asymmetric clusters of 2-4 bricks with isolated ones too. Pronounced contrasting salt-and-pepper facade, still predominantly sand-beige, visually distinct from 10% and 20% mixtures. No diagonal motifs, no large dark full-height color blocks. Ground base stays solid dark."
+    },
+    {
+      "id": "06",
+      "slug": "lightening-gradient",
+      "name": "Постепенное осветление",
+      "description": "Плавный переход от тёмного низа к светлому верху",
+      "prompt": "UPPER WALLS variant 06: vertical transition through RANDOM MIXING OF INDIVIDUAL SMALL BRICKS, not smooth painted gradient: SECOND floor about 70% Flash/30% Sahara; THIRD 50/50; FOURTH 30% Flash; FIFTH 15% Flash; floors SIX THROUGH TEN 5% Flash/95% Sahara. Blend through courses around transitions so no sharp horizontal solid color bands. Ground floor stays 100% built dark mix. Clearly brown near base becoming pale beige by mid-height, very pale upper half. Apply distribution according to actual floor rows/perspective on both faces. No vertical dark piers."
+    },
+    {
+      "id": "07",
+      "slug": "dark-recesses",
+      "name": "Тёмные углубления",
+      "description": "Светлые выступы, тёмные стены в углублениях",
+      "prompt": "UPPER WALLS variant 07: existing PROJECTING masses and broad flat exposed wall faces are Sahara. Only existing RECESSED opaque WALL faces/back walls between projecting masses and alongside recessed glazed loggia stacks are Flash all the way up. Keep opaque leading separator piers around x=38% LIGHT Sahara, unlike variant 01 which makes piers dark. Keep glass of loggias unchanged. Create architectural depth by dark recesses and pale projecting front edges, not alternate random window frames. Ground floor uniformly dark; no new recesses or projections."
+    },
+    {
+      "id": "08",
+      "slug": "dark-corner",
+      "name": "Тёмный угол",
+      "description": "Один крупный тёмный угол, остальные стены светлые",
+      "prompt": "UPPER WALLS variant 08: ONE substantial dark CORNER MASS: Flash covers the entire broad BLANK SUNLIT WALL at x=57%-67% that turns at the nearest tallest building corner, and its existing opaque right-hand side return up to the next glazed stack. This corner wraps BOTH visible sides from dark ground base to roof. It is deliberately a broad dark blank wall, unlike narrow vertical accents. All other upper opaque wall cladding on left/front and far-right wing is Sahara. Keep every window/glazed stack and roof outline exactly."
+    },
+    {
+      "id": "09",
+      "slug": "window-groups",
+      "name": "Широкие оконные группы",
+      "description": "Две широкие тёмные группы окон на главном фасаде",
+      "prompt": "UPPER WALLS variant 09: Sahara main facade, Flash as TWO BROAD FULL-HEIGHT WINDOW-BAY GROUPS on sunlit LEFT/FRONT face. First dark group contains the separate single-window stack just left of left glazed loggia (around x=26%-29%); second dark group contains the pair of ordinary window stacks between projecting separator and right glazed loggia (roughly x=40%-48%). Each dark area includes opaque wall around and between its own windows continuously vertically; windows stay exact and uncovered. Groups extend from above solid dark first floor to roof and stop at existing bay edges. Broad blank wall at main corner near x=62% and projecting separator near x=38% remain LIGHT. Do not make glazed loggia framing thicker, do not turn it opaque, no brown outline around every unrelated window."
+    },
+    {
+      "id": "10",
+      "slug": "dark-facade",
+      "name": "Тёмный фасад",
+      "description": "Тёмная основа, крупные светлые вертикальные участки",
+      "prompt": "UPPER WALLS variant 10: clearly predominantly Flash (about 70% of upper opaque wall cladding) as large solid brown areas, NOT a speckled beige mix. Make broad BLANK CORNER wall near x=62%, most front wall bays and recessed walls muted rich DARK BROWN Flash. Keep about 30% Sahara as FEW substantial LIGHT full-height PROJECTING SEPARATOR PIERS and vertical architectural strips, including the separator at x=38% and analogous right-side projecting strip; they begin at second floor, above uniform built dark first-floor base. Overall reads DARK apartment facade with intentional pale vertical relief. Window glass and mullions unchanged."
+    }
+  ],
+  "calibration_correction": "Reduced original two-storey brown base to one ground-floor window row; moved upper boundary down to y≈732 at main corner in 1448×1086 view."
+}

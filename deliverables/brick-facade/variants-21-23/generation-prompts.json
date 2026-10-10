@@ -1,0 +1,28 @@
+{
+  "tool": "built-in imagegen",
+  "references": [
+    "/Users/kirillsaidashev/Documents/Projects/construction/deliverables/brick-facade/source-view.jpg",
+    "/Users/kirillsaidashev/Documents/Projects/construction/deliverables/brick-facade/variants-11-20/references/built-brick.png"
+  ],
+  "common": "Use case: precise-object-edit. Image 1 is the EXACT building edit target; image 2 is material reference ONLY for existing brown brick with light warm gray mortar, do not reproduce construction site. Produce one photorealistic facade concept, same framing camera daylight sky cars trees people bench as image 1. Preserve EXACT building silhouette roofline floor count every window opening glass balcony and entrance. Replace ALL opaque facade cladding including gray/pink panels with fine ordinary horizontal running-bond brick. Never brick over glass. Design is three warm horizontal zones across BOTH visible facades: bottom THREE actual floor/window rows dark warm brown terracotta FLASH; next FOUR floor/window rows sandy beige SAHARA; top TWO rows and parapet much paler warm cream brick. Count ground floor as floor 1 and preserve all nine existing rows. Boundaries follow floor slabs in perspective, not horizontal across image. FLASH varied #846651 #6E513C #967B6C #4B3323 with light beige gray mortar referencing existing material. SAHARA #E3CDB2 #F2E0CA #CDB79D with restrained taupe variation and #5A4A40 mortar. Fine realistic brick scale. NO cold gray, no extra floors, no new cornices or structural details, no text/watermark.",
+  "variants": [
+    {
+      "id": 21,
+      "name": "21-cream-top",
+      "title": "Чёткие переходы · кремовый верх",
+      "detail": "Clean three clearly separated horizontal zones 3/4/2. Upper two floors pale warm ivory #F4E9D5 with subtle cream variation, light warm mortar. Simple restrained architecture, no window frames or decorative belts."
+    },
+    {
+      "id": 22,
+      "name": "22-soft-transitions",
+      "title": "Мягкие переходы · молочный верх",
+      "detail": "Warm milk-white #F7F0E3 upper two floors and sandy middle. Soften each zone boundary with 6-10 brick courses intermixed between adjacent colors, irregular fine individual bricks without diagonal repeating patterns. Keep bottom three floors predominantly dark, middle four sand, top two milk cream. Do not make a broad all-building gradient; three main zones remain legible."
+    },
+    {
+      "id": 23,
+      "name": "23-light-verticals",
+      "title": "Три пояса · светлые вертикали",
+      "detail": "Three clear 3/4/2 horizontal zones, upper two floors very pale warm limestone cream #F2E6CC. Add restrained slim cream brick vertical jamb strips along existing glazed loggia edges ONLY above third floor to connect sandy middle with light upper zone. First three floors remain uninterrupted brown except actual windows/glass. No individual window frames, no ornamental teeth. Bright warm elegant composition."
+    }
+  ]
+}

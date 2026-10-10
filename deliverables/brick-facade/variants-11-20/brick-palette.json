@@ -1,0 +1,20 @@
+{
+  "brickPalette": {
+    "flash": {
+      "name": "Флэш",
+      "description": "Тёмный коричнево-терракотовый кирпич с естественными вариациями оттенка",
+      "colors": {"base": "#846651", "secondary": "#6E513C", "light": "#967B6C", "dark": "#4B3323", "deep": "#1A0C06"},
+      "distribution": {"base": 35, "secondary": 25, "light": 15, "dark": 20, "deep": 5},
+      "mortar": {"color": "#3B322C", "finish": "matte"},
+      "material": {"roughness": 0.82, "saturation": 0.75, "contrast": 1.08}
+    },
+    "sahara": {
+      "name": "Сахара",
+      "description": "Светлый песочно-бежевый кирпич с кремовыми, серо-бежевыми и коричневыми акцентами",
+      "colors": {"base": "#E3CDB2", "light": "#F2E0CA", "secondary": "#CDB79D", "taupe": "#B09A84", "accent": "#987F6C", "darkAccent": "#534036"},
+      "distribution": {"base": 40, "light": 20, "secondary": 15, "taupe": 10, "accent": 10, "darkAccent": 5},
+      "mortar": {"color": "#5A4A40", "finish": "matte"},
+      "material": {"roughness": 0.86, "saturation": 0.55, "contrast": 1.03}
+    }
+  }
+}
