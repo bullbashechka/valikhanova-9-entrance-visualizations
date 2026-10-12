@@ -1,0 +1,99 @@
+{
+  "status": "10 corrected images reviewed",
+  "original_images_retained": true,
+  "gallery_links_valid": true,
+  "browser_visual_check": false,
+  "images": [
+    {
+      "id": "01-walnut-terrazzo",
+      "size": [
+        1536,
+        1024
+      ],
+      "sha256": "dc9cbedc91f43b150cb1b6558bdda09224cda06b005d079fe3c7b9425ee3ef76",
+      "visual_review": "Passed: recess and projecting casing removed; wall finish continued across flush leaf; fine perimeter seam remains."
+    },
+    {
+      "id": "02-oak-linen",
+      "size": [
+        1536,
+        1024
+      ],
+      "sha256": "2863c0e8a974ae0586011831a980be4813042e0103c9ec0e84b2f4a22aefdf50",
+      "visual_review": "Passed: recess and projecting casing removed; wall finish continued across flush leaf; fine perimeter seam remains."
+    },
+    {
+      "id": "03-sage-oak",
+      "size": [
+        1536,
+        1024
+      ],
+      "sha256": "8725225d921361e93523e6512757d7550c53f7be032b17ed445246c2c02ba7bc",
+      "visual_review": "Passed: recess and projecting casing removed; wall finish continued across flush leaf; fine perimeter seam remains."
+    },
+    {
+      "id": "04-mineral-relief",
+      "size": [
+        1536,
+        1024
+      ],
+      "sha256": "185fa1d592ab6a1ef30553b25ab1570d2442a98fe5bdf839fc540af6274619a4",
+      "visual_review": "Passed: recess and projecting casing removed; wall finish continued across flush leaf; fine perimeter seam remains."
+    },
+    {
+      "id": "05-ivory-graphite",
+      "size": [
+        1536,
+        1024
+      ],
+      "sha256": "e502f6da62706b0f80575e97808cd4860bf46732fd017d6c775c581fea1e2540",
+      "visual_review": "Passed: recess and projecting casing removed; wall finish continued across flush leaf; fine perimeter seam remains."
+    },
+    {
+      "id": "06-terracotta",
+      "size": [
+        1536,
+        1024
+      ],
+      "sha256": "b58d4ff990e375aca28adb88bf454733f32c8c95c0ec412ea702e70e36c78617",
+      "visual_review": "Passed: recess and projecting casing removed; wall finish continued across flush leaf; fine perimeter seam remains."
+    },
+    {
+      "id": "07-walnut-bronze",
+      "size": [
+        1536,
+        1024
+      ],
+      "sha256": "5b9d0cb9472b53c5c5ff7491e0cef5c924352454d7dc14cba571a85b48aaa520",
+      "visual_review": "Passed: recess and projecting casing removed; wall finish continued across flush leaf; fine perimeter seam remains."
+    },
+    {
+      "id": "08-sand-gallery",
+      "size": [
+        1536,
+        1024
+      ],
+      "sha256": "54bcb8b87f218af83d9c3fda6f8944b1c003c9bfea4be251d128cfc4958917ee",
+      "visual_review": "Passed: recess and projecting casing removed; wall finish continued across flush leaf; fine perimeter seam remains."
+    },
+    {
+      "id": "09-stone-champagne",
+      "size": [
+        1536,
+        1024
+      ],
+      "sha256": "5852b6f841f13c820e94a357382aea2f6ec08751049ce70dbcd5f0bcf826ead6",
+      "visual_review": "Passed: recess and projecting casing removed; wall finish continued across flush leaf; fine perimeter seam remains."
+    },
+    {
+      "id": "10-ink-oak",
+      "size": [
+        1536,
+        1024
+      ],
+      "sha256": "783bb0972cafdb565c0b28952185aa8c5486f683d40abcf2a3afc88be4d9f841",
+      "visual_review": "Passed: recess and projecting casing removed; wall finish continued across flush leaf; fine perimeter seam remains."
+    }
+  ],
+  "limitation": "Generative edit, not pixel-identical outside the requested area; no measured construction geometry is implied."
+}

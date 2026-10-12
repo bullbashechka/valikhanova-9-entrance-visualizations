@@ -1,0 +1,40 @@
+{
+  "status": "three concepts ready for user selection",
+  "source_copy_identical": true,
+  "mode": "built-in image_gen",
+  "images": [
+    {
+      "file": "images/01-wood-graphite.png",
+      "width": 1536,
+      "height": 1024,
+      "sha256": "448d7331f43c244badbb3a8a10935fc73aa74ce517d1973789c273af914a0461",
+      "visual_review": "reviewed for concept selection",
+      "text": "ЛЕСТНИЦА; ЛИФТ →",
+      "geometry": "Main layout and opening topology visually retained; pixel-perfect and metric identity not asserted."
+    },
+    {
+      "file": "images/02-wood-stone.png",
+      "width": 1536,
+      "height": 1024,
+      "sha256": "89baa202c3b4c21f9337f4cbad723118db60b91e5a7b20cfcf4c3c3ef1127486",
+      "visual_review": "reviewed for concept selection",
+      "text": "ЛЕСТНИЦА; ЛИФТ →",
+      "geometry": "Main layout and opening topology visually retained; pixel-perfect and metric identity not asserted."
+    },
+    {
+      "file": "images/03-relief-light.png",
+      "width": 1536,
+      "height": 1024,
+      "sha256": "c58b429dbc5ba7dfb9fd35d4c2c0d1a95401c325d31c413851e1151ac555d90d",
+      "visual_review": "reviewed for concept selection",
+      "text": "ЛЕСТНИЦА; ЛИФТ →",
+      "geometry": "Main layout and opening topology visually retained; pixel-perfect and metric identity not asserted."
+    }
+  ],
+  "limitations": [
+    "No construction dimensions or cost verified.",
+    "AI contours and reflections are not pixel-identical.",
+    "Variant 03 panel joints require clarification if selected."
+  ],
+  "next_step": "User selects a concept before other views are produced."
+}

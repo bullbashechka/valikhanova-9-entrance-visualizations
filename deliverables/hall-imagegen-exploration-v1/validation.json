@@ -1,0 +1,109 @@
+{
+  "image_count": 10,
+  "unique_images": true,
+  "source_copy_identical": true,
+  "local_gallery_links_checked": 21,
+  "browser_visual_check": false,
+  "images": [
+    {
+      "id": "01-walnut-terrazzo",
+      "file": "images/01-walnut-terrazzo.png",
+      "size": [
+        1536,
+        1024
+      ],
+      "sha256": "eaa5e62d34e051ab604689ec694f586045135fc9c2ef9b16932d257d48a7a35d",
+      "visual_review": "Viewed; main visible layout retained, metric accuracy not asserted."
+    },
+    {
+      "id": "02-oak-linen",
+      "file": "images/02-oak-linen.png",
+      "size": [
+        1536,
+        1024
+      ],
+      "sha256": "068bf7e4a7f856979082c296a4f22c2e92a497988b79f9ba9a491d01fbfc1d40",
+      "visual_review": "Viewed; main visible layout retained, metric accuracy not asserted."
+    },
+    {
+      "id": "03-sage-oak",
+      "file": "images/03-sage-oak.png",
+      "size": [
+        1536,
+        1024
+      ],
+      "sha256": "f38a70251be6ea3e2c245f7d90265aac2e0301ae056fe43e32f843d5e80f5e6f",
+      "visual_review": "Viewed; main visible layout retained, metric accuracy not asserted."
+    },
+    {
+      "id": "04-mineral-relief",
+      "file": "images/04-mineral-relief.png",
+      "size": [
+        1536,
+        1024
+      ],
+      "sha256": "baefec56d2c9e353f7d2bac99ce34017c4a46662d50e63c193fb47fefc41fb42",
+      "visual_review": "Viewed; main visible layout retained, metric accuracy not asserted."
+    },
+    {
+      "id": "05-ivory-graphite",
+      "file": "images/05-ivory-graphite.png",
+      "size": [
+        1536,
+        1024
+      ],
+      "sha256": "232a2c3b29222f7261ca20caed5866cf7688035f52cc77ba9b3fbbde8763cc2f",
+      "visual_review": "Viewed; main visible layout retained, metric accuracy not asserted."
+    },
+    {
+      "id": "06-terracotta",
+      "file": "images/06-terracotta.png",
+      "size": [
+        1536,
+        1024
+      ],
+      "sha256": "ff50823761de2d6cb01a1d98cf8e954feb00765af90a37c67df1c4da497de7c5",
+      "visual_review": "Viewed; main visible layout retained, metric accuracy not asserted."
+    },
+    {
+      "id": "07-walnut-bronze",
+      "file": "images/07-walnut-bronze.png",
+      "size": [
+        1536,
+        1024
+      ],
+      "sha256": "11d70d95875d0ca072b74cd91207d61892b9b8dc09c180ec88960f4f0c1d7da6",
+      "visual_review": "Viewed; main visible layout retained, metric accuracy not asserted."
+    },
+    {
+      "id": "08-sand-gallery",
+      "file": "images/08-sand-gallery.png",
+      "size": [
+        1536,
+        1024
+      ],
+      "sha256": "f2b71476bff668d572c8a6f9d41fd415748cd18abb6e975587ac0fa14e1cedaa",
+      "visual_review": "Viewed; main visible layout retained, metric accuracy not asserted."
+    },
+    {
+      "id": "09-stone-champagne",
+      "file": "images/09-stone-champagne.png",
+      "size": [
+        1536,
+        1024
+      ],
+      "sha256": "d45a52da21a3476160c59ebaa27be3201e9cc7efe0e8e0c134a27af75d5d2a66",
+      "visual_review": "Viewed; main visible layout retained, metric accuracy not asserted."
+    },
+    {
+      "id": "10-ink-oak",
+      "file": "images/10-ink-oak.png",
+      "size": [
+        1536,
+        1024
+      ],
+      "sha256": "4f8f81e93c25a958c9eda496e54e1e1cc24c9e5361c616f67fbaf7afb5c4c17c",
+      "visual_review": "Viewed; main visible layout retained, metric accuracy not asserted."
+    }
+  ]
+}

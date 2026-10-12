@@ -1,0 +1,92 @@
+[
+  {
+    "id": "01-walnut-terrazzo",
+    "input": "images/01-walnut-terrazzo.png",
+    "file": "images-flush/01-walnut-terrazzo.png",
+    "mode": "built-in image_gen",
+    "prompt_file": "prompts-flush.json",
+    "generated_source": "/Users/kirillsaidashev/.codex/generated_images/01a12ea0-393c-7703-838d-8ecb5bbc9c8f/exec-87a82b4c-24ce-42c8-a3d5-4e38aa9b3aab.png",
+    "visual_review": "Passed: recess and projecting casing removed; wall finish continued across flush leaf; fine perimeter seam remains."
+  },
+  {
+    "id": "02-oak-linen",
+    "input": "images/02-oak-linen.png",
+    "file": "images-flush/02-oak-linen.png",
+    "mode": "built-in image_gen",
+    "prompt_file": "prompts-flush.json",
+    "generated_source": "/Users/kirillsaidashev/.codex/generated_images/01a12ea0-393c-7703-838d-8ecb5bbc9c8f/exec-a6db3c42-ff7a-4b53-8cf1-0f4e22219517.png",
+    "visual_review": "Passed: recess and projecting casing removed; wall finish continued across flush leaf; fine perimeter seam remains."
+  },
+  {
+    "id": "03-sage-oak",
+    "input": "images/03-sage-oak.png",
+    "file": "images-flush/03-sage-oak.png",
+    "mode": "built-in image_gen",
+    "prompt_file": "prompts-flush.json",
+    "generated_source": "/Users/kirillsaidashev/.codex/generated_images/01a12ea0-393c-7703-838d-8ecb5bbc9c8f/exec-9c32c335-8c95-41be-8186-b154b370de0f.png",
+    "visual_review": "Passed: recess and projecting casing removed; wall finish continued across flush leaf; fine perimeter seam remains."
+  },
+  {
+    "id": "04-mineral-relief",
+    "input": "images/04-mineral-relief.png",
+    "file": "images-flush/04-mineral-relief.png",
+    "mode": "built-in image_gen",
+    "prompt_file": "prompts-flush.json",
+    "generated_source": "/Users/kirillsaidashev/.codex/generated_images/01a12ea0-393c-7703-838d-8ecb5bbc9c8f/exec-a7cba5f0-098c-4143-866f-a1dfe5e06f85.png",
+    "visual_review": "Passed: recess and projecting casing removed; wall finish continued across flush leaf; fine perimeter seam remains."
+  },
+  {
+    "id": "05-ivory-graphite",
+    "input": "images/05-ivory-graphite.png",
+    "file": "images-flush/05-ivory-graphite.png",
+    "mode": "built-in image_gen",
+    "prompt_file": "prompts-flush.json",
+    "generated_source": "/Users/kirillsaidashev/.codex/generated_images/01a12ea0-393c-7703-838d-8ecb5bbc9c8f/exec-398efb73-8516-42c0-933f-53332a472137.png",
+    "visual_review": "Passed: recess and projecting casing removed; wall finish continued across flush leaf; fine perimeter seam remains."
+  },
+  {
+    "id": "06-terracotta",
+    "input": "images/06-terracotta.png",
+    "file": "images-flush/06-terracotta.png",
+    "mode": "built-in image_gen",
+    "prompt_file": "prompts-flush.json",
+    "generated_source": "/Users/kirillsaidashev/.codex/generated_images/01a12ea0-393c-7703-838d-8ecb5bbc9c8f/exec-ce3b8a09-3db8-4919-b3eb-9ea9418095bd.png",
+    "visual_review": "Passed: recess and projecting casing removed; wall finish continued across flush leaf; fine perimeter seam remains."
+  },
+  {
+    "id": "07-walnut-bronze",
+    "input": "images/07-walnut-bronze.png",
+    "file": "images-flush/07-walnut-bronze.png",
+    "mode": "built-in image_gen",
+    "prompt_file": "prompts-flush.json",
+    "generated_source": "/Users/kirillsaidashev/.codex/generated_images/01a12ea0-393c-7703-838d-8ecb5bbc9c8f/exec-0ad42c68-9788-4ad6-9af1-71a96c526fb9.png",
+    "visual_review": "Passed: recess and projecting casing removed; wall finish continued across flush leaf; fine perimeter seam remains."
+  },
+  {
+    "id": "08-sand-gallery",
+    "input": "images/08-sand-gallery.png",
+    "file": "images-flush/08-sand-gallery.png",
+    "mode": "built-in image_gen",
+    "prompt_file": "prompts-flush.json",
+    "generated_source": "/Users/kirillsaidashev/.codex/generated_images/01a12ea0-393c-7703-838d-8ecb5bbc9c8f/exec-150bc17d-ba1a-4e72-8e98-48187e81eba8.png",
+    "visual_review": "Passed: recess and projecting casing removed; wall finish continued across flush leaf; fine perimeter seam remains."
+  },
+  {
+    "id": "09-stone-champagne",
+    "input": "images/09-stone-champagne.png",
+    "file": "images-flush/09-stone-champagne.png",
+    "mode": "built-in image_gen",
+    "prompt_file": "prompts-flush.json",
+    "generated_source": "/Users/kirillsaidashev/.codex/generated_images/01a12ea0-393c-7703-838d-8ecb5bbc9c8f/exec-83605adf-1427-477b-ae70-f48931940ca0.png",
+    "visual_review": "Passed: recess and projecting casing removed; wall finish continued across flush leaf; fine perimeter seam remains."
+  },
+  {
+    "id": "10-ink-oak",
+    "input": "images/10-ink-oak.png",
+    "file": "images-flush/10-ink-oak.png",
+    "mode": "built-in image_gen",
+    "prompt_file": "prompts-flush.json",
+    "generated_source": "/Users/kirillsaidashev/.codex/generated_images/01a12ea0-393c-7703-838d-8ecb5bbc9c8f/exec-49fdf34e-dc37-48ac-9b6c-6cfdbd8c3772.png",
+    "visual_review": "Passed: recess and projecting casing removed; wall finish continued across flush leaf; fine perimeter seam remains."
+  }
+]
