@@ -1,0 +1,148 @@
+{
+  "passed": true,
+  "deliverables": {
+    "baseline": 3,
+    "wood": 5,
+    "marble": 5,
+    "total": 13
+  },
+  "images": [
+    {
+      "id": "A1",
+      "file": "images/A1.png",
+      "width": 1536,
+      "height": 1024,
+      "bytes": 2280285,
+      "sha256": "3a388df3fddc01321bdf38ba36dc674873466ca3aa8f0164d7286b9abab6ead9",
+      "png_crc_valid": true,
+      "matches_native_output": true
+    },
+    {
+      "id": "A2",
+      "file": "images/A2.png",
+      "width": 1536,
+      "height": 1024,
+      "bytes": 2228239,
+      "sha256": "4414b19090e1b2d0e439913704daa1cf656b570f8a0ff847dd3356de54b8f926",
+      "png_crc_valid": true,
+      "matches_native_output": true
+    },
+    {
+      "id": "A3",
+      "file": "images/A3.png",
+      "width": 1536,
+      "height": 1024,
+      "bytes": 2092106,
+      "sha256": "1c8d3d6a5a88cf686a1daff95f2c1c4f81d15d5ea208d543998cb94feaa73227",
+      "png_crc_valid": true,
+      "matches_native_output": true
+    },
+    {
+      "id": "D1",
+      "file": "images/D1.png",
+      "width": 1536,
+      "height": 1024,
+      "bytes": 2175956,
+      "sha256": "432b57468949ab23516307708c342f661d67a9f362ea79059f3ad0e7fa1b99ce",
+      "png_crc_valid": true,
+      "matches_native_output": true
+    },
+    {
+      "id": "D2",
+      "file": "images/D2.png",
+      "width": 1536,
+      "height": 1024,
+      "bytes": 1945783,
+      "sha256": "9600b15fa669fdb0e78ed7a4c9c14372792e0e24359fe2044a5ee6f68c961a28",
+      "png_crc_valid": true,
+      "matches_native_output": true
+    },
+    {
+      "id": "D3",
+      "file": "images/D3.png",
+      "width": 1536,
+      "height": 1024,
+      "bytes": 2276693,
+      "sha256": "42a3d81a88359456537d3a1197184b8bad99b227b27271e65e38bba5dc1c69f5",
+      "png_crc_valid": true,
+      "matches_native_output": true
+    },
+    {
+      "id": "D4",
+      "file": "images/D4.png",
+      "width": 1536,
+      "height": 1024,
+      "bytes": 2367332,
+      "sha256": "a668882752e9162a3601d6ff92081c070be152207b91340a1eb421f60719d0ab",
+      "png_crc_valid": true,
+      "matches_native_output": true
+    },
+    {
+      "id": "D5",
+      "file": "images/D5.png",
+      "width": 1536,
+      "height": 1024,
+      "bytes": 2086376,
+      "sha256": "258a33d6ccbe08d8e2809f77bd071498e9cc12db16b766d54ab1dca2f7d7717d",
+      "png_crc_valid": true,
+      "matches_native_output": true
+    },
+    {
+      "id": "M1",
+      "file": "images/M1.png",
+      "width": 1536,
+      "height": 1024,
+      "bytes": 2120967,
+      "sha256": "2c5fed3400fd53186fd6c05f43bfb23a48527075186a14110601c20a2b8a3033",
+      "png_crc_valid": true,
+      "matches_native_output": true
+    },
+    {
+      "id": "M2",
+      "file": "images/M2.png",
+      "width": 1536,
+      "height": 1024,
+      "bytes": 2297277,
+      "sha256": "5d5c68e5299a029744427fb56568f865949489f812667caecc16ecc28a17d64b",
+      "png_crc_valid": true,
+      "matches_native_output": true
+    },
+    {
+      "id": "M3",
+      "file": "images/M3.png",
+      "width": 1536,
+      "height": 1024,
+      "bytes": 2307774,
+      "sha256": "0c9ac2ac3bdbfd1b095d4540376bea54f19fdc5dbce0aebfadc321a5c7f573ae",
+      "png_crc_valid": true,
+      "matches_native_output": true
+    },
+    {
+      "id": "M4",
+      "file": "images/M4.png",
+      "width": 1536,
+      "height": 1024,
+      "bytes": 2254051,
+      "sha256": "6d1290d9d3bd252f7f19b2bac3a598372e5284ded7517ab4e63f0a1600156a78",
+      "png_crc_valid": true,
+      "matches_native_output": true
+    },
+    {
+      "id": "M5",
+      "file": "images/M5.png",
+      "width": 1536,
+      "height": 1024,
+      "bytes": 2032568,
+      "sha256": "096154e12acd31b59deb74d590616f41a8a3949287144f00f2509e58329d97aa",
+      "png_crc_valid": true,
+      "matches_native_output": true
+    }
+  ],
+  "unique_images": true,
+  "all_local_gallery_links_exist": true,
+  "source_and_reference_copies_match_originals": true,
+  "exact_prompt_history_saved": true,
+  "visual_review": "All selected images inspected individually against source views. See generation.json for observations.",
+  "geometry": "Visual comparison only; original plan remains the authority for area and dimensions.",
+  "browser_render_check": "Not performed: no enabled CUA browser. Static HTML link and image checks passed."
+}

@@ -1,0 +1,21 @@
+{
+  "title": "Фотореалистичные референсы холла — второй комплект",
+  "authorized": "Implement the plan",
+  "mode": "built-in imagegen",
+  "deliverables": {
+    "baseline": 3,
+    "wood": 5,
+    "flexible_marble": 5,
+    "total": 13
+  },
+  "decisions": {
+    "geometry": "preserve area, room contour, proportions, opening locations and source cameras",
+    "details": "freely redesign doors, finishes, hardware, floor, skirting, fixtures and signage",
+    "circulation": "clear floor, no waiting furniture, no people or demonstration stroller",
+    "navigation": "main entry, lift and staircase identifiable; service doors subdued",
+    "realism": "new finished building, photographic material and construction detail",
+    "character": "quiet expensive residential, bright neutral warm base, restrained satin metallic accents",
+    "logo": "reserve a calm location, identify in caption, no invented brand"
+  },
+  "boundary": "Image previews only; no Blender scene, facade, project material or task status changes"
+}

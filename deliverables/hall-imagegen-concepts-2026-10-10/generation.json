@@ -1,0 +1,72 @@
+{
+  "mode": "built-in image_gen",
+  "generated_at": "2026-10-10",
+  "approval": "pending user revisions and separate authorization to implement",
+  "selected_images": [
+    {
+      "id": "00a",
+      "path": "/Users/kirillsaidashev/Documents/Projects/construction/deliverables/hall-imagegen-concepts-2026-10-10/images/00a-current-lobby-detailed.png",
+      "source": "/Users/kirillsaidashev/.codex/generated_images/01a12441-b2fb-70b0-92c1-aa3449f386f1/exec-a14a3438-b477-432c-8525-2bd5c8f835db.png"
+    },
+    {
+      "id": "00b",
+      "path": "/Users/kirillsaidashev/Documents/Projects/construction/deliverables/hall-imagegen-concepts-2026-10-10/images/00b-current-entry-detailed.png",
+      "source": "/Users/kirillsaidashev/.codex/generated_images/01a12441-b2fb-70b0-92c1-aa3449f386f1/exec-b69dbfb5-73f8-4ead-914e-bec9515277bb.png"
+    },
+    {
+      "id": "00c",
+      "path": "/Users/kirillsaidashev/Documents/Projects/construction/deliverables/hall-imagegen-concepts-2026-10-10/images/00c-current-lift-detailed.png",
+      "source": "/Users/kirillsaidashev/.codex/generated_images/01a12441-b2fb-70b0-92c1-aa3449f386f1/exec-3a72e600-3657-4e7d-97eb-e174f743ea75.png"
+    },
+    {
+      "id": "D1",
+      "path": "/Users/kirillsaidashev/Documents/Projects/construction/deliverables/hall-imagegen-concepts-2026-10-10/images/D1-light-oak.png",
+      "source": "/Users/kirillsaidashev/.codex/generated_images/01a12441-b2fb-70b0-92c1-aa3449f386f1/exec-9b3cdafc-56a4-4bea-a997-04592122a86c.png"
+    },
+    {
+      "id": "D2",
+      "path": "/Users/kirillsaidashev/Documents/Projects/construction/deliverables/hall-imagegen-concepts-2026-10-10/images/D2-walnut-graphite.png",
+      "source": "/Users/kirillsaidashev/.codex/generated_images/01a12441-b2fb-70b0-92c1-aa3449f386f1/exec-54793fa6-9fd4-40ea-b094-22b171801618.png"
+    },
+    {
+      "id": "D3",
+      "path": "/Users/kirillsaidashev/Documents/Projects/construction/deliverables/hall-imagegen-concepts-2026-10-10/images/D3-oak-rhythm.png",
+      "source": "/Users/kirillsaidashev/.codex/generated_images/01a12441-b2fb-70b0-92c1-aa3449f386f1/exec-857a8ce6-acfb-4606-af4a-2ba6208ba921.png"
+    },
+    {
+      "id": "D4",
+      "path": "/Users/kirillsaidashev/Documents/Projects/construction/deliverables/hall-imagegen-concepts-2026-10-10/images/D4-wood-champagne.png",
+      "source": "/Users/kirillsaidashev/.codex/generated_images/01a12441-b2fb-70b0-92c1-aa3449f386f1/exec-b7443148-013f-40e3-84d5-dd33f121dd2e.png"
+    },
+    {
+      "id": "D5",
+      "path": "/Users/kirillsaidashev/Documents/Projects/construction/deliverables/hall-imagegen-concepts-2026-10-10/images/D5-wood-ivory-panels.png",
+      "source": "/Users/kirillsaidashev/.codex/generated_images/01a12441-b2fb-70b0-92c1-aa3449f386f1/exec-54dcda55-ba37-4439-ac3c-a0f69e9dcff2.png"
+    },
+    {
+      "id": "M1",
+      "path": "/Users/kirillsaidashev/Documents/Projects/construction/deliverables/hall-imagegen-concepts-2026-10-10/images/M1-white-marble-champagne.png",
+      "source": "/Users/kirillsaidashev/.codex/generated_images/01a12441-b2fb-70b0-92c1-aa3449f386f1/exec-fba0f208-5cbb-46bf-9b3f-fa5953582941.png"
+    },
+    {
+      "id": "M2",
+      "path": "/Users/kirillsaidashev/Documents/Projects/construction/deliverables/hall-imagegen-concepts-2026-10-10/images/M2-beige-marble-gold.png",
+      "source": "/Users/kirillsaidashev/.codex/generated_images/01a12441-b2fb-70b0-92c1-aa3449f386f1/exec-0a263a50-554a-4c16-9236-83028e025118.png"
+    },
+    {
+      "id": "M3",
+      "path": "/Users/kirillsaidashev/Documents/Projects/construction/deliverables/hall-imagegen-concepts-2026-10-10/images/M3-grey-marble-graphite.png",
+      "source": "/Users/kirillsaidashev/.codex/generated_images/01a12441-b2fb-70b0-92c1-aa3449f386f1/exec-f59affa5-3691-4eb2-af4a-e543ee8b1a93.png"
+    },
+    {
+      "id": "M4",
+      "path": "/Users/kirillsaidashev/Documents/Projects/construction/deliverables/hall-imagegen-concepts-2026-10-10/images/M4-marble-framed-panels.png",
+      "source": "/Users/kirillsaidashev/.codex/generated_images/01a12441-b2fb-70b0-92c1-aa3449f386f1/exec-2f7c4b7a-05f6-4077-ac40-e0434525b2f4.png"
+    },
+    {
+      "id": "M5",
+      "path": "/Users/kirillsaidashev/Documents/Projects/construction/deliverables/hall-imagegen-concepts-2026-10-10/images/M5-marble-focus-ivory.png",
+      "source": "/Users/kirillsaidashev/.codex/generated_images/01a12441-b2fb-70b0-92c1-aa3449f386f1/exec-246a85a6-ea29-44ce-bf72-728d2ec75e4c.png"
+    }
+  ]
+}
