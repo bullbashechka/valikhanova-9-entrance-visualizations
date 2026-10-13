@@ -1,0 +1,41 @@
+{
+  "mode": "built-in image_gen",
+  "variants": [
+    {
+      "id": "11-carrara-walnut",
+      "source": "images/11-carrara-walnut.png",
+      "output": "images-flush/11-carrara-walnut.png",
+      "prompt": "Use case: precise-object-edit. Edit ONLY the left staircase door and its immediate frame in this photograph. Make it a CONCEALED FLUSH DOOR exactly coplanar with the surrounding finished wall surface. Bring its face forward to the wall plane. Eliminate all projecting casing, jamb returns, lintel undersides, dark recess shadows and thick frames. Leave only a fine 2 mm hairline outline around a closed leaf at the existing opening size and position. Keep one small functional matching metal lever. Concealed hinges. Door leaf finish must seamlessly match the surrounding wall material specified below, aligned grain/veins/panel joints.\nKeep every other element unchanged: marble patterns, walls, floor, ceiling, camera, framing, light fixtures and lighting, right glass door, signs and all colors. Preserve exact Russian wayfinding. Do not redesign the room or change the plan. Do not make the opening taller or wider; panels above it remain fixed. Photorealistic image, same landscape 3:2 framing, no annotations.\n\nMATERIAL: Match the walnut wall panelling above and beside the stair door: continuous walnut grain, remove frame and recess."
+    },
+    {
+      "id": "12-cream-marble-bronze",
+      "source": "images/12-cream-marble-bronze.png",
+      "output": "images-flush/12-cream-marble-bronze.png",
+      "prompt": "Use case: precise-object-edit. Edit ONLY the left staircase door and its immediate frame in this photograph. Make it a CONCEALED FLUSH DOOR exactly coplanar with the surrounding finished wall surface. Bring its face forward to the wall plane. Eliminate all projecting casing, jamb returns, lintel undersides, dark recess shadows and thick frames. Leave only a fine 2 mm hairline outline around a closed leaf at the existing opening size and position. Keep one small functional matching metal lever. Concealed hinges. Door leaf finish must seamlessly match the surrounding wall material specified below, aligned grain/veins/panel joints.\nKeep every other element unchanged: marble patterns, walls, floor, ceiling, camera, framing, light fixtures and lighting, right glass door, signs and all colors. Preserve exact Russian wayfinding. Do not redesign the room or change the plan. Do not make the opening taller or wider; panels above it remain fixed. Photorealistic image, same landscape 3:2 framing, no annotations.\n\nMATERIAL: Match the warm beige painted wall around and above the staircase opening; continue any lower marble wall band through the door at exactly its surrounding level."
+    },
+    {
+      "id": "13-grey-marble-graphite",
+      "source": "images/13-grey-marble-graphite.png",
+      "output": "images-flush/13-grey-marble-graphite.png",
+      "prompt": "Use case: precise-object-edit. Edit ONLY the left staircase door and its immediate frame in this photograph. Make it a CONCEALED FLUSH DOOR exactly coplanar with the surrounding finished wall surface. Bring its face forward to the wall plane. Eliminate all projecting casing, jamb returns, lintel undersides, dark recess shadows and thick frames. Leave only a fine 2 mm hairline outline around a closed leaf at the existing opening size and position. Keep one small functional matching metal lever. Concealed hinges. Door leaf finish must seamlessly match the surrounding wall material specified below, aligned grain/veins/panel joints.\nKeep every other element unchanged: marble patterns, walls, floor, ceiling, camera, framing, light fixtures and lighting, right glass door, signs and all colors. Preserve exact Russian wayfinding. Do not redesign the room or change the plan. Do not make the opening taller or wider; panels above it remain fixed. Photorealistic image, same landscape 3:2 framing, no annotations.\n\nMATERIAL: Match the smooth graphite wall panel above and surrounding the stair door, including joint alignment; no recessed or projecting frame."
+    },
+    {
+      "id": "14-green-marble-oak",
+      "source": "images/14-green-marble-oak.png",
+      "output": "images-flush/14-green-marble-oak.png",
+      "prompt": "Use case: precise-object-edit. Edit ONLY the left staircase door and its immediate frame in this photograph. Make it a CONCEALED FLUSH DOOR exactly coplanar with the surrounding finished wall surface. Bring its face forward to the wall plane. Eliminate all projecting casing, jamb returns, lintel undersides, dark recess shadows and thick frames. Leave only a fine 2 mm hairline outline around a closed leaf at the existing opening size and position. Keep one small functional matching metal lever. Concealed hinges. Door leaf finish must seamlessly match the surrounding wall material specified below, aligned grain/veins/panel joints.\nKeep every other element unchanged: marble patterns, walls, floor, ceiling, camera, framing, light fixtures and lighting, right glass door, signs and all colors. Preserve exact Russian wayfinding. Do not redesign the room or change the plan. Do not make the opening taller or wider; panels above it remain fixed. Photorealistic image, same landscape 3:2 framing, no annotations.\n\nMATERIAL: Match the continuous light oak panel finish above and around the staircase door, removing casing and aligning timber grain."
+    },
+    {
+      "id": "15-black-marble-walnut",
+      "source": "images/15-black-marble-walnut.png",
+      "output": "images-flush/15-black-marble-walnut.png",
+      "prompt": "Use case: precise-object-edit. Edit ONLY the left staircase door and its immediate frame in this photograph. Make it a CONCEALED FLUSH DOOR exactly coplanar with the surrounding finished wall surface. Bring its face forward to the wall plane. Eliminate all projecting casing, jamb returns, lintel undersides, dark recess shadows and thick frames. Leave only a fine 2 mm hairline outline around a closed leaf at the existing opening size and position. Keep one small functional matching metal lever. Concealed hinges. Door leaf finish must seamlessly match the surrounding wall material specified below, aligned grain/veins/panel joints.\nKeep every other element unchanged: marble patterns, walls, floor, ceiling, camera, framing, light fixtures and lighting, right glass door, signs and all colors. Preserve exact Russian wayfinding. Do not redesign the room or change the plan. Do not make the opening taller or wider; panels above it remain fixed. Photorealistic image, same landscape 3:2 framing, no annotations.\n\nMATERIAL: Match the surrounding medium walnut wall panelling, continuous grain across the flush door and fixed head panel; remove visible jamb returns."
+    },
+    {
+      "id": "16-calacatta-amber",
+      "source": "images/16-calacatta-amber.png",
+      "output": "images-flush/16-calacatta-amber.png",
+      "prompt": "Use case: precise-object-edit. Edit ONLY the left staircase door and its immediate frame in this photograph. Make it a CONCEALED FLUSH DOOR exactly coplanar with the surrounding finished wall surface. Bring its face forward to the wall plane. Eliminate all projecting casing, jamb returns, lintel undersides, dark recess shadows and thick frames. Leave only a fine 2 mm hairline outline around a closed leaf at the existing opening size and position. Keep one small functional matching metal lever. Concealed hinges. Door leaf finish must seamlessly match the surrounding wall material specified below, aligned grain/veins/panel joints.\nKeep every other element unchanged: marble patterns, walls, floor, ceiling, camera, framing, light fixtures and lighting, right glass door, signs and all colors. Preserve exact Russian wayfinding. Do not redesign the room or change the plan. Do not make the opening taller or wider; panels above it remain fixed. Photorealistic image, same landscape 3:2 framing, no annotations.\n\nMATERIAL: Carry the SAME adjacent milky white marble pattern and its amber-grey veins continuously across the hidden left door; visually align each vein and panel joint with surrounding fixed marble wall. This is thin marble-look finish, not a thick stone door."
+    }
+  ]
+}

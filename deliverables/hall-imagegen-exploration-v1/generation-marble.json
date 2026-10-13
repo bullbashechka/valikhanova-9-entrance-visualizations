@@ -1,0 +1,80 @@
+[
+  {
+    "number": "11",
+    "id": "11-carrara-walnut",
+    "title": "Белый мрамор и орех",
+    "description": "Белый мрамор с серыми прожилками, ореховые панели и графитовые детали.",
+    "file": "images/11-carrara-walnut.png",
+    "flush_file": "images-flush/11-carrara-walnut.png",
+    "mode": "built-in image_gen",
+    "prompt_file": "prompts-marble.json",
+    "flush_prompt_file": "prompts-marble-flush.json",
+    "source_output": "/Users/kirillsaidashev/.codex/generated_images/01a12ea0-393c-7703-838d-8ecb5bbc9c8f/exec-c2118daf-d38b-4099-aaf8-5e19dfcffc1c.png",
+    "flush_source_output": "/Users/kirillsaidashev/.codex/generated_images/01a12ea0-393c-7703-838d-8ecb5bbc9c8f/exec-8179474e-e83d-4dcc-ac4f-2456db1a03f4.png"
+  },
+  {
+    "number": "12",
+    "id": "12-cream-marble-bronze",
+    "title": "Бежевый мрамор и бронза",
+    "description": "Тёплый бежевый мрамор, мягкая бронза и равномерный свет.",
+    "file": "images/12-cream-marble-bronze.png",
+    "flush_file": "images-flush/12-cream-marble-bronze.png",
+    "mode": "built-in image_gen",
+    "prompt_file": "prompts-marble.json",
+    "flush_prompt_file": "prompts-marble-flush.json",
+    "source_output": "/Users/kirillsaidashev/.codex/generated_images/01a12ea0-393c-7703-838d-8ecb5bbc9c8f/exec-2d73c4cf-75cc-4be7-9cbb-ea8d3fc0afce.png",
+    "flush_source_output": "/Users/kirillsaidashev/.codex/generated_images/01a12ea0-393c-7703-838d-8ecb5bbc9c8f/exec-fc68f865-bddc-499b-8d54-0604b641ed9b.png"
+  },
+  {
+    "number": "13",
+    "id": "13-grey-marble-graphite",
+    "title": "Серый мрамор и графит",
+    "description": "Серый мрамор, графитовые панели и строгий линейный свет.",
+    "file": "images/13-grey-marble-graphite.png",
+    "flush_file": "images-flush/13-grey-marble-graphite.png",
+    "mode": "built-in image_gen",
+    "prompt_file": "prompts-marble.json",
+    "flush_prompt_file": "prompts-marble-flush.json",
+    "source_output": "/Users/kirillsaidashev/.codex/generated_images/01a12ea0-393c-7703-838d-8ecb5bbc9c8f/exec-38d7aa76-9c6d-417c-8216-2ff59623f4ca.png",
+    "flush_source_output": "/Users/kirillsaidashev/.codex/generated_images/01a12ea0-393c-7703-838d-8ecb5bbc9c8f/exec-4283b1e5-ec08-4d10-b384-3189dc10367e.png"
+  },
+  {
+    "number": "14",
+    "id": "14-green-marble-oak",
+    "title": "Зелёный мрамор и дуб",
+    "description": "Зелёный мрамор, светлый дуб и молочные стены.",
+    "file": "images/14-green-marble-oak.png",
+    "flush_file": "images-flush/14-green-marble-oak.png",
+    "mode": "built-in image_gen",
+    "prompt_file": "prompts-marble.json",
+    "flush_prompt_file": "prompts-marble-flush.json",
+    "source_output": "/Users/kirillsaidashev/.codex/generated_images/01a12ea0-393c-7703-838d-8ecb5bbc9c8f/exec-ff71ed47-fbc1-4b43-927a-800ee70b8a8a.png",
+    "flush_source_output": "/Users/kirillsaidashev/.codex/generated_images/01a12ea0-393c-7703-838d-8ecb5bbc9c8f/exec-26abd9a1-bed7-49d8-a6b7-4543258aa9f9.png"
+  },
+  {
+    "number": "15",
+    "id": "15-black-marble-walnut",
+    "title": "Чёрный мрамор и тёплое дерево",
+    "description": "Чёрный мрамор с белыми прожилками, тёплое дерево и светлый пол.",
+    "file": "images/15-black-marble-walnut.png",
+    "flush_file": "images-flush/15-black-marble-walnut.png",
+    "mode": "built-in image_gen",
+    "prompt_file": "prompts-marble.json",
+    "flush_prompt_file": "prompts-marble-flush.json",
+    "source_output": "/Users/kirillsaidashev/.codex/generated_images/01a12ea0-393c-7703-838d-8ecb5bbc9c8f/exec-92b29d18-dc74-4b0c-9f3e-5c8516c302f1.png",
+    "flush_source_output": "/Users/kirillsaidashev/.codex/generated_images/01a12ea0-393c-7703-838d-8ecb5bbc9c8f/exec-52004e0c-e3f4-4599-9af4-6e4a02b25f0d.png"
+  },
+  {
+    "number": "16",
+    "id": "16-calacatta-amber",
+    "title": "Мрамор с тёплыми прожилками",
+    "description": "Молочный мрамор с медово-серыми прожилками, светлая отделка и металл шампань.",
+    "file": "images/16-calacatta-amber.png",
+    "flush_file": "images-flush/16-calacatta-amber.png",
+    "mode": "built-in image_gen",
+    "prompt_file": "prompts-marble.json",
+    "flush_prompt_file": "prompts-marble-flush.json",
+    "source_output": "/Users/kirillsaidashev/.codex/generated_images/01a12ea0-393c-7703-838d-8ecb5bbc9c8f/exec-9df68a62-6f29-4bdc-987f-3e8d534b4d9b.png",
+    "flush_source_output": "/Users/kirillsaidashev/.codex/generated_images/01a12ea0-393c-7703-838d-8ecb5bbc9c8f/exec-db490580-2f05-490a-9c3b-6288ed6dc1c7.png"
+  }
+]

@@ -1,8 +1,8 @@
 {
-  "image_count": 10,
+  "image_count": 16,
   "unique_images": true,
   "source_copy_identical": true,
-  "local_gallery_links_checked": 21,
+  "local_gallery_links_checked": 35,
   "browser_visual_check": false,
   "images": [
     {
@@ -104,6 +104,68 @@
       ],
       "sha256": "4f8f81e93c25a958c9eda496e54e1e1cc24c9e5361c616f67fbaf7afb5c4c17c",
       "visual_review": "Viewed; main visible layout retained, metric accuracy not asserted."
+    },
+    {
+      "id": "11-carrara-walnut",
+      "file": "images/11-carrara-walnut.png",
+      "size": [
+        1536,
+        1024
+      ],
+      "sha256": "d5ab8dead360c6b5829d63ca400f058f9fa3d234c714ba5cdeb91b061b6e2e89",
+      "visual_review": "Viewed: original arrangement of two openings and corner retained; flush version has no deep door reveal."
+    },
+    {
+      "id": "12-cream-marble-bronze",
+      "file": "images/12-cream-marble-bronze.png",
+      "size": [
+        1536,
+        1024
+      ],
+      "sha256": "4b62747e00ae7b85d5d4d574643a0fb2708e2e22e2d771041399609b37414e7d",
+      "visual_review": "Viewed: original arrangement of two openings and corner retained; flush version has no deep door reveal."
+    },
+    {
+      "id": "13-grey-marble-graphite",
+      "file": "images/13-grey-marble-graphite.png",
+      "size": [
+        1536,
+        1024
+      ],
+      "sha256": "1141f3de96c5c7e1fe7a80092b49849b60fcb254f3533327bc94192662f21c45",
+      "visual_review": "Viewed: original arrangement of two openings and corner retained; flush version has no deep door reveal."
+    },
+    {
+      "id": "14-green-marble-oak",
+      "file": "images/14-green-marble-oak.png",
+      "size": [
+        1536,
+        1024
+      ],
+      "sha256": "464a726884f5b06a4a87b02b49f3d9b66d77ff55e9ee73a6143ee370c8764558",
+      "visual_review": "Viewed: original arrangement of two openings and corner retained; flush version has no deep door reveal."
+    },
+    {
+      "id": "15-black-marble-walnut",
+      "file": "images/15-black-marble-walnut.png",
+      "size": [
+        1536,
+        1024
+      ],
+      "sha256": "9ea8cb0aa4440e88951b7e10f5a782ff134fb09170d58d3285e652b367339b84",
+      "visual_review": "Viewed: original arrangement of two openings and corner retained; flush version has no deep door reveal."
+    },
+    {
+      "id": "16-calacatta-amber",
+      "file": "images/16-calacatta-amber.png",
+      "size": [
+        1536,
+        1024
+      ],
+      "sha256": "fb0d5f6fec6b9d397d9d9e328b0d061955a50bea692a426f55bd109f5961896c",
+      "visual_review": "Viewed: original arrangement of two openings and corner retained; flush version has no deep door reveal."
     }
-  ]
+  ],
+  "status": "16 variants reviewed; marble series 11–16 added",
+  "gallery_links_valid": true
 }
